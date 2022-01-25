@@ -3,7 +3,7 @@ echo "check and run"
 
 
 HEADHASH=$(git rev-parse HEAD)
-REMOTEHASHCMD=$(git ls-remote origin refs/heads/main)
+REMOTEHASHCMD=$(git ls-remote origin refs/heads/master)
 REMOTEHASH=${REMOTEHASHCMD:0:40}
 
 echo "'$HEADHASH'"
