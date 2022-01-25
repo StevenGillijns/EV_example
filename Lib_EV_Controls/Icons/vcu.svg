@@ -1,0 +1,68 @@
+<svg xmlns:amesim="vnd.lms.imagine.amesim" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+ <amesim:metadata>
+  <ICON name="vcu">
+   <ICON_DESCRIPTION>vcu</ICON_DESCRIPTION>
+  </ICON>
+  <PORTS>
+   <PORT y="190" type="signal" x="30" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="27.0276 129.18 8.86914 40.0893" label="msg_Treq" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="190" type="signal" x="76" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="73.0276 125.343 8.86914 43.9264" label="msg_Tmax" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="190" type="signal" x="122" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="119.004 128.146 8.91553 41.1228" label="msg_Tmin" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="190" type="signal" x="165" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="162.818 141.138 7.28735 28.1308" label="msg_w" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="100" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="146.462 95.963 24.0691 7.36157" label="brake" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="170" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="167.818 19.4691 7.28735 34.9403" label="msg_acc" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="100" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="96.8722 19.4691 9.17993 30.2961" label="msg_br" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="30" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="26.8722 19.4691 9.17993 28.4406" label="msg_gl" orientation="1">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="100" type="signal" x="1" face="2">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="20.4572 96.0465 18.4907 7.19458" label="SOC" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+  </PORTS>
+ </amesim:metadata>
+ <g id="object1">
+  <image y="0" transform="matrix(1.00 0.00 0.00 1.00 0.00 0.00)" width="190" height="190" id="object2" x="0" xlink:href="data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAChklEQVRYhe2YsYrbQBCG104KJwRiFy5DDlXBT3EBX38HWVQZP0VwZWRSCT/F4cqo0DNckUeIULUspFRxnVGKWzazK1malUaH7hISX3Ij1jaMRt/++2tHwowx9pKVMT7+OC++nhONxFtNxA0kRoyI80cl3syJuP9SA9Y+fjfjD+h4RcgYPEEdz36clo7H+sE5pxmjMNwQ051MppxfTYoY99HBcXzq48dUoLhEfgwjFBvMwL3KYVAVkBjwpC5IONIx26GKfc24WOdwalCMdI0Ys4ioMH6spawhC+SHV58fR9e/ooNNlVJmmbTSWlyixDDKHrhW5OpaP3QKjERoLbV0/fgCp3oewUjh4qsVoWPbpaNQIdo6TGQgJmsy5Ge/9KOhg2LAtIEhBVgiwBd5hfxAyuMm4+DTftyjQxmGEpSO24xYK9nlB8Gwfti14twsmOy5P1LjhSR0bEzRltCRcIMBQ0RTx66LceCB5uBJ0NTRrij8SA9GSSrAkdIP/cNWxN8dP4K7imF2oc4JPwhGqaNgtHTsym3Yuq8Sn2R07w8lFqUO0dcPzn2YmZ+veODo2Ifh1ozd2aihg3OALHgC38376joqTXEZOsjL4eiY4VmFyI81MGCxkiUwlrhfVRUG4vREned2qXLY67gnfiAZtu/aW8oeTt8d4r7b0PHgfoXC8SOOb4+HywjQ06Cr7xoZtR8LpbQqRoL9wBV7hhgXaFJ38w5GVWH8GCxNo5L245vzPJ+ZjVGMDWbMlzXjq8NAplcVNvGu1nHjJI6MrDfjNcGw71fvJTyepBaB1B+d96uh5515xWAO4595vzo1Hf/7++6p6XhifnT+OXD8O2FcXaO6+sklXvzVxE9U+g4h9Z7BdwAAAABJRU5ErkJggncAAAAASUVORK5CYILwcDZio2Llx3cH8RBAolD2PdaYbxqNb5oGgl5nlIH3jY87LVBpZBdrvDFolO9XHxgcT4ynAeOfCDo/iOv7V77sRNMY9u4zOPBU71dPrPEMPszvu/+fjxce/8SH+c+BMk/+nTCux6hHfwlogT/Hrg6+0n11zwAAAABJRU5ErkJggg=="/>
+ </g>
+ <image y="0" transform="matrix(1.29 0.00 0.00 1.29 12.50 12.50)" width="128" height="128" id="object120" x="0" xlink:href="data:image/bitmap;base64,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"/>
+ <rect rx="0" stroke-dashoffset="0.00" ry="0" transform="matrix(1.01 0.00 0.00 1.01 12.58 12.34)" stroke-miterlimit="4.00" width="164" y="0" stroke-width="0.99" id="object121" stroke-linejoin="miter" stroke="#000000" stroke-linecap="butt" stroke-dasharray="" fill="none" x="0" height="164" stroke-opacity="1.00" fill-rule="nonzero"/>
+</svg>

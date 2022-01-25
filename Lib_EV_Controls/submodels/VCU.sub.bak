@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>VCU</SC_SUB_NAME>
+  <CATNAME>Lib_EV_Controls</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>0 0 86 116 1 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>1 1 89 208 1 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>1 2 115 208 1 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 3 135 92 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 2 117 116 1 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 4 117 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 5 102 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 6 86 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 7 68 92 2 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>VCU</ALIAS>
+     <COMP_NAME>drv_ECUforElectricVehicle2</COMP_NAME>
+     <COMP_DISPLAYNAME>drv_ECUforElectricVehicle2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>Control unit for an electric vehicle</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>drive.drv_ECUforElectricVehicle2</COMP_LIBRARY_ID>
+     <COMP_POS>67 67</COMP_POS>
+     <COMP_DEPTH>201</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 68
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,
+        0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,
+        0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,
+        0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x80,0x24,0x80,0x24,0x40,
+        0x12,0x00,0x00,0x00,0x00,0x15,0x00,0x15,0x80,0x0a,0x00,0x00,0x00,0x00,0x15,
+        0x00,0x15,0x80,0x0a,0x00,0x00,0x00,0x00,0x0e,0x00,0x0e,0x00,0x07,0x00,0x00,
+        0x00,0x00,0x0e,0x00,0x0e,0x00,0x07,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,
+        0x02,0x00,0x00,0x00,0xf0,0xff,0xff,0xff,0xff,0x7f,0x00,0x00,0x00,0x10,0x00,
+        0x00,0x00,0x00,0xc0,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x00,0xc0,0x00,0x00,
+        0x00,0x10,0x80,0x08,0x47,0x08,0xc0,0x00,0x00,0x00,0x10,0x80,0x88,0x48,0x08,
+        0xc0,0x00,0x00,0x00,0x10,0x80,0x48,0x40,0x08,0xc0,0x00,0x00,0x00,0x10,0x00,
+        0x45,0x40,0x08,0xc0,0x00,0x00,0x00,0x10,0x00,0x45,0x40,0x08,0xc0,0x00,0x00,
+        0x00,0x10,0x00,0x45,0x40,0x08,0xc0,0x00,0x00,0x40,0x10,0x00,0x82,0x48,0x08,
+        0xc0,0x20,0x00,0x80,0x11,0x00,0x02,0x87,0x07,0xc0,0x18,0x00,0x00,0x16,0x00,
+        0x00,0x00,0x00,0xc0,0x06,0x00,0xff,0x1f,0x00,0x00,0x00,0x00,0xc0,0xff,0x0f,
+        0x00,0x16,0xc0,0x17,0x3e,0x0e,0xc0,0x06,0x00,0x80,0x11,0x40,0x10,0x02,0x11,
+        0xc0,0x18,0x00,0x40,0x10,0x40,0x10,0x82,0x00,0xc0,0x20,0x00,0x00,0x10,0xc0,
+        0x17,0xbe,0x00,0xc0,0x00,0x00,0x00,0x10,0x40,0x10,0x82,0x00,0xc0,0x00,0x00,
+        0x00,0x10,0x40,0x10,0x82,0x00,0xc0,0x00,0x00,0x00,0x10,0x40,0x10,0x02,0x11,
+        0xc0,0x00,0x00,0x00,0x10,0xc0,0xf7,0x3e,0x0e,0xc0,0x00,0x00,0x00,0x10,0x00,
+        0x00,0x00,0x00,0xc0,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x00,0xc0,0x00,0x00,
+        0x00,0xf0,0xff,0xff,0xff,0xff,0xff,0x00,0x00,0x00,0xe0,0xff,0xff,0xff,0xff,
+        0xff,0x00,0x00,0x00,0x80,0x20,0x00,0x04,0x40,0x10,0x00,0x00,0x00,0x00,0x11,
+        0x00,0x0e,0x80,0x08,0x00,0x00,0x00,0x00,0x11,0x00,0x0e,0x80,0x08,0x00,0x00,
+        0x00,0x00,0x0a,0x00,0x15,0x00,0x05,0x00,0x00,0x00,0x00,0x0e,0x00,0x15,0x00,
+        0x07,0x00,0x00,0x00,0x00,0x04,0x80,0x24,0x00,0x02,0x00,0x00,0x00,0x00,0x04,
+        0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,
+        0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,
+        0x02,0x00,0x00,0x00,0x00,0x04,0x00,0x04,0x00,0x02,0x00,0x00,0x00,0x00,0x04,
+        0x00,0x04,0x00,0x02,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>19 49</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>35 49</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>50 49</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>4</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>68 25</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>3</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>50 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>5</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>35 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>6</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>19 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>7</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 25</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>8</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>271</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <HAS_TERMINATE>1</HAS_TERMINATE>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DRVVCUE02</SUB_NAME>
+      <SUB_DIR>$AME/libdrv/submodels</SUB_DIR>
+      <SUB_ID_MAX>61</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>control unit for an electric vehicle</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <P_STORES_NUMBER>1</P_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <TIME_REQUIRED>1</TIME_REQUIRED>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>11</SUB_ID>
+        <TITLE>maximum braking torque for the vehicle</TITLE>
+        <VARNAME>maxtorqveh</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+03</DEF_VALUE>
+        <VALUE>1.00000000000000e+03</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>Nm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>12</SUB_ID>
+        <TITLE>gear ratio between the electric motor and the vehicle</TITLE>
+        <VARNAME>gearratio</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>gear_ratio</DEF_VALUE>
+        <VALUE>gear_ratio__VCU_1</VALUE>
+        <MIN_VALUE>1.00000000000000e-05</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>33</SUB_ID>
+        <TITLE>electric motor torque for pull away</TITLE>
+        <VARNAME>tpull</VARNAME>
+        <VISIBILITY>typec == 2</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>Nm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>18</SUB_ID>
+        <TITLE>high rpm threshold for regenerative braking</TITLE>
+        <VARNAME>speedregactive</VARNAME>
+        <VISIBILITY>useregbrake == 2</VISIBILITY>
+        <DEF_VALUE>7.10000000000000e+01</DEF_VALUE>
+        <VALUE>7.10000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>rev/min</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>59</SUB_ID>
+        <TITLE>low rpm threshold for regenerative braking</TITLE>
+        <VARNAME>speedregdeactive</VARNAME>
+        <VISIBILITY>useregbrake == 2</VISIBILITY>
+        <DEF_VALUE>6.90000000000000e+01</DEF_VALUE>
+        <VALUE>6.90000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>rev/min</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>47</SUB_ID>
+        <TITLE>low SOC threshold for regenerative braking</TITLE>
+        <VARNAME>SOCregactive</VARNAME>
+        <VISIBILITY>useregbrake == 2</VISIBILITY>
+        <DEF_VALUE>8.90000000000000e+01</DEF_VALUE>
+        <VALUE>8.90000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>56</SUB_ID>
+        <TITLE>high SOC threshold for regenerative braking</TITLE>
+        <VARNAME>SOCregdeactive</VARNAME>
+        <VISIBILITY>useregbrake == 2</VISIBILITY>
+        <DEF_VALUE>9.50000000000000e+01</DEF_VALUE>
+        <VALUE>9.50000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>51</SUB_ID>
+        <TITLE>torque repartition during regenerative braking</TITLE>
+        <VARNAME>trqrepreg</VARNAME>
+        <VISIBILITY>useregbrake == 2 && regstrategy == 2</VISIBILITY>
+        <DEF_VALUE>4.00000000000000e+01</DEF_VALUE>
+        <VALUE>4.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>61</SUB_ID>
+        <TITLE>percentage of brake torque where maximum motor torque is reached</TITLE>
+        <VARNAME>trqrepregmax</VARNAME>
+        <VISIBILITY>useregbrake == 2 && regstrategy == 4</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>29</SUB_ID>
+        <TITLE>acceleration command type at port 5</TITLE>
+        <VARNAME>typec</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>3</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>signal [0..1]</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>wheel power [W]</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>wheel torque [Nm]</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>31</SUB_ID>
+        <TITLE>brake command type at port 6</TITLE>
+        <VARNAME>typeb</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>signal [0..1]</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>wheel torque [Nm]</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>45</SUB_ID>
+        <TITLE>use regenerative braking</TITLE>
+        <VARNAME>useregbrake</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>no</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>yes</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>48</SUB_ID>
+        <TITLE>regenerative braking strategy</TITLE>
+        <VARNAME>regstrategy</VARNAME>
+        <VISIBILITY>useregbrake == 2</VISIBILITY>
+        <DEF_VALUE>2</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>4</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>series</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>fixed repartition</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>full parallel</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>parallel</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <PARAMS_GROUPS_LIST>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>regenerative braking</ORIG_TITLE>
+        <NAME>regbraking</NAME>
+        <SUB_ID>49</SUB_ID>
+        <CIRCUIT_SCOPE_ID>26</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>regstrategy</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>trqrepreg</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>trqrepregmax</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>speedregactive</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>speedregdeactive</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>SOCregdeactive</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>SOCregactive</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+      </PARAMS_GROUPS_LIST>
+      <IVARS_LIST>
+       <IVAR>
+        <SUB_ID>53</SUB_ID>
+        <TITLE>braking torque</TITLE>
+        <VARNAME>torbrak</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>Nm</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>54</SUB_ID>
+        <TITLE>control mode</TITLE>
+        <VARNAME>mode</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>57</SUB_ID>
+        <TITLE>regeneration authorized</TITLE>
+        <VARNAME>regauthorized</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+      </IVARS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>electric motor torque command at port 1</TITLE>
+         <VARNAME>torME</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>25</SUB_ID>
+         <TITLE>maximum electric motor torque at port 2</TITLE>
+         <VARNAME>tmax</VARNAME>
+         <VARNAME2>dtmaxout</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>26</SUB_ID>
+         <TITLE>minimum electric motor torque at port 2</TITLE>
+         <VARNAME>tmin</VARNAME>
+         <VARNAME2>dtminout</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>braking command at port 3</TITLE>
+         <VARNAME>outbrak</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>39</SUB_ID>
+         <TITLE>electric motor rotary velocity at port 4</TITLE>
+         <VARNAME>sensor</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>44</SUB_ID>
+         <TITLE>acceleration command from driver at port 5</TITLE>
+         <VARNAME>torvehdrv</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>43</SUB_ID>
+         <TITLE>braking command from driver at port 6</TITLE>
+         <VARNAME>torbrakdrv</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>52</SUB_ID>
+         <TITLE>gear selection at port 7</TITLE>
+         <VARNAME>gearsel</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>6</SUB_ID>
+         <TITLE>battery state of charge at port 8</TITLE>
+         <VARNAME>SOC</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>%</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>dynamic_mux2</ALIAS>
+     <COMP_NAME>dynamic_mux2</COMP_NAME>
+     <COMP_DISPLAYNAME>dynamic_mux2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>dynamic multiplexer block</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.dynamic_mux2</COMP_LIBRARY_ID>
+     <COMP_POS>76 169</COMP_POS>
+     <COMP_DEPTH>202</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 39
+        #define icon_height 52
+        static unsigned char icon_bits[] = {
+        0x00,0xf0,0xff,0x0f,0x80,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x40,0x10,0x00,0x08,0x00,0x80,0x11,0x00,0x08,0x00,0x00,0x16,0x00,0x08,0x00,
+        0xff,0x1f,0x00,0x08,0x00,0x00,0x16,0x00,0x08,0x00,0x80,0x11,0x00,0x08,0x00,
+        0x40,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x18,0x00,0x00,0x10,0x00,0x68,0x00,
+        0x00,0x10,0x00,0x88,0x01,0x00,0x10,0x00,0x08,0x7f,0x00,0x10,0x00,0x88,0x01,
+        0x00,0x10,0x00,0x68,0x00,0x00,0x10,0x00,0x18,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x40,0x10,0x00,0x08,0x00,
+        0x80,0x11,0x00,0x08,0x00,0x00,0x16,0x00,0x08,0x00,0xff,0x1f,0x00,0x08,0x00,
+        0x00,0x16,0x00,0x08,0x00,0x80,0x11,0x00,0x08,0x00,0x40,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,0x00,0x10,0x00,0x08,0x00,
+        0x00,0xf0,0xff,0x0f,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>4</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>26 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>13 39</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>39 39</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>298</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>4</SUB_TYPE>
+      <SUB_NAME>DYNMUX2</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>7</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>dynamic multiplexer</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <I_STORES_NUMBER>1</I_STORES_NUMBER>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <DYNAMIC_PARAMS_LIST>
+       <IPARAM>
+        <TITLE>number of ports at left</TITLE>
+        <VARNAME>numPorts</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>99999</MAX_VALUE>
+       </IPARAM>
+       <IPARAM>
+        <TITLE>number of inputs per port</TITLE>
+        <VARNAME>numInp</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>99999</MAX_VALUE>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>4</SUB_ID>
+        <TITLE>dimension of each input</TITLE>
+        <VARNAME>dimInp</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>10000</MAX_VALUE>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>dimension of each output</TITLE>
+        <VARNAME>dimOut</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>10000</MAX_VALUE>
+       </IPARAM>
+      </DYNAMIC_PARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>merge vector method</TITLE>
+        <VARNAME>merge</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>concatenate</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCt2UPW+DMBCG9/wK67q0A2CgSUqEidShW6c0UlcHDHECNrVdIP31dciHiJK1HXKDrXvvw77HkuN5V5WoYUpzKQj4LgbERCozLgoCy4835wXmySjWTYEaztpX2RHACKMgQuEUkK0WmsDamHrmeW3bum3oSlV4AcbYs1XHlFlXcrG9lehHUeT1UUhGyFpcIJ4RkKsNS02AwTvKhnUG5VIYJ6cVL3cEFlRotGCK53AIaP7DCES1AWSUDeZSVQQqahTvHu1s9uLnpXf9iRuGyB+7wfgJhseGtiMvSwIPuLeD68iaptzselBW00bJrT1RSMFOnpNRvaZKUZt1ock818xYeoNSx87NUloT0F/fVLELfSO5fZIVa1h51itumCq53QgEw0Y3b+a0PDPro5a8x96e4V/inLr+BAXXOJ/vEOfyP3AGUxRe4xzfIc7PE854/20ko1/Z/7xlmgQAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>interlace</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCt2UPW+DMBCG9/wK67q0A2CgSUqEidShW6c0UlcHDHECNrVdIP31dciHiJK1HXKDrXvvw77HkuN5V5WoYUpzKQj4LgbERCozLgoCy4835wXmySjWTYEaztpX2RHACKMgQuEUkK0WmsDamHrmeW3bum3oSlV4AcbYs1XHlFlXcrG9lehHUeT1UUhGyFpcIJ4RkKsNS02AwTvKhnUG5VIYJ6cVL3cEFlRotGCK53AIaP7DCES1AWSUDeZSVQQqahTvHu1s9uLnpXf9iRuGyB+7wfgJhseGtiMvSwIPuLeD68iaptzselBW00bJrT1RSMFOnpNRvaZKUZt1ock818xYeoNSx87NUloT0F/fVLELfSO5fZIVa1h51itumCq53QgEw0Y3b+a0PDPro5a8x96e4V/inLr+BAXXOJ/vEOfyP3AGUxRe4xzfIc7PE854/20ko1/Z/7xlmgQAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>output at port 1</TITLE>
+         <NB_IN_GROUP>MAX(1, numPorts*numInp*dimInp/dimOut)</NB_IN_GROUP>
+         <VARNAME>output1</VARNAME>
+         <ORIG_VARNAME>output</ORIG_VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <DIM_EXPRESSION>dimOut</DIM_EXPRESSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>1G1</SUB_ID>
+         <TITLE>output at port 1</TITLE>
+         <NB_IN_GROUP>__CLONE__</NB_IN_GROUP>
+         <VARNAME>output2</VARNAME>
+         <ORIG_VARNAME>output</ORIG_VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <DIM_EXPRESSION>dimOut</DIM_EXPRESSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <NB_IN_GROUP>numPorts</NB_IN_GROUP>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input at port 2</TITLE>
+         <NB_IN_GROUP>numInp</NB_IN_GROUP>
+         <VARNAME>p2__input</VARNAME>
+         <ORIG_VARNAME>input</ORIG_VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <DIM_EXPRESSION>dimInp</DIM_EXPRESSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <NB_IN_GROUP>__CLONE__</NB_IN_GROUP>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2P1</SUB_ID>
+         <TITLE>input at port 3</TITLE>
+         <NB_IN_GROUP>numInp</NB_IN_GROUP>
+         <VARNAME>p3__input</VARNAME>
+         <ORIG_VARNAME>input</ORIG_VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <DIM_EXPRESSION>dimInp</DIM_EXPRESSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <LINES_LIST>
+    <LINE>
+     <ALIAS>control_12</ALIAS>
+     <LINE_TYPE>2</LINE_TYPE>
+     <CIRCUIT_SCOPE_ID>299</CIRCUIT_SCOPE_ID>
+     <LINE_POINTS>
+      101,115 101,169
+     </LINE_POINTS>
+     <LINE_START_TYPE>0</LINE_START_TYPE>
+     <LINE_END_TYPE>0</LINE_END_TYPE>
+     <LINE_START_ENTITY>0</LINE_START_ENTITY>
+     <LINE_START_PORT>1</LINE_START_PORT>
+     <LINE_END_ENTITY>1</LINE_END_ENTITY>
+     <LINE_END_PORT>0</LINE_END_PORT>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DIRECT</SUB_NAME>
+      <SUB_DIR> </SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>Direct connection</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>output at port 1</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>output at port 1</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>maximum electric motor torque at port 2</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>minimum electric motor torque at port 2</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>1</CIR_PORTS_OVER_FRAMEWORK>
+     </SUBMODEL>
+    </LINE>
+   </LINES_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+00</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+    <GLOBAL_PARAMS_LIST>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="gear ratio" VALUE="5" TYPE="Real" GLOB_PARAM_NAME="gear_ratio" UNITS="null"/>
+    </GLOBAL_PARAMS_LIST>
+   
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>

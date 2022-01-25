@@ -1,0 +1,7 @@
+./submodels
+Scenario_Manager_EV
+&SCENARIO_MANAGER_EV Lib_EV_Scenario
+Analyzer_Performance
+&ANALYZER_PERFORMANCE Lib_EV_Scenario
+Analyzer_Comfort
+&ANALYZER_COMFORT Lib_EV_Scenario

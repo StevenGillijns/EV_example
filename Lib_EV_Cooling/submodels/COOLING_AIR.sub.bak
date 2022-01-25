@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>COOLING_AIR</SC_SUB_NAME>
+  <CATNAME>Lib_EV_Cooling</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>1 0 779 549 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 1 774 220 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 0 762 220 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>2 0 491 230 0 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>th2signal1_1</ALIAS>
+     <COMP_NAME>th2signal1</COMP_NAME>
+     <COMP_DISPLAYNAME>th2signal1</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>conversion between thermal variables and signal variables</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>th.th2signal1</COMP_LIBRARY_ID>
+     <COMP_POS>749 219</COMP_POS>
+     <COMP_DEPTH>201</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x1f,0x00,0x00,0x00,0x00,0x11,0x00,0x00,
+        0x00,0x00,0x11,0x00,0x00,0x00,0x00,0x1f,0x00,0x00,0x00,0x00,0x11,0x00,0x00,
+        0x00,0x00,0x11,0x00,0x00,0x00,0x00,0x1f,0x00,0x00,0x00,0x00,0x11,0x00,0x00,
+        0x00,0x00,0x11,0x00,0x00,0x00,0x00,0x1f,0x00,0x00,0x00,0x00,0x11,0x00,0x00,
+        0x00,0x00,0x11,0x00,0x00,0x00,0x00,0x1f,0x00,0x00,0x00,0xff,0xff,0x1f,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0xe0,0x00,0x00,0xe0,0x00,0x30,0x00,0x00,0x80,0x01,
+        0x18,0x00,0x00,0x00,0x03,0x18,0x00,0x00,0x00,0x03,0x0c,0x00,0x00,0x00,0x06,
+        0x0c,0x00,0x00,0x00,0x06,0x0c,0x02,0x90,0x03,0x06,0x0c,0x02,0x70,0x04,0x06,
+        0x06,0xfe,0xd0,0x05,0x0c,0x0c,0x02,0x40,0x17,0x06,0x0c,0x02,0x40,0x1c,0x06,
+        0x0c,0x00,0x80,0x13,0x06,0x0c,0x00,0x00,0x00,0x06,0x18,0x00,0x00,0x00,0x03,
+        0x18,0x00,0x00,0x00,0x03,0x30,0x00,0x00,0x80,0x01,0xe0,0x00,0x00,0xe0,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0x00,0xff,0xff,0x1f,0x00,0x00,0x10,0x20,0x08,0x00,
+        0x00,0x10,0x40,0x04,0x00,0x00,0x38,0x80,0x02,0x00,0x00,0x38,0x00,0x01,0x00,
+        0x00,0x54,0x00,0x01,0x00,0x00,0x54,0x00,0x01,0x00,0x00,0x92,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>7</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>13 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>25 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>19 49</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>thermal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>8571</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>THCS1</SUB_NAME>
+      <SUB_DIR>$AME/libth/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>conversion between linear variables and signal variables</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>temperature</TITLE>
+         <VARNAME>its</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>degC</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>heat flow rate</TITLE>
+         <VARNAME>ohfs</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>1</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>temperature</TITLE>
+         <VARNAME>outt</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>0</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>heat flow rate</TITLE>
+         <VARNAME>ihfs</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>W</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>th_piloted_convection_1</ALIAS>
+     <COMP_NAME>th_piloted_convection</COMP_NAME>
+     <COMP_DISPLAYNAME>th_piloted_convection</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>convective exchange - 1 port - piloted</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>th.th_piloted_convection</COMP_LIBRARY_ID>
+     <COMP_POS>755 523</COMP_POS>
+     <COMP_DEPTH>202</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 25
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x00,0x00,0x40,0x00,0x00,0x00,0xe0,0x03,0x00,0x03,0x00,0x00,0x03,
+        0x00,0x03,0x00,0x80,0x42,0x10,0x03,0x00,0x40,0x42,0x10,0x03,0x00,0x20,0x42,
+        0x38,0x03,0x00,0x10,0x40,0x38,0x0f,0x0c,0x0c,0x40,0x7c,0x0f,0x0c,0x1c,0x40,
+        0x10,0x1f,0x1e,0x1e,0x40,0x10,0x1f,0x1e,0xff,0x6f,0x20,0x33,0xb3,0x33,0x69,
+        0x20,0x33,0x73,0x33,0x79,0x20,0x33,0x33,0x23,0x69,0x20,0xe3,0xf1,0xe1,0x6f,
+        0x20,0xe3,0xe9,0x01,0x60,0x10,0xc3,0xc4,0x00,0x40,0x10,0xc3,0xc2,0x00,0x40,
+        0x10,0x03,0x01,0x00,0x40,0x08,0xfb,0x00,0x00,0x40,0x08,0xc3,0x00,0x00,0x40,
+        0x00,0xa3,0x00,0x00,0x40,0x00,0x93,0x00,0x00,0x40,0x00,0x88,0x00,0x00,0x00,
+        0x00,0x08,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>4</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>25 26</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>13 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>thermal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>22667</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>THGCV1</SUB_NAME>
+      <SUB_DIR>$AME/libth/submodels</SUB_DIR>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>external mixed convective exchange with variable signal (either velocity or heat exchange coefficient)</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <R_STORES_NUMBER>5</R_STORES_NUMBER>
+      <I_STORES_NUMBER>6</I_STORES_NUMBER>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>8</SUB_ID>
+        <TITLE>convective heat exchange area</TITLE>
+        <VARNAME>cearea</VARNAME>
+        <VISIBILITY>(ctype==3)||(ctype==4)</VISIBILITY>
+        <DEF_VALUE>1.30000000000000e+06</DEF_VALUE>
+        <VALUE>1.30000000000000e+06</VALUE>
+        <MIN_VALUE>1.00000000000000e-04</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+12</MAX_VALUE>
+        <UNITS>mm**2</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>9</SUB_ID>
+        <TITLE>characteristic length of the heat exchange</TITLE>
+        <VARNAME>cdim</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+02</DEF_VALUE>
+        <VALUE>1.00000000000000e+02</VALUE>
+        <MIN_VALUE>1.00000000000000e-04</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>mm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>62</SUB_ID>
+        <TITLE>inclination angle with respect to horizontal (fluid is above port 2 if angle = 0)</TITLE>
+        <VARNAME>theta</VARNAME>
+        <VISIBILITY>(ctype==1)||(ctype==4)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.80000000000000e+02</MAX_VALUE>
+        <UNITS>degree</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>41</SUB_ID>
+        <TITLE>width</TITLE>
+        <VARNAME>width</VARNAME>
+        <VISIBILITY>ctype==1</VISIBILITY>
+        <DEF_VALUE>1.50000000000000e+02</DEF_VALUE>
+        <VALUE>1.50000000000000e+02</VALUE>
+        <MIN_VALUE>1.00000000000000e-09</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>mm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>42</SUB_ID>
+        <TITLE>length</TITLE>
+        <VARNAME>length</VARNAME>
+        <VISIBILITY>(ctype==1)||(ctype==2)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+02</DEF_VALUE>
+        <VALUE>1.00000000000000e+02</VALUE>
+        <MIN_VALUE>1.00000000000000e-09</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>mm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>43</SUB_ID>
+        <TITLE>radius</TITLE>
+        <VARNAME>radius</VARNAME>
+        <VISIBILITY>ctype==2</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+01</DEF_VALUE>
+        <VALUE>1.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>mm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>11</SUB_ID>
+        <TITLE>temperature of the fluid</TITLE>
+        <VARNAME>tFluid</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>Tamb</DEF_VALUE>
+        <VALUE>Tamb__COOLING_AIR_1</VALUE>
+        <MIN_VALUE>-2.73140000000000e+02</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+05</MAX_VALUE>
+        <UNITS>degC</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>12</SUB_ID>
+        <TITLE>pressure (absolute) of the fluid</TITLE>
+        <VARNAME>pFluid</VARNAME>
+        <VISIBILITY>(fluidprop==1)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>1.01300000000000e+00</DEF_VALUE>
+        <VALUE>1.01300000000000e+00</VALUE>
+        <MIN_VALUE>1.00000000000000e-06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+08</MAX_VALUE>
+        <UNITS>barA</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>13</SUB_ID>
+        <TITLE>moist air relative humidity [%]</TITLE>
+        <VARNAME>rh</VARNAME>
+        <VISIBILITY>(fluidprop==1)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>4.00000000000000e+01</DEF_VALUE>
+        <VALUE>4.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>14</SUB_ID>
+        <TITLE>density of the fluid</TITLE>
+        <VARNAME>rho</VARNAME>
+        <VISIBILITY>(fluidprop==2)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>1.20399000000000e+00</DEF_VALUE>
+        <VALUE>1.20399000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>kg/m**3</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>15</SUB_ID>
+        <TITLE>specific heat of the fluid</TITLE>
+        <VARNAME>cp</VARNAME>
+        <VISIBILITY>(fluidprop==2)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>9.92532000000000e+02</DEF_VALUE>
+        <VALUE>9.92532000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>J/kg/K</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>16</SUB_ID>
+        <TITLE>absolute viscosity of the fluid</TITLE>
+        <VARNAME>mu</VARNAME>
+        <VISIBILITY>(fluidprop==2)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>1.91461000000000e-02</DEF_VALUE>
+        <VALUE>1.91461000000000e-02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>cP</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>17</SUB_ID>
+        <TITLE>thermal conductivity of the fluid</TITLE>
+        <VARNAME>lambda</VARNAME>
+        <VISIBILITY>(fluidprop==2)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>2.62096000000000e-02</DEF_VALUE>
+        <VALUE>2.62096000000000e-02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>W/m/degC</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>18</SUB_ID>
+        <TITLE>volumetric expansion coefficient at constant pressure of the fluid</TITLE>
+        <VARNAME>alpha</VARNAME>
+        <VISIBILITY>(fluidprop==2)&&(!(ctype==3))</VISIBILITY>
+        <DEF_VALUE>3.66100000000000e-03</DEF_VALUE>
+        <VALUE>3.66100000000000e-03</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>1/K</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>67</SUB_ID>
+        <TITLE>laminar to turbulent transition for free convection: lower Rayleigh number</TITLE>
+        <VARNAME>RaTrans1</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+08</DEF_VALUE>
+        <VALUE>1.00000000000000e+08</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+12</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>68</SUB_ID>
+        <TITLE>laminar to turbulent transition for free convection: upper Rayleigh number</TITLE>
+        <VARNAME>RaTrans2</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+09</DEF_VALUE>
+        <VALUE>1.00000000000000e+09</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+16</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>63</SUB_ID>
+        <TITLE>laminar to turbulent transition for forced convection: lower Reynolds number</TITLE>
+        <VARNAME>ReTrans1</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+04</DEF_VALUE>
+        <VALUE>1.00000000000000e+04</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>66</SUB_ID>
+        <TITLE>laminar to turbulent transition for forced convection: upper Reynolds number</TITLE>
+        <VARNAME>ReTrans2</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+04</DEF_VALUE>
+        <VALUE>5.00000000000000e+04</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+09</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>gain on heat exchange</TITLE>
+        <VARNAME>kHeat</VARNAME>
+        <VISIBILITY>(ctype==1)||(ctype==2)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>20</SUB_ID>
+        <TITLE>calculation type</TITLE>
+        <VARNAME>ctype</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>4</DEF_VALUE>
+        <VALUE>4</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>4</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>flat plate with predefined correlation</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1Qy07DMBA8U6n/sFoOhUOT2FFpU9Wt4MyBP0ChdRKrjh3ZJkn5etZpQRzIZbTryc5jdxhbDb10XlkjkCUZgjRHe1KmFvgZquUGD/v5bOf7+i+NI3yUXr45WyktBQZlLgjqJPBV9VJr+85wPrsDum68wCaEbpumwzAkQ55YV6c8y7KUjuKVsh21Muf/iKwoinR6JarArBsRLjcc1Ck0AvN1HBqp6iYI5Cuaonav5PBi4z+QQb4GvkKwlKHSdhDoj85qPclvfVceKUTnpJeul0iBKTJpSqB4WqCxRiL44OyZePfZ9P0sljcb/HfRqiCdVgTUFfFGJrAg22wijfw6EfAc09hukGOA4ErjK+tagW0ZnBofGETrDNg6IT0OPE+ojc0jQmVNWFZlqzR1sXh2qtSL29arL/L4RCXs+10aL0eF2DXhN14y1g/wAQAA
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>cylinder with predefined correlation</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1Ry07DMBA8U4l/WC2HgtQmdqLQh+pWcAaJP0AhdRqrjh3ZJkn5etZtQRzwZbTr8e7MeLMbWw29dF5ZI5AnDEGayu6VOQj8DPV8ibvt7WTj+8NfWobwUXr55myttBQYlDkhqL3AF9VLre07x9vJDdB04wU2IXTrNB2GIRnyxLpDmjHGUhqKF8p61Moc/yPy1WqVnm+JKpB1I8LpioPah0ZgvohFI9WhCQKzgqq4u1dyeLbxDTDIF5AVCJY81NoOAn3lrNbn9WvflRWZ6Jz00vUSo+GuDA2QOS3QWCMRfHD2SKw7dj4/jflVRPbbaFWQTisCSop4FMor50kxy5KiYjM2J5zlSXFGzqhVXC6puELUn0YVQY4BgiuNr61rBbZlcGq85xA9ceCLhKRkkOUJxbR8QKitCfO6bJWmkKZPTpV6eu169UXyHymdbb9J4+S4IX4C4Tc4h2+YCQIAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>generic geometry with imposed heat exchange coefficient</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCp1Sy07DMBA8g8Q/rJYDILWO49KnahCcQeIPUGidxqpjR7ZJAl/POi0IJMSBXCaeHe9j1uvbvjbQKh+0sxJzxhGU3bittjuJr7EcL/D25ux0Hdrdd5lAeCmCevKu1EZJjNq+IeitxAfdKmPcc45npydA2W2QWMXYrLKs6zrWTZjzu0xwzjNKigfJqjfa7n8T5svlMhuiJJXImx7h7Yid3sZK4mSeDpXSuypKFFM6pdqtVt29S3eAw2QOYorgaIbSuE5i2HhnzFB+FZpiQ0M0XgXlW4Vp4KaIFdBwRqJ1ViGE6N2eVOd8+D6J8bEJ8UXUOipvNAE5RToy5XHBpiOx4SM+yukvZ4sBBZsmjs3GB/Z6QEHNhyNxkIWf8f8Hh2rzP3oQXx1gllyIqo8QfWFD6XwtsS6i1/1lDsnTHPI5IysEiAmjNS2uEEpn47gsam1oSRd3Xhfm4sgG/U72zWg7N/06S5lThfQICD8AlO3g1YkCAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>generic geometry with Nusselt correlation</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCp1Sy07DMBA8g8Q/rJYDILWO49KnahCcQeIPUGidxqpjR7ZJAl/POi0IJMSBXCaeHe9j1uvbvjbQKh+0sxJzxhGU3bittjuJr7EcL/D25ux0Hdrdd5lAeCmCevKu1EZJjNq+IeitxAfdKmPcc45npydA2W2QWMXYrLKs6zrWTZjzu0xwzjNKigfJqjfa7n8T5svlMhuiJJXImx7h7Yid3sZK4mSeDpXSuypKFFM6pdqtVt29S3eAw2QOYorgaIbSuE5i2HhnzFB+FZpiQ0M0XgXlW4Vp4KaIFdBwRqJ1ViGE6N2eVOd8+D6J8bEJ8UXUOipvNAE5RToy5XHBpiOx4SM+yukvZ4sBBZsmjs3GB/Z6QEHNhyNxkIWf8f8Hh2rzP3oQXx1gllyIqo8QfWFD6XwtsS6i1/1lDsnTHPI5IysEiAmjNS2uEEpn47gsam1oSRd3Xhfm4sgG/U72zWg7N+06S5lThfQICD8AHf/NzIkCAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>74</SUB_ID>
+        <TITLE>fluid properties</TITLE>
+        <VARNAME>fluidprop</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>environmental moist air</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>constant properties</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <TPARAMS_LIST>
+       <TPARAM>
+        <SUB_ID>69</SUB_ID>
+        <TITLE>expression for free laminar Nusselt number = f(Gr, Pr, cdim[mm], theta[rad], tWall[K], tFluid[K])</TITLE>
+        <VARNAME>expressionFreeNuLam</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>0.68+(0.67*(pr*gr)^(0.25))/((1+(0.492/pr)^(9/16))^(4/9))</DEF_VALUE>
+        <VALUE>0.68+(0.67*(pr*gr)^(0.25))/((1+(0.492/pr)^(9/16))^(4/9))</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>Gr, Pr, cdim, theta, tWall, tFluid</TOKEN_LIST>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>70</SUB_ID>
+        <TITLE>expression for free turbulent Nusselt number = f(Gr, Pr, cdim[mm], theta[rad], tWall[K], tFluid[K])</TITLE>
+        <VARNAME>expressionFreeNuTurb</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>0.68+(0.67*(pr*gr)^(0.25))/((1+(0.492/pr)^(9/16))^(4/9))</DEF_VALUE>
+        <VALUE>0.68+(0.67*(pr*gr)^(0.25))/((1+(0.492/pr)^(9/16))^(4/9))</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>Gr, Pr, cdim, theta, tWall, tFluid</TOKEN_LIST>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>71</SUB_ID>
+        <TITLE>expression for forced laminar Nusselt number = f(Re, Pr, cdim[mm], mu[kg/m/s], mus[kg/m/s])</TITLE>
+        <VARNAME>expressionForcedNuLam</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>0.037*re^(0.8)*pr^(0.33)</DEF_VALUE>
+        <VALUE>0.037*re^(0.8)*pr^(0.33)</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>Re, Pr, cdim, mu, mus</TOKEN_LIST>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>72</SUB_ID>
+        <TITLE>expression for forced turbulent Nusselt number = f(Re, Pr, cdim[mm], mu[kg/m/s], mus[kg/m/s])</TITLE>
+        <VARNAME>expressionForcedNuTurb</VARNAME>
+        <VISIBILITY>(ctype==4)</VISIBILITY>
+        <DEF_VALUE>0.037*re^(0.8)*pr^(0.33)</DEF_VALUE>
+        <VALUE>0.037*re^(0.8)*pr^(0.33)</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>Re, Pr, cdim, mu, mus</TOKEN_LIST>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>52</SUB_ID>
+        <TITLE>expression for convective heat exchange coefficient[W/m**2/K] = f(x, tWall[K], tFluid[K])</TITLE>
+        <VARNAME>hconvExpression</VARNAME>
+        <VISIBILITY>(ctype==3)</VISIBILITY>
+        <DEF_VALUE>x</DEF_VALUE>
+        <VALUE>x</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>x, tWall, tFluid</TOKEN_LIST>
+       </TPARAM>
+      </TPARAMS_LIST>
+      <PARAMS_GROUPS_LIST>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>fluid properties</ORIG_TITLE>
+        <NAME>fluidProperties</NAME>
+        <SUB_ID>25</SUB_ID>
+        <CIRCUIT_SCOPE_ID>43</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>fluidprop</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>tFluid</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>pFluid</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>rh</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>rho</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>cp</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>mu</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>lambda</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>alpha</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>heat exchange</ORIG_TITLE>
+        <NAME>heatExchange</NAME>
+        <SUB_ID>26</SUB_ID>
+        <CIRCUIT_SCOPE_ID>44</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>hconvExpression</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>RaTrans1</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>RaTrans2</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>expressionFreeNuLam</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>expressionFreeNuTurb</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>ReTrans1</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>ReTrans2</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>expressionForcedNuLam</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>expressionForcedNuTurb</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>kHeat</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+      </PARAMS_GROUPS_LIST>
+      <IVARS_LIST>
+       <IVAR>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>Reynolds number</TITLE>
+        <VARNAME>Re</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>4</SUB_ID>
+        <TITLE>Prandtl number</TITLE>
+        <VARNAME>Pr</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>Grashof number</TITLE>
+        <VARNAME>Gr</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>61</SUB_ID>
+        <TITLE>Nusselt number for free convection</TITLE>
+        <VARNAME>NuFree</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>60</SUB_ID>
+        <TITLE>Nusselt number for forced convection</TITLE>
+        <VARNAME>NuForced</VARNAME>
+        <VISIBILITY>!(ctype==3)</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>7</SUB_ID>
+        <TITLE>convective exchange coefficient fluid/wall</TITLE>
+        <VARNAME>hconv</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>W/m**2/degC</UNITS>
+       </IVAR>
+      </IVARS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>53</SUB_ID>
+         <TITLE>input signal at port 1</TITLE>
+         <VARNAME>x</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>73</SUB_ID>
+         <TITLE>heat flow rate at port 2</TITLE>
+         <VARNAME>dh2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>W</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>temperature at port 2</TITLE>
+         <VARNAME>t2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>degC</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        H4sIAAAAAAACCq1UUW+bMBB+TqX+B8t9JWAbSEIUVm3Pm7R/UGXEIVYdGxkHkn+/O4eQdqumKaklfOfPhz9/dwer5+Nek066VllTUh4zSqSp7EaZuqQHv50u6POXx4dV29VvwwQlv9at/OnsVmlZUq/MiRK1Kel31Umt7Qunjw8TAqebtqQ775tlkvR9H/dpbF2dCMZYAofSc8jyqJV5/SiQF0WRhF0ILSlrjpScBturjd+VNJ3jYidVvfMlFTmskLtTsv9m8R3CSDonIqfEgoattn1J28pZrQP9sm3WFYhonGyl6yRFwTVMBMaqDrIqazpZeZD/1Tnb02E3RDRWn2prSGOV8aA2i/MoJyIqyByeCU3eBa/9jkDSdEmNNZKS1jv7CuxPLIwLMN0rL51WYCDhAMMlfuDJi45XLBIRBz8Nc95OwyLMecdHwlUyqvhv2iGnYgQg9bJaNyV19mA2/7weZ9Gi4vEigvvBVYooi7OogFoAKAI4mwZwWgAyC0iBYRGu52GdYQTss3AMoviIOI2yqy68001JPHKweQydcEKvQO8ooIVSQATKHjmwqjfzXFpBFFghkqaQjtGZkcByrs6lvw6tf+Evfifdfq2xvSb3qUyvKsWocn5WGZAkcPyh8mkbxm1CMxSYo9Krx8DDPbSTgfM+XWLUlY26zhgqY6Oyu1hE8TfLgL1l+aiErarNpYKf0kMcP2uRk7OFBiIcLBvT+UkkEX4NhIeqjZ7IBppBKf6ywf4GYgSXzDcGAAA=
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>constant</ALIAS>
+     <COMP_NAME>constant</COMP_NAME>
+     <COMP_DISPLAYNAME>constant</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>constant signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.constant</COMP_LIBRARY_ID>
+     <COMP_POS>476 228</COMP_POS>
+     <COMP_DEPTH>203</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 40
+        #define icon_height 29
+        static unsigned char icon_bits[] = {
+        0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x00,0x01,0x00,0x08,0x00,0x00,0x02,0x00,
+        0x08,0x00,0x00,0x02,0x00,0x04,0x00,0x00,0x04,0x00,0x02,0x00,0x00,0x08,0x00,
+        0x02,0x20,0x00,0x08,0x00,0x02,0x20,0x00,0x08,0x00,0x01,0x20,0x00,0x30,0x00,
+        0x01,0x20,0x02,0xd0,0x00,0x01,0x20,0x01,0x10,0x03,0x01,0xa0,0x00,0x10,0xfe,
+        0x01,0x60,0x00,0x10,0x03,0x01,0xa0,0x00,0xd0,0x00,0x01,0x20,0x01,0x30,0x00,
+        0x02,0x20,0x02,0x08,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+        0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+        0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>4</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>15 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>3</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>5</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>CONS00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>28</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>constant signal</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>constant value</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TUNABLE>True</TUNABLE>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <HISTORY_VARIABLE>k0GEN</HISTORY_VARIABLE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IVARS_LIST>
+       <IVAR>
+        <SUB_ID>28</SUB_ID>
+        <TITLE>constant value - Linked variable</TITLE>
+        <VARNAME>k0GEN</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <TYPE>10</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <DEF_VALUE>0</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+       </IVAR>
+      </IVARS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>24</SUB_ID>
+         <TITLE>output</TITLE>
+         <VARNAME>out</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <LINES_LIST>
+    <LINE>
+     <ALIAS>thermal</ALIAS>
+     <LINE_TYPE>7</LINE_TYPE>
+     <CIRCUIT_SCOPE_ID>1</CIRCUIT_SCOPE_ID>
+     <LINE_POINTS>
+      767,267 767,523
+     </LINE_POINTS>
+     <LINE_START_TYPE>0</LINE_START_TYPE>
+     <LINE_END_TYPE>0</LINE_END_TYPE>
+     <LINE_START_ENTITY>0</LINE_START_ENTITY>
+     <LINE_START_PORT>2</LINE_START_PORT>
+     <LINE_END_ENTITY>1</LINE_END_ENTITY>
+     <LINE_END_PORT>1</LINE_END_PORT>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DIRECT</SUB_NAME>
+      <SUB_DIR> </SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>Direct connection</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>heat flow rate at port 2</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>W</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>temperature at port 2</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>degC</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>temperature</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>degC</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>heat flow rate</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>W</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>1</CIR_PORTS_OVER_FRAMEWORK>
+     </SUBMODEL>
+    </LINE>
+   </LINES_LIST>
+   <TEXTS_LIST>
+    <TEXT>
+     <TEXT_POS>798 506</TEXT_POS>
+     <TEXT_ORIENTATION>0</TEXT_ORIENTATION>
+     <HTML>
+      &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+      &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+      p, li { white-space: pre-wrap; }
+      &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+      &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;convection car speed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+     </HTML>
+    </TEXT>
+   </TEXTS_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+00</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+    <GLOBAL_PARAMS_LIST>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="ambient temperature" VALUE="25" TYPE="Real" GLOB_PARAM_NAME="Tamb" UNITS="degreeC"/>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="control temperature coolant" VALUE="54" TYPE="Real" GLOB_PARAM_NAME="Tcontrol" UNITS="degreeC"/>
+    </GLOBAL_PARAMS_LIST>
+   
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>

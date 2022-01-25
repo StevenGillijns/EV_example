@@ -1,0 +1,74 @@
+<svg xmlns:amesim="vnd.lms.imagine.amesim" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+ <amesim:metadata>
+  <ICON name="electric_motor">
+   <ICON_DESCRIPTION>electric_motor</ICON_DESCRIPTION>
+  </ICON>
+  <PORTS>
+   <PORT y="190" type="signal" x="40" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="38.5974 163.23 34.3614 8.58154" label="temp_cs" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="190" type="signal" x="140" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="139.131 162.636 49.028 8.65576" label="heatflow_cs" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="130" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="138.541 127.002 31.3546 8.81812" label="Torque" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="60" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="146.901 56.8467 23.3093 9.12891" label="speed" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="171" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="169.639 20.1 6.77246 5.1814" label="w" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="122" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="120.495 20.1 19.9083 6.95337" label="Tmin" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="73" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="71.4954 20.2438 22.7119 7.05078" label="Tmax" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="24" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="22.4954 22.0111 18.8748 8.81812" label="Treq" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="60" type="signal" x="1" face="2">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="20.1278 56.8722 31.3222 9.17993" label="voltage" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="140" type="signal" x="1" face="2">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="20.3737 136.237 31.3899 6.81421" label="current" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+  </PORTS>
+ </amesim:metadata>
+ <g id="object1">
+  <image y="0" transform="matrix(1.00 0.00 0.00 1.00 0.00 0.00)" width="190" height="190" id="object2" x="0" xlink:href="data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAXlJREFUWIXtmE1uwjAQhe2sQlSp3XSPWPYUWZB9KsVi1bPEyx4F5RS9SO/RRSPjDMUeG7+KIKBAM5FGQaPx88fzjxQhhBQUmnJJeU55KsSFR5OID1vIRSLKowoPy0T8PpQU+8+pNS7AMUtgyBvkmPy4Lo5798N8pTra75NzZIhj5QavmkCj0Kmh7LT7/tOGeLNJBX50PjKuUfkDt1eBhm9Y53y60pAGhao5B9PIoUaT1mAd1o8fDUMar3x/sI5irMY615yjZxoN4phHGq19bD6Eg/xgs1LIj1jDdyAOAnEcvKMEHNlIDcux0yA/Ag3gR6aRhkLr6h1xqDRH8bIYp9ExjdgPBfzAHHB/XMAP5/ngR6gB/FiM3h9+7UYcaH8UcO3C/aH5/uAd9ZnOK85RAg58XgGN6LziGhKcV4HGsvUdqbO9o8w5xPPwQ5oh1UFh+wdFHe6OqswBd9Rwq/3P+/x6Oe7dj1vjmPz4Ew74cUC4DwrbeGLvU4EXNvkgRjtNQfyeAAAAAElFTkSuQmCCQmCC"/>
+ </g>
+ <image y="0" transform="matrix(1.28 0.00 0.00 1.30 12.28 11.78)" width="128" height="128" id="object151" x="0" xlink:href="data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFtJREFUeNrsnE1LG0EYgDdqUhvSxiSSqETwVC0Inuup9A8U2oPeeiuF9je00P9QKL15ql4K/QPiTTwKQkUvgmLQmtjUEC1pat9k2mn8SLTdnc3u9HkIy7hCEubZd953ZmcTKRaLDnSPHroAAQgABCAAEIAAQAACAAEIAAQgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABCAAEIAAQAACAAEIAAQgABAQSvq8eqPnS3PzG8vSmL1z7839J6HriO3t7VKpJI10Oj06Ohq+CFC939oIF6r3Wxv+EHHzoPb7jeUXS3POzn7jj3z2zz8unvGCdrGlg+8faX7bxcev9In19XU5Tk9P+xAKroagRu/7iPSyn+EloRCNRoeGhkjCXWNvb8/0iOQ6Cf84PTPsWMfu7u7NJkGNgOIXu4OgXq9LgSTHoEbAt1rjmL7txPt/nameOKWvjcb3utPX6/H3vTTOvM72ikKhMDw8LI3j42NxMDY2FrYc4Hnv+0u5XD44ONBtQ8nAdQTciDaCQC55ddXbxeHhYSqV6u3tVckgkUjEYrGARUBmwNbRX2pQGfrFgU4GUhQFbwjqifwZiPPZyaNb8rJDwODgoAoCnYFNjELMA9qSTCbj8bj0vs4EIUjCa3dvyssaBzoIarVaUMvQvy0ZQ/VB8SbValWCQJWkDEHdCQIpQw0FAQKuDgKpPp3mupAcFxYWVlZWEOAruVxOjpVKRcYiaWxtbSHA7wmBVETSMFEOIeAvMoGKgIBVQbYvR+sgSKVSelYcpAiwfTm6NQjUolDAIqDDcrRdSO9LEKg0sLq6qs+73EXR58C10QLUXXvNzMxM9wTYuxx9rpeDuhSRGXB2P/9voRCJRMbHx4MhoHU52nEmPx3Lce3WkQW9PDExce5MvV7f3NyUxunpaWt8TE1NMQ/wg/39S0rtbDbb1Qg4y6+16J0jHRMeY+Km/PVmMCcnJ+Vy2X3WJQK8vPwDkANcX1mh+KBqExPvTARci0Kh4PxeEUKA35RKpVqtpmbCCPAbKT3VDv5MJqPWgrzdIsdSxBWobSnRaDSdTntb/3gkwOrlaBl51OKPoTvyDsvRnVH3gdXeCEMfwXJ0p9KzUqm0znVNPCVAEm6LGnySyWR/f+Pakgxs4pExlqM7RYB0ur78R0ZGAhkB9u6Odpp3YFTpKXGgqqDgRYC9y9GJRELNvGKxmLnnVZkHtCWfz6uGzLxM3I43IuDMcrQV5HI5c49IUgVdPQrxoHbXkGHH0JORngmYvXPPYgGSeM0N/d7kAPXTGfM7H9tkMe9/rGN+8ZLPmn3w0P2PdVxEbcg1jatfSzkzH3j3TLeLT98a+rqZl48uniy+/uD+nVs3u7nZ5dC1HKCHo5COS3qeZWjCZTwC/MFcBHSLkAmwD8pQBCAAEIAAQAACAAEIAAQgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABCAAEIAAQAACAAEIAAQgABCAAPhHfgowAF5ShPKVVlCvAAAAAElFTkSuQmCC"/>
+ <rect rx="0" stroke-dashoffset="0.00" ry="0" transform="matrix(1.01 0.00 0.00 1.01 11.94 12.00)" stroke-miterlimit="4.00" width="164" y="0" stroke-width="0.99" id="object152" stroke-linejoin="miter" stroke="#000000" stroke-linecap="butt" stroke-dasharray="" fill="none" x="0" height="165" stroke-opacity="1.00" fill-rule="nonzero"/>
+</svg>

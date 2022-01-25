@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>BOARDNET_BOUNDERY_CONDITION</SC_SUB_NAME>
+  <CATNAME>Lib_EV_Electrics</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>1 0 386 94 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 0 258 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 1 270 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>elec2signal1_8</ALIAS>
+     <COMP_NAME>elec2signal1</COMP_NAME>
+     <COMP_DISPLAYNAME>elec2signal1</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>conversion between electric and signal variables</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>eb.elec2signal1</COMP_LIBRARY_ID>
+     <COMP_POS>245 67</COMP_POS>
+     <COMP_DEPTH>201</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x0c,0x00,0x00,0x00,0x00,0x08,0x00,0x00,
+        0x00,0x00,0x0c,0x00,0x00,0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x06,0x00,0x00,
+        0x00,0x00,0x02,0x00,0x00,0x00,0x00,0x06,0x00,0x00,0x00,0x00,0x04,0x00,0x00,
+        0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x04,0x00,0x00,
+        0x00,0x00,0x04,0x00,0x00,0x00,0x00,0x04,0x00,0x00,0x00,0xff,0xff,0x1f,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0xe0,0x00,0x00,0xe0,0x00,0x30,0x00,0x00,0x80,0x01,
+        0x18,0x00,0x00,0x00,0x03,0x18,0x00,0x00,0x00,0x03,0x0c,0x00,0x00,0x00,0x06,
+        0x0c,0x00,0x00,0x00,0x06,0x0c,0xfc,0x10,0x04,0x06,0x0c,0x00,0x11,0x04,0x06,
+        0x06,0x00,0xf1,0x07,0x0c,0x0c,0x00,0x11,0x04,0x06,0x0c,0xfc,0x10,0x04,0x06,
+        0x0c,0x00,0x00,0x00,0x06,0x0c,0x00,0x00,0x00,0x06,0x18,0x00,0x00,0x00,0x03,
+        0x18,0x00,0x00,0x00,0x03,0x30,0x00,0x00,0x80,0x01,0xe0,0x00,0x00,0xe0,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0x00,0xff,0xff,0x1f,0x00,0x00,0x10,0x20,0x08,0x00,
+        0x00,0x10,0x40,0x04,0x00,0x00,0x38,0x40,0x04,0x00,0x00,0x38,0x80,0x02,0x00,
+        0x00,0x54,0x80,0x03,0x00,0x00,0x54,0x00,0x01,0x00,0x00,0x92,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>7</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>13 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>25 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>19 49</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>elect</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>2</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>8577</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>EBES11</SUB_NAME>
+      <SUB_DIR>$AME/libeb/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>conversion between electric and signal variables</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>voltage signal input at port 1</TITLE>
+         <VARNAME>usig1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>V</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>current at port 3</TITLE>
+         <VARNAME>psig2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>1</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>voltage signal input at port 1</TITLE>
+         <VARNAME>q3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>0</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>current at port 3</TITLE>
+         <VARNAME>I3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>A</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>signalsink</ALIAS>
+     <COMP_NAME>signalsink</COMP_NAME>
+     <COMP_DISPLAYNAME>signalsink</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>general signal sink</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.signalsink</COMP_LIBRARY_ID>
+     <COMP_POS>381 92</COMP_POS>
+     <COMP_DEPTH>202</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 9
+        #define icon_height 9
+        static unsigned char icon_bits[] = {
+        0x80,0x01,0x88,0x01,0xb0,0x01,0xc0,0x01,0xff,0x01,0xc0,0x01,0xb0,0x01,0x88,
+        0x01,0x80,0x01
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>2</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>5 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>1</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SSINK</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>1</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>plug for signal port</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>signal input</TITLE>
+         <VARNAME>sink</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>zero_current_source</ALIAS>
+     <COMP_NAME>zero_current_source</COMP_NAME>
+     <COMP_DISPLAYNAME>zero_current_source</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>zero current source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>eb.zero_current_source</COMP_LIBRARY_ID>
+     <COMP_POS>256 116</COMP_POS>
+     <COMP_DEPTH>203</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 15
+        #define icon_height 20
+        static unsigned char icon_bits[] = {
+        0x80,0x00,0xc0,0x00,0x40,0x00,0xc0,0x00,0x80,0x00,0x80,0x01,0x00,0x01,0x80,
+        0x01,0x80,0x00,0x80,0x00,0x90,0x04,0xb0,0x06,0xe0,0x03,0xc0,0x01,0xe0,0x03,
+        0x30,0x06,0x10,0x04,0x00,0x00,0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>8 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>elect</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>3</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>EBZC01</SUB_NAME>
+      <SUB_DIR>$AME/libeb/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>zero current source</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>zero current</TITLE>
+         <VARNAME>I1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>5</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>A</UNITS>
+         <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>0.00000000000000e+00</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+00</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+    <GLOBAL_PARAMS_LIST>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="ambient temperature" VALUE="20" TYPE="Real" GLOB_PARAM_NAME="Tamb" UNITS="null"/>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage battery number of cells in series" VALUE="6" TYPE="Real" GLOB_PARAM_NAME="Ns" UNITS="null"/>
+     <GLOBALPARAM MIN_VALUE="1" GLOB_EXPOSED="0" TITLE="low voltage battery number of branches in parallel" VALUE="1" MAX_VALUE="10000" TYPE="Integer" GLOB_PARAM_NAME="Np"/>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage battery initial SOC" VALUE="80" TYPE="Real" GLOB_PARAM_NAME="SOC" UNITS="null"/>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage output " VALUE="13.91" TYPE="Real" GLOB_PARAM_NAME="LVoutput" UNITS="null"/>
+    </GLOBAL_PARAMS_LIST>
+   
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>

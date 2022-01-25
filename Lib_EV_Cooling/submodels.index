@@ -1,0 +1,5 @@
+./submodels
+Cooling_Air
+&COOLING_AIR Lib_EV_Cooling
+Cooling_System_Liquid
+&COOLING_LIQUID Lib_EV_Cooling

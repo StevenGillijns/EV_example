@@ -1,0 +1,2841 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="2021.2" MAJ="20212" MIN="" PATCH="">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>VEHICLE_1D</SC_SUB_NAME>
+  <CATNAME>Lib_EV_Mechanics</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>6 1 319 145 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>8 1 319 114 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>9 1 319 83 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>3 1 279 161 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>9 0 304 68 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 6 194 144 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 2 184 222 1 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>5 0 92 292 2 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>5 1 92 304 2 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>vehicle_1</ALIAS>
+     <COMP_NAME>drv_4wheelsvehicle</COMP_NAME>
+     <COMP_DISPLAYNAME>drv_4wheelsvehicle</COMP_DISPLAYNAME>
+     <COMP_POS>110 143</COMP_POS>
+     <COMP_DEPTH>201</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 114
+        #define icon_height 79
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x80,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x49,0x40,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x2a,0x30,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x2a,0x08,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x1c,0x04,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x1c,0x03,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x88,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x40,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x30,0x5c,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x52,0x00,0x00,0x00,
+        0x00,0x00,0x80,0x03,0x00,0x00,0x00,0x00,0x00,0x00,0x04,0x22,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x3c,0x00,0x00,0x00,0x00,0x00,0x00,0x07,0x22,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xc0,0x03,0x00,0x60,0x00,0x00,0x80,0x08,0x32,0x01,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x3e,0x00,0xc0,0x01,0x00,0x40,0x10,0xdc,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0xe0,0x03,0x00,0x07,0x00,0x30,0x10,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x3e,0x00,0x18,0x00,0x08,0x20,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0xf0,0x00,0x30,0x00,0xfc,0xff,0xff,0x07,0x00,0x00,
+        0x00,0x00,0x00,0xe0,0xff,0xff,0x03,0xe0,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xf0,0xff,0xff,0x07,0x80,0x01,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xfc,0x1f,0x00,0x0e,0x00,0x03,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xe4,0x1f,0x00,0x1c,0x00,0x06,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xc2,0x1f,0x00,0x38,0x18,0x08,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x80,0xc3,0x1f,0x00,0x70,0x20,0x30,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x80,0xc0,0x1f,0x00,0xe0,0xc0,0xc0,0xc0,0x01,0x00,0x00,0x00,0x00,
+        0x00,0x00,0xc0,0xc0,0x1f,0x00,0xc0,0x03,0x03,0x00,0x07,0x00,0x00,0x08,0x00,
+        0x00,0x00,0x40,0xe0,0x1f,0x00,0x80,0x07,0x0c,0x00,0x38,0x00,0x00,0x06,0x00,
+        0x00,0x00,0x60,0xf0,0x1f,0x00,0x00,0x0f,0x70,0x00,0xc0,0x07,0x80,0x01,0x00,
+        0x00,0x00,0x38,0xf8,0x1f,0x00,0x00,0x1c,0x80,0x0f,0x00,0xfc,0xc3,0xff,0x03,
+        0x00,0x00,0x1c,0xfc,0x1f,0x00,0x00,0x38,0x00,0x38,0x00,0x00,0x80,0x01,0x00,
+        0xf8,0xff,0xff,0xff,0x1f,0x00,0x00,0x70,0x00,0xe0,0x0f,0x00,0x00,0x06,0x00,
+        0xfc,0xff,0xff,0xff,0x3f,0x00,0x00,0xe0,0x00,0x00,0x78,0x00,0x00,0x08,0x00,
+        0x0c,0x00,0x06,0x00,0xf0,0xff,0xff,0xff,0x01,0x00,0x00,0x00,0x00,0x00,0x00,
+        0xcc,0x00,0x06,0x00,0xe0,0xff,0xff,0xff,0xff,0xff,0x00,0x00,0x00,0x00,0x00,
+        0xec,0x00,0x06,0x00,0xc0,0x01,0x00,0xc0,0xff,0xff,0x3f,0x00,0x00,0x00,0x00,
+        0x0c,0x00,0x06,0x00,0x80,0x01,0x00,0x80,0x01,0x00,0xff,0x00,0x00,0x00,0x00,
+        0x0c,0x00,0x07,0x00,0x80,0x01,0x00,0x00,0x03,0x00,0xe0,0x03,0x00,0x00,0x00,
+        0x0c,0xf0,0x01,0x00,0x80,0x01,0x00,0x00,0x03,0x00,0x00,0x0f,0x00,0x00,0x00,
+        0x0c,0x3f,0x00,0x00,0x00,0x03,0x00,0x00,0x06,0x00,0x00,0x30,0x00,0x00,0x00,
+        0xf8,0x03,0x00,0x00,0x00,0xf3,0x00,0x00,0x06,0x00,0x00,0xf0,0x00,0x00,0x00,
+        0x38,0x00,0x00,0x00,0x00,0x77,0x00,0x00,0x06,0x00,0x00,0x30,0x01,0x00,0x00,
+        0x18,0x00,0x00,0x00,0x00,0x06,0x00,0x00,0x0c,0x00,0x00,0x30,0x03,0x00,0x00,
+        0x18,0x00,0x00,0x00,0x00,0x06,0x00,0x00,0x0c,0x00,0x00,0x30,0x06,0x00,0x00,
+        0x18,0x00,0x00,0xf8,0x01,0x0c,0x00,0x00,0x0c,0xc0,0x0f,0x30,0x04,0x00,0x00,
+        0x10,0x00,0x00,0xfe,0x07,0x0c,0x00,0x00,0x0c,0xf0,0x3f,0xe0,0x0f,0x00,0x00,
+        0x30,0x00,0x80,0xff,0x1f,0x0c,0x00,0x00,0x0c,0xfc,0xff,0xc0,0xdf,0x7f,0x00,
+        0x30,0x00,0xc0,0xff,0x3f,0x0c,0x00,0x00,0x0c,0xfe,0xff,0x01,0xd8,0x7f,0x00,
+        0x38,0x00,0xc0,0xdf,0x3f,0x0c,0x00,0x00,0x0c,0xfe,0xfe,0x01,0x18,0x60,0x00,
+        0xfc,0x00,0xe0,0x03,0x7c,0x0c,0x00,0x00,0x0c,0x1f,0xe0,0x03,0x1f,0x60,0x00,
+        0xe6,0x00,0xe0,0x01,0x78,0x0c,0x00,0x00,0x0c,0x0f,0xc0,0xc3,0x1f,0xe0,0x03,
+        0xc6,0x01,0xf8,0x01,0xf8,0x0c,0x00,0x00,0x8c,0x0f,0xc0,0xe7,0x18,0x60,0x00,
+        0xc6,0x01,0xf8,0x21,0xf8,0x0c,0x00,0x00,0x8c,0x0f,0xc1,0xe7,0x18,0x60,0x00,
+        0xc6,0x01,0xf8,0x70,0xf0,0x06,0x00,0x00,0x8e,0x87,0x83,0xe7,0xd8,0x7f,0x00,
+        0xfc,0x01,0xf8,0x21,0xf8,0x06,0x00,0x00,0x86,0x0f,0xc1,0xe7,0xd8,0x7f,0x00,
+        0xf8,0xff,0xff,0x01,0xf8,0xff,0xff,0xff,0xff,0x0f,0xc0,0xff,0x0f,0x00,0x00,
+        0x00,0xff,0xff,0x01,0xf8,0xff,0xff,0xff,0xff,0x0f,0xc0,0xfb,0x07,0x00,0x00,
+        0x00,0x00,0xe0,0x03,0x7c,0x00,0x00,0x00,0x00,0x1f,0xe0,0x03,0x00,0x00,0x00,
+        0x00,0x00,0xc0,0xdf,0x3f,0x00,0x00,0x00,0x00,0xfe,0xfe,0x01,0x00,0x00,0x00,
+        0x00,0x00,0xc0,0xff,0x3f,0x00,0x00,0x00,0x00,0xfe,0xff,0x01,0x00,0x00,0x00,
+        0x00,0x00,0x80,0xff,0x1f,0x00,0x00,0x00,0x00,0xfc,0xff,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xfe,0x07,0x00,0x00,0x00,0x00,0xf0,0x3f,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0xf8,0x01,0x00,0x00,0x00,0x00,0xc0,0x0f,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x83,0x01,0x00,0x00,0x00,0x02,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0xe0,0x00,0x83,0x01,0x00,0x00,0x00,0x07,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0xe0,0x00,0x83,0x01,0x00,0x00,0x00,0x07,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x50,0x01,0x83,0x01,0x00,0x00,0x80,0x0a,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x50,0x01,0x83,0x01,0x00,0x00,0x80,0x0a,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x48,0x02,0x83,0x01,0x00,0x00,0x40,0x12,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x83,0x01,0x00,0x00,0x00,0x02,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x83,0x01,0x00,0x00,0x00,0x02,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x83,0x01,0x00,0x00,0x00,0x02,0x18,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x93,0x01,0x00,0x00,0x00,0x02,0x98,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x93,0x01,0x00,0x00,0x00,0x02,0x98,0x0c,0x00,0x00,0x00,
+        0x00,0x00,0x40,0x00,0x93,0x01,0x00,0x00,0x00,0x02,0x98,0x0c,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>23 79</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>10</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>37 79</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>74 79</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>6</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>88 79</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>114 54</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>114 33</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>2</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>84 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>5</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>691</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <HAS_TERMINATE>1</HAS_TERMINATE>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DRVVEH4A</SUB_NAME>
+      <SUB_DIR>$AME/libdrv/submodels</SUB_DIR>
+      <SUB_ID_MAX>138</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>constant load vehicle with or without slip</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <P_STORES_NUMBER>2</P_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <TIME_REQUIRED>1</TIME_REQUIRED>
+      <HAS_PREINIT>1</HAS_PREINIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>23</SUB_ID>
+        <TITLE>total vehicle mass</TITLE>
+        <VARNAME>mtot</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.20600000000000e+00</DEF_VALUE>
+        <VALUE>1.20600000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>tonne</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>24</SUB_ID>
+        <TITLE>mass distribution (60%: 60% front axle - 40% rear axle)</TITLE>
+        <VARNAME>mdistrib</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>25</SUB_ID>
+        <TITLE>wheel inertia</TITLE>
+        <VARNAME>Jw</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.75+0.1*gear_ratio**2/4</DEF_VALUE>
+        <VALUE>0.75+0.1*gear_ratio__VEHICLE_1D_1**2/4</VALUE>
+        <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>kgm**2</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>26</SUB_ID>
+        <TITLE>tire width</TITLE>
+        <VARNAME>width</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.85000000000000e+02</DEF_VALUE>
+        <VALUE>1.85000000000000e+02</VALUE>
+        <MIN_VALUE>5.00000000000000e+01</MIN_VALUE>
+        <MAX_VALUE>5.00000000000000e+02</MAX_VALUE>
+        <UNITS>mm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>27</SUB_ID>
+        <TITLE>tire height</TITLE>
+        <VARNAME>height</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>6.00000000000000e+01</DEF_VALUE>
+        <VALUE>6.00000000000000e+01</VALUE>
+        <MIN_VALUE>2.50000000000000e+01</MIN_VALUE>
+        <MAX_VALUE>8.50000000000000e+01</MAX_VALUE>
+        <UNITS>%</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>28</SUB_ID>
+        <TITLE>wheel rim diameter</TITLE>
+        <VARNAME>drim</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.50000000000000e+01</DEF_VALUE>
+        <VALUE>1.50000000000000e+01</VALUE>
+        <MIN_VALUE>1.00000000000000e+01</MIN_VALUE>
+        <MAX_VALUE>2.30000000000000e+01</MAX_VALUE>
+        <UNITS>in</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>29</SUB_ID>
+        <TITLE>maximum braking torque on rear axle</TITLE>
+        <VARNAME>maxbrakerear</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>Nm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>30</SUB_ID>
+        <TITLE>maximum braking torque on front axle</TITLE>
+        <VARNAME>maxbrakefront</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+03</DEF_VALUE>
+        <VALUE>1.00000000000000e+03</VALUE>
+        <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>Nm</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>31</SUB_ID>
+        <TITLE>roller test bench config: coefficient 'a'</TITLE>
+        <VARNAME>coefA</VARNAME>
+        <VISIBILITY>(vehtype == 2)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+02</DEF_VALUE>
+        <VALUE>1.00000000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>N</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>32</SUB_ID>
+        <TITLE>roller test bench config: coefficient 'b'</TITLE>
+        <VARNAME>coefB</VARNAME>
+        <VISIBILITY>(vehtype == 2)</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+00</DEF_VALUE>
+        <VALUE>5.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>N/(m/s)</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>33</SUB_ID>
+        <TITLE>roller test bench config: coefficient 'c'</TITLE>
+        <VARNAME>coefC</VARNAME>
+        <VISIBILITY>(vehtype == 2)</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e-01</DEF_VALUE>
+        <VALUE>5.00000000000000e-01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>N/(m/s)**2</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>34</SUB_ID>
+        <TITLE>Coulomb friction coefficient (rolling resistance coef)</TITLE>
+        <VARNAME>f</VARNAME>
+        <VISIBILITY>(vehtype == 1)</VISIBILITY>
+        <DEF_VALUE>1.06400000000000e-02</DEF_VALUE>
+        <VALUE>1.06400000000000e-02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>35</SUB_ID>
+        <TITLE>viscous friction coefficient (rolling resistance coef)</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>(vehtype == 1)</VISIBILITY>
+        <DEF_VALUE>3.62900000000000e-07</DEF_VALUE>
+        <VALUE>3.62900000000000e-07</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>1/(m/s)</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>114</SUB_ID>
+        <TITLE>windage coefficient (rolling resistance coef)</TITLE>
+        <VARNAME>wind</VARNAME>
+        <VISIBILITY>(vehtype == 1)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>1/(m/s)**2</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>36</SUB_ID>
+        <TITLE>air penetration coefficient (Cx)</TITLE>
+        <VARNAME>Cx</VARNAME>
+        <VISIBILITY>(vehtype == 1)</VISIBILITY>
+        <DEF_VALUE>3.60000000000000e-01</DEF_VALUE>
+        <VALUE>3.60000000000000e-01</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+03</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>37</SUB_ID>
+        <TITLE>vehicle active area for aerodynamic drag</TITLE>
+        <VARNAME>S</VARNAME>
+        <VISIBILITY>(vehtype == 1)</VISIBILITY>
+        <DEF_VALUE>2.08000000000000e+00</DEF_VALUE>
+        <VALUE>2.08000000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>m**2</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>38</SUB_ID>
+        <TITLE>stiction coefficient</TITLE>
+        <VARNAME>Cstat</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.20000000000000e+00</DEF_VALUE>
+        <VALUE>1.20000000000000e+00</VALUE>
+        <MIN_VALUE>1.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+02</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>39</SUB_ID>
+        <TITLE>tire/ground grip coefficient</TITLE>
+        <VARNAME>grip</VARNAME>
+        <VISIBILITY>(sliptype == 2)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>40</SUB_ID>
+        <TITLE>rotary stick velocity threshold for longitudinal slip</TITLE>
+        <VARNAME>threshold</VARNAME>
+        <VISIBILITY>(sliptype == 2)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e-02</DEF_VALUE>
+        <VALUE>1.00000000000000e-02</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>rev/min</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>137</SUB_ID>
+        <TITLE>rotary stick velocity threshold for brake</TITLE>
+        <VARNAME>dvel</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e-06</DEF_VALUE>
+        <VALUE>1.00000000000000e-06</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>rev/min</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>138</SUB_ID>
+        <TITLE>vehicle index</TITLE>
+        <VARNAME>index</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>100</MAX_VALUE>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>57</SUB_ID>
+        <TITLE>vehicle configuration</TITLE>
+        <VARNAME>vehtype</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>road</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>roller test bench</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>59</SUB_ID>
+        <TITLE>longitudinal slip configuration</TITLE>
+        <VARNAME>sliptype</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>without slip</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>slip</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <TPARAMS_LIST>
+       <TPARAM>
+        <SUB_ID>86</SUB_ID>
+        <TITLE>expression for wheel dynamic radius [m] = f(wheel radius: Rw [m], vehicle velocity: Vveh [m/s])</TITLE>
+        <VARNAME>tpRdyn</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>Rw</DEF_VALUE>
+        <VALUE>Rw</VALUE>
+        <TEXT_TYPE>2</TEXT_TYPE>
+        <TOKEN_LIST>Rw Vveh</TOKEN_LIST>
+       </TPARAM>
+      </TPARAMS_LIST>
+      <PARAMS_GROUPS_LIST>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>aerodynamic and rolling parameters</ORIG_TITLE>
+        <NAME>aeropar</NAME>
+        <SUB_ID>121</SUB_ID>
+        <CIRCUIT_SCOPE_ID>102</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>coefA</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>coefB</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>coefC</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>f</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>k</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>wind</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Cx</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>S</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Cstat</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>brake characteristics</ORIG_TITLE>
+        <NAME>brake</NAME>
+        <SUB_ID>118</SUB_ID>
+        <CIRCUIT_SCOPE_ID>103</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>maxbrakerear</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>maxbrakefront</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>dvel</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>tire longitudinal slip parameters</ORIG_TITLE>
+        <NAME>slippar</NAME>
+        <SUB_ID>119</SUB_ID>
+        <CIRCUIT_SCOPE_ID>104</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>grip</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>threshold</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>force</ORIG_TITLE>
+        <NAME>forcegp</NAME>
+        <SUB_ID>126</SUB_ID>
+        <CIRCUIT_SCOPE_ID>105</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Fdr</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Fbrak</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Fcl</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Froll</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Faer</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Fres</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>dynamic wheel radius</ORIG_TITLE>
+        <NAME>Rdyngp</NAME>
+        <SUB_ID>127</SUB_ID>
+        <CIRCUIT_SCOPE_ID>106</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Rdynrear</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Rdynfront</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>brake</ORIG_TITLE>
+        <NAME>brakegp</NAME>
+        <SUB_ID>128</SUB_ID>
+        <CIRCUIT_SCOPE_ID>107</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Tbrakrear</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Tbrakfront</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
+        <ORIG_TITLE>longitudinal slip</ORIG_TITLE>
+        <NAME>slipgp</NAME>
+        <SUB_ID>129</SUB_ID>
+        <CIRCUIT_SCOPE_ID>108</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>slipr</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>slipf</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+      </PARAMS_GROUPS_LIST>
+      <IVARS_LIST>
+       <IVAR>
+        <SUB_ID>50</SUB_ID>
+        <TITLE>climbing resistance</TITLE>
+        <VARNAME>Fcl</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>51</SUB_ID>
+        <TITLE>rolling resistance</TITLE>
+        <VARNAME>Froll</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>52</SUB_ID>
+        <TITLE>aerodynamic drag</TITLE>
+        <VARNAME>Faer</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>54</SUB_ID>
+        <TITLE>driving force</TITLE>
+        <VARNAME>Fdr</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>55</SUB_ID>
+        <TITLE>braking force</TITLE>
+        <VARNAME>Fbrak</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>90</SUB_ID>
+        <TITLE>dynamic radius of the rear wheel</TITLE>
+        <VARNAME>Rdynrear</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>m</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>89</SUB_ID>
+        <TITLE>dynamic radius of the front wheel</TITLE>
+        <VARNAME>Rdynfront</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>m</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>93</SUB_ID>
+        <TITLE>rear axle braking torque</TITLE>
+        <VARNAME>Tbrakrear</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>Nm</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>95</SUB_ID>
+        <TITLE>front axle braking torque</TITLE>
+        <VARNAME>Tbrakfront</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>Nm</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>98</SUB_ID>
+        <TITLE>rear axle longitudinal slip [%]</TITLE>
+        <VARNAME>slipr</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>99</SUB_ID>
+        <TITLE>front axle longitudinal slip [%]</TITLE>
+        <VARNAME>slipf</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+       </IVAR>
+       <IVAR>
+        <SUB_ID>135</SUB_ID>
+        <TITLE>total driving resistance (except braking)</TITLE>
+        <VARNAME>Fres</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TYPE>0</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>N</UNITS>
+       </IVAR>
+      </IVARS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>70</SUB_ID>
+         <TITLE>rear axle braking signal at port 1</TITLE>
+         <VARNAME>rbrakcmd</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>111</SUB_ID>
+         <TITLE>rear wheel rotary velocity at port 2</TITLE>
+         <VARNAME>w2</VARNAME>
+         <VARNAME2>dw2</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>1</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>rev/min</UNITS>
+         <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>0.00000000000000e+00</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>72</SUB_ID>
+         <TITLE>rear axle torque at port 2</TITLE>
+         <VARNAME>torq2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>71</SUB_ID>
+         <TITLE>front axle braking signal at port 3</TITLE>
+         <VARNAME>fbrakcmd</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>110</SUB_ID>
+         <TITLE>front wheel rotary velocity at port 4</TITLE>
+         <VARNAME>w4</VARNAME>
+         <VARNAME2>dw4</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>1</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>rev/min</UNITS>
+         <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>0.00000000000000e+00</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>77</SUB_ID>
+         <TITLE>front axle torque at port 4</TITLE>
+         <VARNAME>torq4</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>74</SUB_ID>
+         <TITLE>vehicle linear velocity at port 5</TITLE>
+         <VARNAME>v5</VARNAME>
+         <VARNAME2>dv5</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>1</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m/s</UNITS>
+         <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+         <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>85</SUB_ID>
+         <TITLE>vehicle linear displacement at port 5</TITLE>
+         <VARNAME>x5</VARNAME>
+         <VARNAME2>dx5</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>1</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m</UNITS>
+         <MIN_VALUE>-1.00000000000000e+06</MIN_VALUE>
+         <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>80</SUB_ID>
+         <TITLE>vehicle linear acceleration at port 5</TITLE>
+         <VARNAME>acc5</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m/s/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>82</SUB_ID>
+         <TITLE>external force at port 5</TITLE>
+         <VARNAME>Fext</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>N</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>78</SUB_ID>
+         <TITLE>wind speed at port 6</TITLE>
+         <VARNAME>vwind</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m/s</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>79</SUB_ID>
+         <TITLE>road slope at port 7</TITLE>
+         <VARNAME>slopein</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>zerotorquesource_1</ALIAS>
+     <COMP_NAME>zerotorquesource</COMP_NAME>
+     <COMP_DISPLAYNAME>zerotorquesource</COMP_DISPLAYNAME>
+     <COMP_POS>141 222</COMP_POS>
+     <COMP_DEPTH>202</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 11
+        #define icon_height 19
+        static unsigned char icon_bits[] = {
+        0x26,0x03,0x26,0x03,0x26,0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,
+        0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,0x03,0x06,0x03,
+        0xfe,0x03,0xfe,0x03,0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>6 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>692</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>T000</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>1</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>zero torque source</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>torque (always zero)</TITLE>
+         <VARNAME>tzero</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>5</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>Nm</UNITS>
+         <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>0.00000000000000e+00</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>drv_globvar_1</ALIAS>
+     <COMP_NAME>drv_globvar</COMP_NAME>
+     <COMP_DISPLAYNAME>drv_globvar</COMP_DISPLAYNAME>
+     <COMP_LIBRARY_ID>drive.drv_globvar</COMP_LIBRARY_ID>
+     <COMP_POS>224 161</COMP_POS>
+     <COMP_DEPTH>203</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 40
+        #define icon_height 29
+        static unsigned char icon_bits[] = {
+        0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x60,0x00,0xc0,0x00,0x00,0x10,0x08,0x08,0x01,0x00,0x08,0x08,0x08,0x02,0x00,
+        0x08,0x08,0x08,0x02,0x00,0x84,0x88,0x38,0x04,0x00,0x42,0x49,0x49,0x08,0x00,
+        0x22,0x2a,0x8a,0x08,0x00,0x22,0x2a,0x8a,0x08,0x00,0x41,0x4b,0x49,0x30,0x00,
+        0x81,0x8a,0x38,0xd2,0x00,0x01,0x02,0x00,0x10,0x03,0x01,0x02,0x00,0x10,0xfe,
+        0x01,0x01,0x00,0x10,0x03,0xc1,0x00,0x00,0xd0,0x00,0x01,0x00,0x00,0x30,0x00,
+        0x02,0x00,0x00,0x08,0x00,0x42,0xe4,0x34,0x08,0x00,0x42,0x84,0x0c,0x08,0x00,
+        0x84,0xe2,0x04,0x04,0x00,0x88,0x92,0x04,0x02,0x00,0x08,0xe1,0x45,0x02,0x00,
+        0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>5</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 15</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>5</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>696</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <HAS_TERMINATE>1</HAS_TERMINATE>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DRVGVS2A</SUB_NAME>
+      <SUB_DIR>$AME/libdrv/submodels</SUB_DIR>
+      <SUB_ID_MAX>5</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>source of global variable from mission profile & ambient data</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <P_STORES_NUMBER>3</P_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <TIME_REQUIRED>1</TIME_REQUIRED>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>2</SUB_ID>
+        <TITLE>anticipation time</TITLE>
+        <VARNAME>adv</VARNAME>
+        <VISIBILITY>index == 3</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+01</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+01</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>cycle duration of one cycle</TITLE>
+        <VARNAME>durcyc</VARNAME>
+        <VISIBILITY>index == 3</VISIBILITY>
+        <DEF_VALUE>1.18000000000000e+03</DEF_VALUE>
+        <VALUE>1.18000000000000e+03</VALUE>
+        <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+06</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>observed variable</TITLE>
+        <VARNAME>index</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>5</DEF_VALUE>
+        <VALUE>5</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>6</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>not set</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCp2SsW7CMBCG5yLxDqdbaAcc24kKQRjUzh36BlUAJ7Hq2JHtJqFPX4cyMHQInU7n+/1//8ne7odGQyedV9YIZIQiSHO0J2UqgV+hXK5xv5vPtr6rbmUc4VB4+e5sqbQUGJQ5I6iTwDfVSa3tB8P57AGiu/EC6xDaTZL0fU/6lFhXJZxSmkRT/JVsBq3M519Clud5cplGqUDaDgjna+3VKdQCs0tTS1XVQSDPYzeyOyX7VzveAQoZBZ4j2LhDqW0v0B+d1fqC3/i2OMYlWie9dJ3EceEghwDBFcaX1jUCmyI4NTwyGN0YZMA4idHWTwilNWFZFo3SMdjixalCL66nXn1HYzYG3FXaHsg2GY0nAJ7Jap1y4PdSuskExv6JKKYjViTNstX9CDcZwSlhPL2fcPMS4z+M9QdRRqXKDAMAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>vehicle speed control [m/s] (as a function of time)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm2Qy3LCIBSG13XGd2BOt0ogXnGkznTdRd+gYw0mKEIGMOjb95Bop4uy+c/l49y2u9vFkE75oJ2VwCkDouzBVdrWEq7xOF3D7m082oau/ouVQL73QX16d9RGSYja3oHoSsKH7pQx7ovDePRCsLoNEpoY201RpJRomlHn66JkjBVYFAZkczPanv8DuRCi6LOISmDtDcj9oUlXsZEw751G6bqJEkqBXu7daZXeXf5DGJkzUgogDnc4GpckhIN3xvTtN6HdH3CJ1qugfKcgL9w6c8euiuCCRoJ1VgEJ0bszkq+sf8/ANIMnp/E03l1t9Ru/6Ki80Sh4NMRbZCLeYzbhgi7IYpAVRWOGhhgEh+ecPpL8wfL1ZJlF0FVvlPMnUS4HhSLPnY+K+gOZKxBZ2QEAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>gearbox ratio control (as a function of time)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCp2TzVLCMBDHzzLDO+ysB/VA24SClCEwevbgGzgVUsgQEiaJbfHp3RZGxfFAyWVnN//89msyW9Q7DaV0XlkjkEUJgjRLu1JmLfAjFIMJLub93syX698yjvCee/nqbKG0FBiUOSColcAXVUqt7RvDfu8GiG68wE0I+2kcV1UVVcPIunXMkySJCYpHybTWymz/E7Isy+L2lqQCk32NcDjZSq3CRmDaOhup1psgkGfkNblLJatn27yBBNIEeIZgqYdC20qgXzqrdZt+6vf5kprYO+mlKyU2DVNGCdScFmiskQg+OLsl1W3SHnrJBBLy0JhoRD4/+mTYhALx5Rg2+sNpA1eAODuCWHpeT3oN5LuaNnBWTZB1gOBy4wvrdgJ3eXCqvmfQzJrBI5DyAaGwJgyKfKc0rezuyalc352iXn1S3jHtas5mccO7hBvxEfBhBza/mM2GneFpB3iniQwvB2edwKMu4E6zGP+Qm39N9gtNFmr8XAQAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>air density [kg/m**3] (constant value)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm2PwU7DMAyGz0zaO1i+DA5r0zKhpWo2wZkDb4BKm7YWaVIloel4epKxAwdOlu3f3++/Pq+TgkVaR0YLLDKGIHVrOtKDwC/f7494Pm03tVuGv7IS4aNx8s2anpQU6ElfEKgT+EqLVMq8F7jd3EGkaydw9H6u8jyEkIXHzNghLxljeYTir6RaFenP/4QF5zy/bqNUIJtXhMutBur8KPBwbUZJw+gFljx2yXshGV5MugEGBwYlRzAxQ69MEOhaa5S62ldubtoYYrbSSbtITIG9XD1422jXGzsJnBpvab0vINEKKKF4yg6cHx8QeqP9vm8mUvGx3bOlRu1uU0ffEXyMH506qR35S50ncnJI8WP9AYKNT0yDAQAA
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>wind speed [m/s] (constant value)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCrVU246bMBB9zkr7D9b01RjbQAJR3JX6nEqV9gOqNHGItV6MMBuy/fqODUTdXqRtpSB5jjHDOTP2gc3D5dmSs+68cY0CwTgQ3ezdwTS1gpf+mJTw8PH+buPP9c9pEsi3nddfOnc0VivoTfMKxBwUbM1ZW+u+Cri/WxBkb7yCU9+36zQdhoENGXNdnUrOeYqkMKasL9Y0T39KFFVVpfEppirg7QXI64SDOfQnBXm8OWlTn3oFssK7oH02evjkwjuEk5wTWQFx2MPRukGB33fO2ii/9u1uj020nfa6O2sIDdcYFpt2158IdvVZcFqyYs8pTwQrKGdFxJwVfkI6oc0SPmcmMS/JPQ6KYzvSfIf0F/YlW9Hqyi+RP4+YRf6IdEIrWVDIYy5nZZhHzJh4FBXSVHSE7Uz7m56UVFyLRLEMowxSIdIYrUTSbBJZhXlEyaSfkE64ndjeqKAtrILGNRqI7zv3hPv7gcdrXkieTa87axDQUrgcKluhfrmV+bU+rIaPFfmxyDFuQ6Io5wPBTQ6xQP3FY+SgMV5rcvYVPaT/q67WmaZHF0dGEo8iI6M+WUwC7yYPiftdq6BzL83hr5oXoQCV0Os4kRkuyHkBJyL7171+p2w0Y4n+mcyxjE6vgrNvqCgzKsWkmOMoUE/essOCLme58WNKlqxCL1e3bXL1tke07E0F0aCzooznmIV/VFTcpHWM+AdG/AEoxZiaBgYAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>ambient temperature [degC] (constant value)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCqVUy4rbMBRdZ2D+QdxubVlSbBIHqwPttoWuZltSRbHFaCwjeWynX98r50HJtDBgL+5b59wHuHqaXi0ZtA/GtRI4ZUB0q9zBtLWEt/6YbuHp8+NDFYb67zIB5Nc+6B/eHY3VEnrTnoCYg4RvZtDWup8cHh9WBNHbIKHp+26XZeM40nFNna8zwRjLEBTOJbvJmvblX4W8LMtszmKpBNZNQE4XPZpD30jIZ6fRpm56CaJEL3IPRo9fXHxDGMkZESUQhzMcrRslBOWdtTP9LnR7hUN0XgftBw1x4BrFqur2fUNwRCuhda0GEnrvXrD2E5u/ayB9Nb321qDC9WAYN/Gdb2mRCE4LxRJBRcrpNsnTPMlDmkcHZa4YWkXC0BOYFumaFs85LZB8Nec45spUYEYEEe0E7We+/co3dJMgxSyQhyU3vt+Qxe4jRoWb0x+a4LJMcQvEl2rfSfDurT38d9KJo8aO8Sz8EhG3CFqxoXM/lTJeWU3UdM2r0yVPPBq3urnnj2468pdn8iIizez8zF0shtzcQ24WQ5b3kOViSM7vMTlfDrp+B7peDvruRvx6pCqrZ4l/BdR/ANKHAvaaBAAA
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>observed variable at port 1</TITLE>
+         <VARNAME>output</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        H4sIAAAAAAACCp1RTU/DMAw9b9L+g2WuI03SIdppAYkzB/7BNLqsiwhJlWT9+Pc4ZRMcOJFDbL+8+OnZu+fx00KvQzTeKRSMI2jX+KNxrcJLOt1X+Py0Wu5i3/6mSYT3Q9RvwZ+M1QqTcROCOSp8Nb221u8FrpYLoO4uKjyn1G2LYhgGNpTMh7aQnPOCmuI3ZTta4z7+Ioq6rov5lagKeTciTNc4mGM6K9zMxVmb9pwUypqqrN0bPbz4/Ac4bDjIGsGTh5P1g8LYBG/tLL+N3aEhE13QUYdeYzbc0rXYNSY0VgOZtAqddxohpuA/iH3H53MD7j9N0sEaCjQgghtSFhv2QNl0y0JOsMj9i3ZWmWfWXGLai300rTtYnIXJ8P9kR6GwLGlG4iY6yjwiQuQVKWaFztup9Q46b1yiHclqLQR7gFIysc48yMjjNVasgrJk9c8LZxIWv73kdVL8AiT2sZdTAgAA
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>displacementsensor2_1</ALIAS>
+     <COMP_NAME>displacementsensor2</COMP_NAME>
+     <COMP_DISPLAYNAME>displacementsensor2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>linear displacement sensor</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.displacementsensor2</COMP_LIBRARY_ID>
+     <COMP_POS>266 160</COMP_POS>
+     <COMP_DEPTH>204</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 25
+        #define icon_height 59
+        static unsigned char icon_bits[] = {
+        0x00,0x10,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x10,0x00,
+        0x00,0x00,0x38,0x00,0x00,0x00,0x28,0x00,0x00,0x00,0x44,0x00,0x00,0x00,0x44,
+        0x00,0x00,0x00,0xba,0x00,0x00,0x00,0xff,0x01,0x00,0xc0,0xef,0x07,0x00,0xe0,
+        0x00,0x0e,0x00,0x70,0x00,0x1c,0x00,0x30,0x00,0x18,0x00,0x18,0x00,0x30,0x00,
+        0x18,0x44,0x30,0x00,0x18,0x44,0x30,0x00,0x1c,0x28,0x70,0x00,0x0c,0x38,0x60,
+        0x00,0x1c,0x28,0x70,0x00,0x18,0x44,0x30,0x00,0x18,0x44,0x30,0x00,0x18,0x00,
+        0x30,0x00,0x30,0x00,0x18,0x00,0x70,0x00,0x1c,0x00,0xe0,0x00,0x0e,0x00,0xc0,
+        0xff,0x07,0x00,0x00,0xff,0x01,0x00,0x00,0x38,0x00,0x00,0xc0,0xff,0x07,0x00,
+        0xc0,0xff,0x07,0x00,0x00,0x00,0x00,0x00,0xf8,0xff,0x3f,0x00,0xf8,0xff,0x3f,
+        0x00,0x18,0x00,0x30,0x00,0x18,0x00,0x30,0x00,0x1f,0x00,0xf0,0x01,0x18,0x00,
+        0x30,0x00,0x18,0x00,0x30,0x00,0xf8,0xff,0x3f,0x00,0xf8,0xff,0x3f,0x00,0x00,
+        0x00,0x00,0x00,0xc0,0xff,0x07,0x00,0xc0,0xff,0x07,0x00,0x00,0x11,0x01,0x00,
+        0x80,0x88,0x00,0x00,0x40,0x44,0x04,0x00,0x00,0x22,0x02,0x00,0x00,0x11,0x01,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x30,0x00,0x18,0x00,0x30,0x00,
+        0x38,0x00,0xfc,0xfc,0x7f,0x00,0xfc,0xfc,0x7f,0x00,0x30,0x00,0x38,0x00,0x30,
+        0x00,0x18,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>25 37</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>4</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>13 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>3</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 37</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>699</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>MECDS0A</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>11</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>displacement sensor with offset and gain (displacement at ports)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <R_STORES_NUMBER>1</R_STORES_NUMBER>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>8</SUB_ID>
+        <TITLE>offset to be subtracted from displacement</TITLE>
+        <VARNAME>offset</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>m</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>9</SUB_ID>
+        <TITLE>gain for signal output</TITLE>
+        <VARNAME>gain</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>1/m</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>11</SUB_ID>
+        <TITLE>sign convention: positive from</TITLE>
+        <VARNAME>conv</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>port 1 to 3</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1RQW7bMBA8K0D+sNgekqKxJMphHRligvacQ39QKDYlL0KRAslKcl/fpRUXPVSHHexqOMNZNi/LYGDSPpCzCkVeImh7cEeyvcJfsds84cvz7U0Tpv5fWoXw1gb9w7uOjFYYyZ4R6KjwlSZtjPsp8PYmA1a3QeEpxnFfFPM85/M2d74vqrIsCxbFlbJfDNn3/xFFXdfF5S9TFZbjgnD+wJmO8aSwkqk5aepPUaGsuUveE+n5u0tnoIRKgqwRHGfojJsVhoN3xlzs92FsDxxi9DpoP2lMgXsu2VqzJuolQvStDZ3zg8KhjZ6WewFJWoDY5dsnuQW5y+VnhM7ZuOnagQxf9O6bp9bcfUwD/WYjkW7//KUpku7qwAE18C6NQuusRgjRu3fmfiov33WwuWb+Oxgoam+IIQlzIMG44yUxykfuK4UM5+rSFqvd6My5dxZGRzbyA319kAK47KB6kI+QZSuxKdICrpWfi/EP0evePzMCAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>port 3 to 1</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1RTU/DMAw9dxL/wTIHQLB+QTU6NSA4c+AfoLKlnUWaVEloO349TssQB3Kwk5cXPz+nepw6BYO0jowWmMUpgtQ7syfdCvz0zfoeHx/OVpUb2r+0HOG9dvLVmoaUFOhJHxFoL/CFBqmUecvwbBUBV9dO4MH7fpsk4zjG421sbJvkaZomXBQXynZSpD/+I2ZlWSbzLVMFpv2EcPzJI+39QWBehMNBUnvwAouST0F7IDk+m/AGUsgLKEoEwx4aZUaBbmeNUrP81vX1jk30VjppB4nBcMshWmJUeTl58LbWrjG2E9jV3tJ0mUEozTHmJllgExdXCI3Rft3UHSnu8+LJUq0uflBHX6yTheYfrqsklF0E2J8EHqUSqI2WCM5b88Hc83ReJ2B9svwLdOSlVcQpFGY/mUDug4fEm+KOgZzp6YzkM5Iskr1Rx9Zo6A1pz3+U3cfFTbGBJWeQ5yHfQRQtL6okDOMU+es4fwNVhLa0PwIAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>velocity at port 1</TITLE>
+         <VARNAME>vdup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>m/s</UNITS>
+         <EXPRESS2>@_3_2</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>displacement port 1</TITLE>
+         <VARNAME>xdup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>m</UNITS>
+         <EXPRESS2>@_3_3</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>force at port 1</TITLE>
+         <VARNAME>force</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>N</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>signal output</TITLE>
+         <VARNAME>xsig</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>r2*(c1*@_3_3-r1)</EXPRESS2>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>5</SUB_ID>
+         <TITLE>force at port 3</TITLE>
+         <VARNAME>fordup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>N</UNITS>
+         <EXPRESS2>@_1_3</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>6</SUB_ID>
+         <TITLE>velocity at port 3</TITLE>
+         <VARNAME>v</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>7</SUB_ID>
+         <TITLE>displacement port 3</TITLE>
+         <VARNAME>x</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        H4sIAAAAAAACCu2ZzXKbMBCA73kKjXpIezBI4j9jnGkPPaW3dqa3DLHBVoLBA0rs9OkrCQwSxk1b3GlNygFrJa3G+rTaXYnp9W6dgqe4KGmehRAbCII4m+cLmi1D+OXzx4kPr2cX0/JpCZ5ovP2Q70KIAALEAU4AAdfOyhCuGNtcmeZ2uzW2lpEXS5MghEyuVXe52qU0e+jriIMgMGUrnF0A/kw3EVuBRQg/AddACFhIvG8ADhoJAlZEWZnkxTqE64gVdPcWi1bUvHTxHQSUj5jf3cdzRiBIaJqGMMuzGIKSFflDHMI3SD77iskiKldRUUTPIdTq8iQpY8YpGEpn/v/jebQJ4d0jY1rtfU452DVlcdHUSyml/Icj18bJN9Gcsme5Em3tli7YKoRE1Jk1pThN6aaMwZwvCCaGA8FcqPmiVPC6QBae68IQXtYoeBV8JoBzcSHg3W1uBHUvzOe3iulyxQcnFTtUkRtoZ/aeW0NKiP1/+a/htHtpoh6aWKW5VObp1Bu3b/PaQbV5XQO3AsZSsivJN7xWqJRcUXWjjDBsIdx/yoB/j3gHrtwFLVBHSjVD4Q1ayZPCviM6EVJvhEgtw1dI+VLaI3UNW5GwlPY9W71hTP3xMXVVu6wEx7Aqs7S6LfZggsEIrdKT7jFQcyDbq/xjLTkGqZ0AUXq2esOYYjRCqIHmPXWofcBPgBE32YArnxFlA72bvt7nWkDXQn2PBxA6AzGTV4O5E4X0CKUnBHqy0OoNZG29GtZ6EqXlV3oyq+W5rdZA0PbrMWo9iOkBLtCMWk/Q9OStHWUgeWe85KfmsnM0RvJojJqTsf1LB2MkrB0pLLnINwd/WwF/61cKnnO+h2P8Etg/zpMc8rRHzJPFOwaSPGOTJFrTlKtcvi9olF7Cqrak3/icsL3Z/exu9w3kAGJ1MRI0Qoqzr1NTENRubuaPJbsltyVdZlHaf39Thzk15p3g7tU918vEHwQt4d6AnhwYQR2HlBZXhCitmyWyBZEWk6ahGWsgZ2/E/qAJXOotJPFVM65aUj6LhCn1nYWzBWy/Ai/LmBwhLylPsE6dJx0iIcEHF+bHj8xRclZG3nUJzdRvGj9aGXCnjE6CEZ8rRtL1FY3F9pquRQ5N98Azd5aizQ5u6tTgCPJJx2nU9K39GujI7SPIk+Tc3PMLyJ1D5HWLezJ/gVvelUzkF0xyQN377y9OgdEfp7+Yiu/os4vv6tKnQKsfAAA=
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>velocitysensor2_1</ALIAS>
+     <COMP_NAME>velocitysensor2</COMP_NAME>
+     <COMP_DISPLAYNAME>velocitysensor2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>linear velocity sensor</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.velocitysensor2</COMP_LIBRARY_ID>
+     <COMP_POS>291 160</COMP_POS>
+     <COMP_DEPTH>205</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 25
+        #define icon_height 59
+        static unsigned char icon_bits[] = {
+        0x00,0x10,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x10,0x00,
+        0x00,0x00,0x38,0x00,0x00,0x00,0x28,0x00,0x00,0x00,0x44,0x00,0x00,0x00,0x44,
+        0x00,0x00,0x00,0xba,0x00,0x00,0x00,0xff,0x01,0x00,0xc0,0xef,0x07,0x00,0xe0,
+        0x00,0x0e,0x00,0x70,0x00,0x1c,0x00,0x30,0x00,0x18,0x00,0x18,0x00,0x30,0x00,
+        0x18,0x44,0x30,0x00,0x18,0x44,0x30,0x00,0x1c,0x28,0x70,0x00,0x0c,0x28,0x60,
+        0x00,0x1c,0x28,0x70,0x00,0x18,0x10,0x30,0x00,0x18,0x10,0x30,0x00,0x18,0x00,
+        0x30,0x00,0x30,0x00,0x18,0x00,0x70,0x00,0x1c,0x00,0xe0,0x00,0x0e,0x00,0xc0,
+        0xff,0x07,0x00,0x00,0xff,0x01,0x00,0x00,0x38,0x00,0x00,0xc0,0xff,0x07,0x00,
+        0xc0,0xff,0x07,0x00,0x00,0x00,0x00,0x00,0xf8,0xff,0x3f,0x00,0xf8,0xff,0x3f,
+        0x00,0x18,0x00,0x30,0x00,0x18,0x00,0x30,0x00,0x1f,0x00,0xf0,0x01,0x18,0x00,
+        0x30,0x00,0x18,0x00,0x30,0x00,0xf8,0xff,0x3f,0x00,0xf8,0xff,0x3f,0x00,0x00,
+        0x00,0x00,0x00,0xc0,0xff,0x07,0x00,0xc0,0xff,0x07,0x00,0x00,0x11,0x01,0x00,
+        0x80,0x88,0x00,0x00,0x40,0x44,0x04,0x00,0x00,0x22,0x02,0x00,0x00,0x11,0x01,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x30,0x00,0x18,0x00,0x30,0x00,
+        0x38,0x00,0xfc,0xfc,0x7f,0x00,0xfc,0xfc,0x7f,0x00,0x30,0x00,0x38,0x00,0x30,
+        0x00,0x18,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>25 37</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>7</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>13 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>6</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 37</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>3</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>700</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>MECVS0A</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>10</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>velocity sensor with offset and gain (displacement at ports)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <R_STORES_NUMBER>1</R_STORES_NUMBER>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>8</SUB_ID>
+        <TITLE>offset to be subtracted from velocity</TITLE>
+        <VARNAME>offset</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>m/s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>9</SUB_ID>
+        <TITLE>gain for signal output</TITLE>
+        <VARNAME>gain</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>s/m</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>10</SUB_ID>
+        <TITLE>sign convention: positive from</TITLE>
+        <VARNAME>conv</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>port 1 to 3</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1RQW7bMBA8K0D+sNgekqKxJMphHRligvacQ39QKDYlL0KRAslKcl/fpRUXPVSHHexqOMNZNi/LYGDSPpCzCkVeImh7cEeyvcJfsds84cvz7U0Tpv5fWoXw1gb9w7uOjFYYyZ4R6KjwlSZtjPsp8PYmA1a3QeEpxnFfFPM85/M2d74vqrIsCxbFlbJfDNn3/xFFXdfF5S9TFZbjgnD+wJmO8aSwkqk5aepPUaGsuUveE+n5u0tnoIRKgqwRHGfojJsVhoN3xlzs92FsDxxi9DpoP2lMgXsu2VqzJuolQvStDZ3zg8KhjZ6WewFJWoDY5dsnuQW5y+VnhM7ZuOnagQxf9O6bp9bcfUwD/WYjkW7//KUpku7qwAE18C6NQuusRgjRu3fmfiov33WwuWb+Oxgoam+IIQlzIMG44yUxykfuK4UM5+rSFqvd6My5dxZGRzbyA319kAK47KB6kI+QZSuxKdICrpWfi/EP0evePzMCAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>port 3 to 1</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1RTU/DMAw9dxL/wTIHQLB+QTU6NSA4c+AfoLKlnUWaVEloO349TssQB3Kwk5cXPz+nepw6BYO0jowWmMUpgtQ7syfdCvz0zfoeHx/OVpUb2r+0HOG9dvLVmoaUFOhJHxFoL/CFBqmUecvwbBUBV9dO4MH7fpsk4zjG421sbJvkaZomXBQXynZSpD/+I2ZlWSbzLVMFpv2EcPzJI+39QWBehMNBUnvwAouST0F7IDk+m/AGUsgLKEoEwx4aZUaBbmeNUrP81vX1jk30VjppB4nBcMshWmJUeTl58LbWrjG2E9jV3tJ0mUEozTHmJllgExdXCI3Rft3UHSnu8+LJUq0uflBHX6yTheYfrqsklF0E2J8EHqUSqI2WCM5b88Hc83ReJ2B9svwLdOSlVcQpFGY/mUDug4fEm+KOgZzp6YzkM5Iskr1Rx9Zo6A1pz3+U3cfFTbGBJWeQ5yHfQRQtL6okDOMU+es4fwNVhLa0PwIAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>velocity at port 1</TITLE>
+         <VARNAME>vdup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>m/s</UNITS>
+         <EXPRESS2>@_3_2</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>displacement port 1</TITLE>
+         <VARNAME>xdup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>m</UNITS>
+         <EXPRESS2>@_3_3</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>force at port 1</TITLE>
+         <VARNAME>force</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>N</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>signal output</TITLE>
+         <VARNAME>vsig</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>r2*(c1*@_3_2-r1)</EXPRESS2>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>5</SUB_ID>
+         <TITLE>force at port 3</TITLE>
+         <VARNAME>fordup</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>N</UNITS>
+         <EXPRESS2>@_1_3</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>6</SUB_ID>
+         <TITLE>velocity at port 3</TITLE>
+         <VARNAME>v</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>7</SUB_ID>
+         <TITLE>displacement at port 3</TITLE>
+         <VARNAME>x</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        H4sIAAAAAAACCu2ay3KbMBSG93kKjbJIuwAkcTHKGGfaRVftru02Q2ywlWDwgBI7ffoKcZOw3WSKp61JWYCOLhh9nPPrWPb0ZrdOwFOUFyxLA4hNBEGUzrMFS5cB/Pb1k+HDm9nFtHhagicWbT9muwAigABxgUshEKPTIoArzjfXlrXdbs2tbWb50iIIIUuMqrtc7xKWPhzqiCmllmyFswsgjmkezTkoPwaCZ3nesgVfBdCGYBWx5YqL54Qgr3rkVReeh2kRZ/k6gOuQ52z3DpneBCAToeqE5QmbLgI2Fef3ELBFALO7e/Fp2EY+BDFLkgBeInlUppFtwjnjz5KMqCt4nj1ESqeqwliExSrM81B01OqyOC4i8bxIGW2IuUbzcBPAu0fOtdr7jImXsGY8ytt6aSVMXALoqLc5+GhGzUrWWX8KKNkDSigdMdBNyFdATPYL8EoKtgTyGWDaWocA4pZdB7A1NXykYZdmafTXIWH0akpEpRQlCdsUEZgLx8LCRSCYl8P8slQ6G5WF57owhJc9Cl5NmHoyTB3SxilWApW8HKiv5+acb4yil2J0qczTrZeWXvDiiYkRcKgavY6say3H9KUlr23Pbtww/t4/5be/B/qQIDpOBcpTGXoSYa9lKMHJ+AjWnqd7pW960pLXXttwP/RHSNE2bYWUL63a+bBrUsVC0mp6duOGMaUjZEqk7tXcNPGkpqMwdKTV8O1GDSOK0fiQan5ZiaJXVjVGE/dIxn3drxs0ECgeoY/qK7W+ilN1ceppgq4X3V0GIm5T+UtPHiNKsfrkD61Njf/quZWed3XjBrK23wzrg7mUv6chPXXxT6MazttxaU12NUX21CRN92dtlVRuMRC7+2aw68mEnp7pqZuWaHTDBpL2xkt6ai3rAo92HMRZyo04XLNEjL36kLMwuYJVbcF+ROXWw2b3Wpq+SVxA7P5eIMEj3AmcfZ9aJUFts2H+WPBbcluwZRom8FgK7QonbZXCrQAO3C6cnOv+1y9FQLChKiinDH0pAUqLXNW0bnaVZAhvbBvaew3kPOYfCVphUDfOiKe6cdWSiFnEXKnvvTinhO1X4GUZkyPkJWUD69RFIl6urHhvj/f4t78wPisn70tCO/XPjY7W3/J6ZXQSjPhcMZK+VrQee9B1bbLvunvK3HsVqNFjgVyW8RHkRk80avp28w505M4R5HF8bvL8AnJ3H3nd4p1ML3DHu7KJ/NGN7FGf/NeLU2D0x6kX0/LPCbOLn59yKD0AIQAA
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>rotary2signal2_3</ALIAS>
+     <COMP_NAME>rotary2signal2</COMP_NAME>
+     <COMP_DISPLAYNAME>rotary2signal2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>
+      conversion between rotary
+      variables and signal variables
+      (alternative)
+     </COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.rotary2signal2</COMP_LIBRARY_ID>
+     <COMP_POS>91 279</COMP_POS>
+     <COMP_DEPTH>206</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0xc0,0x64,0x00,0xa0,0x00,0xc0,0x64,0x00,0x40,0x00,0xc0,0x64,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x60,0x00,0xff,0xff,0x1f,0x60,
+        0xc0,0xff,0xff,0x7f,0x60,0xe0,0x00,0x00,0xe0,0x60,0x30,0x00,0x00,0x80,0x21,
+        0x18,0x00,0x00,0x00,0x63,0x18,0x00,0x00,0x00,0x23,0x0c,0x00,0x00,0x00,0x26,
+        0x0c,0x0e,0x00,0x00,0x26,0x0c,0xf0,0x20,0x00,0x66,0x0c,0x40,0x20,0x00,0x26,
+        0x06,0xf8,0xe0,0x0f,0x6c,0x0c,0x40,0x20,0x00,0x26,0x0c,0xf0,0x20,0x00,0x26,
+        0x0c,0x0e,0x00,0x00,0x26,0x0c,0x00,0x00,0x00,0x06,0x18,0x00,0x00,0x00,0x63,
+        0x18,0x00,0x00,0x00,0x63,0x30,0x00,0x00,0x80,0x21,0xe0,0x00,0x00,0xe0,0x60,
+        0xc0,0xff,0xff,0x7f,0x40,0x00,0xff,0xff,0x1f,0x60,0x00,0x82,0x00,0x01,0x20,
+        0x00,0x44,0x00,0x01,0x60,0x00,0x44,0x80,0x03,0x60,0x00,0x28,0x80,0x03,0x60,
+        0x00,0x38,0x40,0x05,0x20,0x00,0x10,0x40,0x05,0x60,0x00,0x10,0x20,0x09,0x20,
+        0x00,0x10,0x00,0x01,0x20,0x00,0x10,0x00,0x01,0x60,0x00,0x10,0x00,0x01,0x60,
+        0x00,0x10,0x00,0x01,0x60,0x00,0x10,0x00,0x01,0x20,0x00,0x10,0x00,0x01,0x40,
+        0x00,0x10,0x00,0x01,0x20
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>2</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 13</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>7</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 25</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>8</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>49 19</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>2</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>708</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>TWSG02</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>conversion between rotary variables and signal variables (alternative)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>output angular velocity signal port 1</TITLE>
+         <VARNAME>wout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>@_3_2</EXPRESS2>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input torque signal at port 2</TITLE>
+         <VARNAME>tin</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>output torque port 3</TITLE>
+         <VARNAME>tout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>Nm</UNITS>
+         <EXPRESS2>@_2_1</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>input angular velocity at port 3</TITLE>
+         <VARNAME>win</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>splitter2p2_1</ALIAS>
+     <COMP_NAME>splitter2p2</COMP_NAME>
+     <COMP_DISPLAYNAME>splitter2p2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>signal duplication (alternative)</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.splitter2p2</COMP_LIBRARY_ID>
+     <COMP_POS>288 129</COMP_POS>
+     <COMP_DEPTH>207</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 31
+        #define icon_height 31
+        static unsigned char icon_bits[] = {
+        0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,
+        0x00,0x00,0xc0,0x01,0x00,0x00,0x40,0x01,0x00,0x00,0x20,0x02,0x00,0x00,0x20,
+        0x02,0x00,0x00,0xf0,0x07,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,
+        0x80,0x00,0x00,0x10,0x80,0x40,0x00,0x60,0x80,0xc0,0x01,0x80,0xc1,0x41,0x06,
+        0xff,0xff,0x7f,0x7c,0x80,0xc1,0x41,0x06,0x60,0x00,0xc0,0x01,0x10,0x00,0x40,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>6</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>16 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>8</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>31 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>16 31</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>4</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>716</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SPLT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>splitter junction</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>in3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>zeroforcesource_1</ALIAS>
+     <COMP_NAME>zeroforcesource</COMP_NAME>
+     <COMP_DISPLAYNAME>zeroforcesource</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>zero force source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.zeroforcesource</COMP_LIBRARY_ID>
+     <COMP_POS>316 191</COMP_POS>
+     <COMP_DEPTH>208</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 11
+        #define icon_height 19
+        static unsigned char icon_bits[] = {
+        0x20,0x20,0x20,0x20,0x20,0x30,0xfe,0x63,0xfe,0x7b,0x06,0x33,0x06,0x2b,0x06,
+        0x33,0x06,0x63,0x06,0x7b,0x06,0x33,0x06,0x2b,0x06,0x33,0x06,0x3b,0x06,0x7b,
+        0xfe,0x33,0xfe,0x2b,0x00,0x30,0x00,0x38
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>4</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 6</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>lshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>4</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>717</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>F000</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>1</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>zero force source</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>force (always zero)</TITLE>
+         <VARNAME>fzero</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>5</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>N</UNITS>
+         <MIN_VALUE>0.00000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>0.00000000000000e+00</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+         <VALUE>0.00000000000000e+00</VALUE>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>splitter2p2</ALIAS>
+     <COMP_NAME>splitter2p2</COMP_NAME>
+     <COMP_DISPLAYNAME>splitter2p2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>signal duplication (alternative)</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.splitter2p2</COMP_LIBRARY_ID>
+     <COMP_POS>288 98</COMP_POS>
+     <COMP_DEPTH>209</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 31
+        #define icon_height 31
+        static unsigned char icon_bits[] = {
+        0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,
+        0x00,0x00,0xc0,0x01,0x00,0x00,0x40,0x01,0x00,0x00,0x20,0x02,0x00,0x00,0x20,
+        0x02,0x00,0x00,0xf0,0x07,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,
+        0x80,0x00,0x00,0x10,0x80,0x40,0x00,0x60,0x80,0xc0,0x01,0x80,0xc1,0x41,0x06,
+        0xff,0xff,0x7f,0x7c,0x80,0xc1,0x41,0x06,0x60,0x00,0xc0,0x01,0x10,0x00,0x40,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>6</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>16 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>9</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>31 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>16 31</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>6</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>22867</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SPLT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>splitter junction</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>in3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>splitter2p2_2</ALIAS>
+     <COMP_NAME>splitter2p2</COMP_NAME>
+     <COMP_DISPLAYNAME>splitter2p2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>signal duplication (alternative)</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.splitter2p2</COMP_LIBRARY_ID>
+     <COMP_POS>288 67</COMP_POS>
+     <COMP_DEPTH>210</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 31
+        #define icon_height 31
+        static unsigned char icon_bits[] = {
+        0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,
+        0x00,0x00,0xc0,0x01,0x00,0x00,0x40,0x01,0x00,0x00,0x20,0x02,0x00,0x00,0x20,
+        0x02,0x00,0x00,0xf0,0x07,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,
+        0x80,0x00,0x00,0x10,0x80,0x40,0x00,0x60,0x80,0xc0,0x01,0x80,0xc1,0x41,0x06,
+        0xff,0xff,0x7f,0x7c,0x80,0xc1,0x41,0x06,0x60,0x00,0xc0,0x01,0x10,0x00,0x40,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>6</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>16 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>4</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>31 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>16 31</PORT_POS>
+       <PORT_FACE>1</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>8</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>22870</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SPLT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>splitter junction</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>in3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>constant_45</ALIAS>
+     <COMP_NAME>constant</COMP_NAME>
+     <COMP_DISPLAYNAME>constant</COMP_DISPLAYNAME>
+     <COMP_LIBRARY_ID>sig.constant</COMP_LIBRARY_ID>
+     <COMP_POS>118 222</COMP_POS>
+     <COMP_DEPTH>211</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 40
+        #define icon_height 29
+        static unsigned char icon_bits[] = {
+        0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x00,0x01,0x00,0x08,0x00,0x00,0x02,0x00,
+        0x08,0x00,0x00,0x02,0x00,0x04,0x00,0x00,0x04,0x00,0x02,0x00,0x00,0x08,0x00,
+        0x02,0x20,0x00,0x08,0x00,0x02,0x20,0x00,0x08,0x00,0x01,0x20,0x00,0x30,0x00,
+        0x01,0x20,0x02,0xd0,0x00,0x01,0x20,0x01,0x10,0x03,0x01,0xa0,0x00,0x10,0xfe,
+        0x01,0x60,0x00,0x10,0x03,0x01,0xa0,0x00,0xd0,0x00,0x01,0x20,0x01,0x30,0x00,
+        0x02,0x20,0x02,0x08,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+        0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+        0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+        0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>4</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>15 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>22883</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>CONS00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>28</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>constant signal</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>constant value</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <TUNABLE>True</TUNABLE>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <HISTORY_VARIABLE>k0GEN</HISTORY_VARIABLE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IVARS_LIST>
+       <IVAR>
+        <SUB_ID>28</SUB_ID>
+        <TITLE>constant value - Linked variable</TITLE>
+        <VARNAME>k0GEN</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <TYPE>10</TYPE>
+        <SAVE_VALUE>1</SAVE_VALUE>
+        <DIMENSION>1</DIMENSION>
+        <UNITS>null</UNITS>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <DEF_VALUE>0</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+       </IVAR>
+      </IVARS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>24</SUB_ID>
+         <TITLE>output</TITLE>
+         <VARNAME>out</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <LINES_LIST>
+    <LINE>
+     <ALIAS>h2port_1</ALIAS>
+     <LINE_TYPE>3</LINE_TYPE>
+     <CIRCUIT_SCOPE_ID>657</CIRCUIT_SCOPE_ID>
+     <LINE_POINTS>
+      223,196 266,196
+     </LINE_POINTS>
+     <LINE_START_TYPE>0</LINE_START_TYPE>
+     <LINE_END_TYPE>0</LINE_END_TYPE>
+     <LINE_START_ENTITY>0</LINE_START_ENTITY>
+     <LINE_START_PORT>4</LINE_START_PORT>
+     <LINE_END_ENTITY>3</LINE_END_ENTITY>
+     <LINE_END_PORT>2</LINE_END_PORT>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DIRECT</SUB_NAME>
+      <SUB_ID_MAX>7</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>Direct connection</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>force at port 3</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>N</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>velocity at port 3</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>displacement port 3</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>m</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>vehicle linear velocity at port 5</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>5</SUB_ID>
+         <TITLE>vehicle linear displacement at port 5</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>6</SUB_ID>
+         <TITLE>vehicle linear acceleration at port 5</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>m/s/s</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>7</SUB_ID>
+         <TITLE>external force at port 5</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>N</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>1</CIR_PORTS_OVER_FRAMEWORK>
+     </SUBMODEL>
+    </LINE>
+    <LINE>
+     <ALIAS>rotary_2</ALIAS>
+     <LINE_TYPE>4</LINE_TYPE>
+     <CIRCUIT_SCOPE_ID>667</CIRCUIT_SCOPE_ID>
+     <LINE_POINTS>
+      139,297 197,297 197,221
+     </LINE_POINTS>
+     <LINE_START_TYPE>0</LINE_START_TYPE>
+     <LINE_END_TYPE>0</LINE_END_TYPE>
+     <LINE_START_ENTITY>5</LINE_START_ENTITY>
+     <LINE_START_PORT>2</LINE_START_PORT>
+     <LINE_END_ENTITY>0</LINE_END_ENTITY>
+     <LINE_END_PORT>3</LINE_END_PORT>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>DIRECT</SUB_NAME>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>Direct connection</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>front wheel rotary velocity at port 4</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>front axle torque at port 4</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>output torque port 3</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>input angular velocity at port 3</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>1</CIR_PORTS_OVER_FRAMEWORK>
+     </SUBMODEL>
+    </LINE>
+   </LINES_LIST>
+   <TEXTS_LIST>
+    <TEXT>
+     <TEXT_POS>101 123</TEXT_POS>
+     <TEXT_ORIENTATION>0</TEXT_ORIENTATION>
+     <HTML>
+      &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+      &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+      p, li { white-space: pre-wrap; }
+      &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+      &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg'; font-weight:600; color:#000000;&quot;&gt;VEHICLE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+     </HTML>
+    </TEXT>
+   </TEXTS_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+00</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+    <GLOBAL_PARAMS_LIST>
+     <GLOBALPARAM VALUE="5" GLOB_EXPOSED="0" GLOB_PARAM_NAME="gear_ratio" TITLE="gear_ratio" TYPE="Real" UNITS="null"/>
+    </GLOBAL_PARAMS_LIST>
+   
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>

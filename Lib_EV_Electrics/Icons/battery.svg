@@ -1,0 +1,56 @@
+<svg xmlns:amesim="vnd.lms.imagine.amesim" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+ <amesim:metadata>
+  <ICON name="battery">
+   <ICON_DESCRIPTION>battery</ICON_DESCRIPTION>
+  </ICON>
+  <PORTS>
+   <PORT y="190" type="signal" x="55" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="54.1169 162.993 19.6466 7.05078" label="Unet" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="190" type="signal" x="132" face="1">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="131.089 162.947 15.8745 7.07397" label="iNet" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="150" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="169.496 146.023 0.992676 6.95337" label="i" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="100" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="165.521 96.1184 4.99585 7.05078" label="U" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="50" type="signal" x="190" face="3">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="166.282 46.0465 4.3186 6.90698" label="E" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="1" type="signal" x="100" face="0">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="98.8572 20.2438 18.4907 7.19458" label="SOC" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+   <PORT y="95" type="signal" x="1" face="2">
+    <PORT_BITMAP>$AME/Icons/signal.svg</PORT_BITMAP>
+    <PORT_DECORATION visible="1" rect="20.1278 90.9514 29.4222 7.33838" label="vehicle" orientation="0">
+     <PORT_DECORATION_FONT>MS Shell Dlg 2,-1,10,5,50,0,0,0,0,0</PORT_DECORATION_FONT>
+    </PORT_DECORATION>
+   </PORT>
+  </PORTS>
+ </amesim:metadata>
+ <g id="object1">
+  <image y="0" transform="matrix(1.00 0.00 0.00 1.00 0.00 0.00)" width="190" height="190" id="object2" x="0" xlink:href="data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAgpJREFUWIXtmDFOwzAUhp0gpCIhwRFQxgycgQHEBYgyRT1GxqBOKMfIFHnwGXqJiKVRGFGHTiAYWhnbieNnYlctaQNU/S1oxMvL1z+/eY2KENClOjxBx0K3cEENmrLCCBl086PC+a1B6y/loO7aJQMN4+PMYMPZ9b0awMfe8xjIxyHkkVCZR9AYcAI9DxfLc/GjxrinzcXvqM5w6xO1DlE4XTV/d8opLLg+xp4QO7gCjDEbHx9xnCR8jrwBBjsP48zDQjnIg3c8x2EcVOxgCfLw57yBdRCCSQ4YSc1g4h0dhq8zRuKeAS1BwZ8DvX5jqI7vDKmWwd52VJVqlSAPnwhhtkjHxxYM9jquz12xn4rOoA9Tx/aMOo9KrRnMYwHU00cRtAo1H3If8j2mMWCHxnhSmsA8NIaWxyRT6sFY6yP1uTD/5XUZ45WFgXONIfIQHVFRM2AeaYYzvuH56jKS940Y9LP1IRkdH9jmg4J7hQAjxbY8yrIw58F8yDz4hGsZIaVmHynG5jyistzWx4b3ql8etn2V2/ZVYdtXwobBR2jbu+kf/f+w+DAyTJNB5SEZMI/MU+o3ryI2ctu1h7kr8hATV6iiWh5s3JIFmYuX//D5QaUPRgJ5XBNuQIgsXgAjDMB6+O3nqyGed8Uz3AA+DuF5d4g8hvKxqzzQMD6sXw4Iue1Fmq8UjoVu4Quj8Lo/nqMvfgAAAABJRU5ErkJggg=="/>
+ </g>
+ <image y="0" transform="matrix(1.29 0.00 0.00 1.29 12.34 12.11)" width="128" height="128" id="object103" x="0" xlink:href="data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5dJREFUeNrsnLFPE1EYwK+IFQpuHYCYoDGaOhkGE9lcYGFmcNF/wEETSIhDh7p29B9QBxdXpiboBolTJwkMSCBosI0MDbRHUT96cja9O2naXu++198vDTnevdJ373ff974e7SXK5bIF0THEFCAAAYAABAACEAAIQAAgAAGAAAQAAhAACEAAIAABgAAEAAIQAAhAACAAAYAAYxgO+wWefXrzfmu9ueXx3dnXj57GcC4iGepQ/w5p//D8YVnSIu2xnv0+DjVcAS0n1KXtERLVUFkD9K8Bx8fHuVxud3fXbSmVSn+3Fm8HPWtubs7ZSKfT7lOc7bBpfq0OhuowPT2dzWZTqVT0EdAy+y5nwwmrdvrv4XDx6/neAFZWVsLe6H6ocshy4LGIAN/ZFw4nk9aPn62tFy2yd3KvFpM80NlQgw48LmvA4cTVjvf2W0B0Qw3xfcD9zxUtK2GEQ010/y1Jd40aQAqFAmXowJehU1NTzCMRMMAR0MzBwcH/A8WMDkQAKQjimYIujVAzOhABpCBQVwUZQ28TFBFgVgQ45PN5IydraWmJNYAIaJvNzU1jpimTyVAFUYYCAhAAehbhUFmtfV2t7njbb1wZfzn+gAgIl5Pf9bXanu+uJ6P3SEGhs2bviwNv+8LILYkABIRL+Vc1KPksXLvJItyH7L9jRvJRKUBO/w37uxnJR6WAdydfjEk++gRs14+26kfGJB99Anyzv97ko+yNWPG05Hv6S0XkLYoeJie0hIWaCPhQ3W6zp6LZVxMBUvlI/dNOT5l6EUAK6vGFh6Dav5nRxPDiyB1ds69DgMzsq+uzzdHw1lOMSp8XYzMaV2N9V0M3Tr953wdI5lFaCykTICtBSy0k8y7nvkQAZWg/+GjvtRQ8kvf1zr4+AetNF4J0lZsmCJDl1/03gLpy0wgBjeVXabmpXoCz/OotN9ULkOVXdbmpXsD+WUV1ualewPOxGctE+GAWAhAAZq4B4X2mngiAeEdAGN+lIgJAQwRw7yAiYLAjgPsFEQGkIEAAAiC6MtS2bWc7mUx6O7g3IPfdK891OvjubXMZDOpgNwjq4OySn/LS3g7uQcVRQEvN4E6xby3Rzd4uiefAepCC5ufnBzN7yIFXKt3edLoH9462Ghd/isXioM3+8vJy93+nNwKAKggBgAAEAAIQAAhAACAAAYAABAACEAAIQAAgAAGAAAQAAhAACEAAIAABgAAEgPVHgAEAUu6Osnp7fhkAAAAASUVORK5CYII="/>
+ <rect rx="0" stroke-dashoffset="0.00" ry="0" transform="matrix(1.01 0.00 0.00 1.00 11.72 12.50)" stroke-miterlimit="4.00" width="164" y="0" stroke-width="0.99" id="object104" stroke-linejoin="miter" stroke="#000000" stroke-linecap="butt" stroke-dasharray="" fill="none" x="0" height="165" stroke-opacity="1.00" fill-rule="nonzero"/>
+</svg>

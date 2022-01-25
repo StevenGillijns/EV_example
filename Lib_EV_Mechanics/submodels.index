@@ -1,0 +1,7 @@
+./submodels
+Vehicle_1D
+&VEHICLE_1D Lib_EV_Mechanics
+Transmission
+&TRANSMISSION_FIXED_RATIO Lib_EV_Mechanics
+Vehicle_2D
+&VEHICLE_2D Lib_EV_Mechanics

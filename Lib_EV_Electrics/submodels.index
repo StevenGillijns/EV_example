@@ -1,0 +1,14 @@
+./submodels
+Battery
+&BATTERY_TH_LIION_NMCC Lib_EV_Electrics
+&BATTERY_TH_LIION_NCAC Lib_EV_Electrics
+&BATTERY_TH_LIION_LMOC Lib_EV_Electrics
+Electric_Motor
+&EM_208NM_EFFICIENT Lib_EV_Electrics
+&EM_208NM_EFFICIENT_ORIG Lib_EV_Electrics
+&EM_215NM_INEFFICIENT Lib_EV_Electrics
+Boardnet
+&BOARDNET_GENERIC_CONSUMERS Lib_EV_Electrics
+&BOARDNET_BOUNDERY_CONDITION Lib_EV_Electrics
+Boardnet_Cooling
+&BOARDNET_COOLING Lib_EV_Electrics

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>TRANSMISSION_FIXED_RATIO</SC_SUB_NAME>
+  <CATNAME>Lib_EV_Mechanics</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>2 1 190 124 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>2 0 190 112 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>1 0 68 80 2 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>1 1 68 92 2 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>ratio</ALIAS>
+     <COMP_NAME>reducer</COMP_NAME>
+     <COMP_DISPLAYNAME>reducer</COMP_DISPLAYNAME>
+     <COMP_POS>116 77</COMP_POS>
+     <COMP_DEPTH>201</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 49
+        #define icon_height 25
+        static unsigned char icon_bits[] = {
+        0x00,0x00,0x00,0x00,0x30,0x19,0x00,0x00,0x00,0x00,0x00,0x30,0x19,0x00,0x00,
+        0x00,0x00,0x00,0x30,0x19,0x00,0x00,0x00,0x00,0x00,0x30,0x18,0x20,0x00,0x00,
+        0x00,0x00,0x30,0x18,0x78,0x00,0x00,0x00,0x00,0x30,0x18,0x30,0x00,0x00,0xf0,
+        0x1f,0x30,0x18,0x2c,0x00,0x00,0xf0,0x1f,0x30,0x18,0x38,0x00,0x00,0x30,0x18,
+        0xf0,0x1f,0x30,0xfe,0xff,0xff,0xff,0xff,0xff,0x78,0xfe,0xff,0xff,0xff,0xff,
+        0xff,0x30,0x46,0xc4,0x88,0x88,0x46,0xc4,0x2c,0x26,0xe2,0x11,0x11,0x27,0xe2,
+        0x30,0x16,0xd1,0x22,0x22,0x16,0xd1,0x30,0x8e,0xc8,0x44,0x44,0x8e,0xc8,0x78,
+        0x46,0xc4,0x88,0x88,0x46,0xc4,0x30,0x26,0xe2,0x11,0x11,0x27,0xe2,0x2c,0xfe,
+        0xff,0xff,0xff,0xff,0xff,0x32,0xfe,0xff,0xff,0xff,0xff,0xff,0x30,0x30,0x18,
+        0x30,0x18,0x00,0x00,0x78,0x30,0x18,0xf0,0x1f,0x00,0x00,0x30,0x30,0x18,0xf0,
+        0x1f,0x00,0x00,0x2c,0x30,0x19,0x00,0x00,0x00,0x00,0x34,0x30,0x19,0x00,0x00,
+        0x00,0x00,0x72,0x30,0x19,0x00,0x00,0x00,0x00,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>2</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 9</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>25 41</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>2</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>118</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>RN001</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>5</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>gear ratio (velocity port 2 input)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>gear ratio</TITLE>
+        <VARNAME>alpha</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>gear_ratio</DEF_VALUE>
+        <VALUE>gear_ratio__TRANSMISSION_FIXED_RATIO_1</VALUE>
+        <MIN_VALUE>-1.00000000000000e+30</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+30</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>velocity at port 1</TITLE>
+         <VARNAME>w1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>rev/min</UNITS>
+         <EXPRESS2>r1*@_2_2</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>torque at port 1</TITLE>
+         <VARNAME>t1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>torque at port 2</TITLE>
+         <VARNAME>t2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>Nm</UNITS>
+         <EXPRESS2>r1*@_1_2</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>velocity at port 2</TITLE>
+         <VARNAME>w2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>rotary2signal2</ALIAS>
+     <COMP_NAME>rotary2signal2</COMP_NAME>
+     <COMP_DISPLAYNAME>rotary2signal2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>
+      conversion between rotary
+      variables and signal variables
+      (alternative)
+     </COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.rotary2signal2</COMP_LIBRARY_ID>
+     <COMP_POS>67 67</COMP_POS>
+     <COMP_DEPTH>202</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0xc0,0x64,0x00,0xa0,0x00,0xc0,0x64,0x00,0x00,0x00,0xc0,0x64,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x60,0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x20,
+        0x00,0xc0,0x60,0x00,0x20,0x00,0xc0,0x60,0x00,0x60,0x00,0xff,0xff,0x1f,0x60,
+        0xc0,0xff,0xff,0x7f,0x60,0xe0,0x00,0x00,0xe0,0x60,0x30,0x00,0x00,0x80,0x21,
+        0x18,0x00,0x00,0x00,0x63,0x18,0x00,0x00,0x00,0x23,0x0c,0x00,0x00,0x00,0x26,
+        0x0c,0x0e,0x00,0x00,0x26,0x0c,0xf0,0x20,0x00,0x66,0x0c,0x40,0x20,0x00,0x26,
+        0x06,0xf8,0xe0,0x0f,0x6c,0x0c,0x40,0x20,0x00,0x26,0x0c,0xf0,0x20,0x00,0x26,
+        0x0c,0x0e,0x00,0x00,0x26,0x0c,0x00,0x00,0x00,0x06,0x18,0x00,0x00,0x00,0x63,
+        0x18,0x00,0x00,0x00,0x63,0x30,0x00,0x00,0x80,0x21,0xe0,0x00,0x00,0xe0,0x60,
+        0xc0,0xff,0xff,0x7f,0x40,0x00,0xff,0xff,0x1f,0x60,0x00,0x82,0x00,0x01,0x20,
+        0x00,0x44,0x00,0x01,0x60,0x00,0x44,0x80,0x03,0x60,0x00,0x28,0x80,0x03,0x60,
+        0x00,0x38,0x40,0x05,0x20,0x00,0x10,0x40,0x05,0x60,0x00,0x10,0x20,0x09,0x20,
+        0x00,0x10,0x00,0x01,0x20,0x00,0x10,0x00,0x01,0x60,0x00,0x10,0x00,0x01,0x60,
+        0x00,0x10,0x00,0x01,0x60,0x00,0x10,0x00,0x01,0x20,0x00,0x10,0x00,0x01,0x20,
+        0x00,0x10,0x00,0x01,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>2</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 13</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 25</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>3</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>49 19</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>278</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>TWSG02</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>conversion between rotary variables and signal variables (alternative)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>output angular velocity signal port 1</TITLE>
+         <VARNAME>wout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>@_3_2</EXPRESS2>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input torque signal at port 2</TITLE>
+         <VARNAME>tin</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>output torque port 3</TITLE>
+         <VARNAME>tout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>Nm</UNITS>
+         <EXPRESS2>@_2_1</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>input angular velocity at port 3</TITLE>
+         <VARNAME>win</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>rev/min</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <COMP_TYPE>0</COMP_TYPE>
+     <ALIAS>rotary2signal1_1</ALIAS>
+     <COMP_NAME>rotary2signal1</COMP_NAME>
+     <COMP_DISPLAYNAME>rotary2signal1</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>
+      conversion between rotary
+      variables and signal variables
+     </COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>meca.rotary2signal1</COMP_LIBRARY_ID>
+     <COMP_POS>141 99</COMP_POS>
+     <COMP_DEPTH>203</COMP_DEPTH>
+     <CIR_COMP_ICON>
+      <CIR_ICON_IDENTITY>1</CIR_ICON_IDENTITY>
+      <ICON_MAP>
+       <ICON_MAP_FORMAT>xbm</ICON_MAP_FORMAT>
+       <ICON_MAP_DATA>
+        #define icon_width 37
+        #define icon_height 49
+        static unsigned char icon_bits[] = {
+        0x00,0xc0,0x64,0x00,0x00,0x00,0xc0,0x64,0x00,0x00,0x00,0xc0,0x64,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,
+        0x00,0xc0,0x60,0x00,0x00,0x00,0xc0,0x60,0x00,0x00,0x00,0xff,0xff,0x1f,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0xe0,0x00,0x00,0xe0,0x00,0x30,0x00,0x00,0x80,0x01,
+        0x18,0x00,0x00,0x00,0x03,0x18,0x00,0x00,0x00,0x03,0x0c,0x00,0x00,0x00,0x06,
+        0x0c,0x0e,0x00,0x00,0x06,0x0c,0xf0,0x20,0x00,0x06,0x0c,0x40,0x20,0x00,0x06,
+        0x06,0xf8,0xe0,0x0f,0x0c,0x0c,0x40,0x20,0x00,0x06,0x0c,0xf0,0x20,0x00,0x06,
+        0x0c,0x0e,0x00,0x00,0x06,0x0c,0x00,0x00,0x00,0x06,0x18,0x00,0x00,0x00,0x03,
+        0x18,0x00,0x00,0x00,0x03,0x30,0x00,0x00,0x80,0x01,0xe0,0x00,0x00,0xe0,0x00,
+        0xc0,0xff,0xff,0x7f,0x00,0x00,0xff,0xff,0x1f,0x00,0x00,0x10,0x20,0x08,0x00,
+        0x00,0x10,0x40,0x04,0x00,0x00,0x38,0x40,0x04,0x00,0x00,0x38,0x80,0x02,0x00,
+        0x00,0x54,0x80,0x03,0x00,0x00,0x54,0x00,0x01,0x00,0x00,0x92,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,0x00,0x10,0x00,0x01,0x00,
+        0x00,0x10,0x00,0x01,0x00
+        };
+       </ICON_MAP_DATA>
+      </ICON_MAP>
+      <CIR_PORT_HIDDEN>0</CIR_PORT_HIDDEN>
+     </CIR_COMP_ICON>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>8</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>49 13</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>49 25</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>-1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 19</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>rshaft</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <CIRCUIT_SCOPE_ID>284</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>TWSG01</SUB_NAME>
+      <SUB_DIR>$AME/libmec/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
+      <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
+      <SUB_LABEL>conversion between rotary variables and signal variables (W output port 3)</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input angular velocity signal port 1</TITLE>
+         <VARNAME>win</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>output torque signal port 2</TITLE>
+         <VARNAME>tout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>@_3_2</EXPRESS2>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <PORT_TAG>undefined</PORT_TAG>
+        <USE_REQUIRED>0</USE_REQUIRED>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>output angular velocity at port 3</TITLE>
+         <VARNAME>wout</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>rev/min</UNITS>
+         <EXPRESS2>@_1_1</EXPRESS2>
+        </EVAR>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>input torque port 3</TITLE>
+         <VARNAME>tin</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>Nm</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+      <CIR_PORTS_OVER_FRAMEWORK>0</CIR_PORTS_OVER_FRAMEWORK>
+      <SUBIDS_RESET>0</SUBIDS_RESET>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+00</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+    <GLOBAL_PARAMS_LIST>
+     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="gear ratio" VALUE="5" TYPE="Real" GLOB_PARAM_NAME="gear_ratio" UNITS="null"/>
+    </GLOBAL_PARAMS_LIST>
+   
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>
