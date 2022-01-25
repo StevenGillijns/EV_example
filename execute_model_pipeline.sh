@@ -1,2 +1,2 @@
 #!/bin/bash
-while true; do ./check_potentially_run.sh; sleep 5; done
+while true; do clear; ./check_potentially_run.sh; sleep 5; done
