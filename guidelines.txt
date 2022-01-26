@@ -1,1 +1,1 @@
-some guideline to use the scripts in order to execute the model pipeline
+some guideline on how to use the scripts 
