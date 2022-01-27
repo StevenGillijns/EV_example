@@ -6399,19 +6399,19 @@
     <LOOP>0</LOOP>
    </ANIMATION_PROPERTIES>
     <GLOBAL_PARAMS_LIST>
-     <GLOBALPARAM GLOB_PARAM_NAME="Tamb" TYPE="Real" TITLE="Temperature ambient" VALUE="20" UNITS="degreeC" Param_Id="1" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="SOC" TYPE="Real" TITLE="initial SOC" VALUE="100" UNITS="%" Param_Id="2" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Ns" TYPE="Real" TITLE="number of cells in series" VALUE="42" UNITS="null" Param_Id="3" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Np" TYPE="Real" TITLE="number of cells in parallel" VALUE="2" UNITS="null" Param_Id="4" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Ccell" TYPE="Real" TITLE="capacity cell" VALUE="33.1" UNITS="Ah" Param_Id="5" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Acell" TYPE="Real" TITLE="convective exchange area cell" VALUE="58800" UNITS="mm**2" Param_Id="6" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Mcell" TYPE="Real" TITLE="mass of material cell" VALUE="0.15" UNITS="kg" Param_Id="7" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="rhocell" TYPE="Real" TITLE="density of material" VALUE="2000" UNITS="kg/m**3" Param_Id="8" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Tmin" TYPE="Real" TITLE="minimum temperature" VALUE="-20" UNITS="degreeC" Param_Id="9" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Tmax" TYPE="Real" TITLE="maximum temperature" VALUE="60" UNITS="degreeC" Param_Id="10" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="Cp" TYPE="Real" TITLE=" specific heat of the material" VALUE="1000" UNITS="J/kg/K" Param_Id="11" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="lambda" TYPE="Real" TITLE="thermal conductivity of the material" VALUE="1.5" UNITS="W/m/K" Param_Id="12" GLOB_EXPOSED="0"/>
-     <GLOBALPARAM GLOB_PARAM_NAME="stype" TYPE="Real" TITLE="solid type" VALUE="2" UNITS="null" Param_Id="13" GLOB_EXPOSED="0"/>
+     <GLOBALPARAM Param_Id="1" TYPE="Real" GLOB_EXPOSED="0" VALUE="20" UNITS="degreeC" TITLE="Temperature ambient" GLOB_PARAM_NAME="Tamb"/>
+     <GLOBALPARAM Param_Id="2" TYPE="Real" GLOB_EXPOSED="0" VALUE="100" UNITS="%" TITLE="initial SOC" GLOB_PARAM_NAME="SOC"/>
+     <GLOBALPARAM Param_Id="3" TYPE="Real" GLOB_EXPOSED="0" VALUE="96" UNITS="null" TITLE="number of cells in series" GLOB_PARAM_NAME="Ns"/>
+     <GLOBALPARAM Param_Id="4" TYPE="Real" GLOB_EXPOSED="0" VALUE="2" UNITS="null" TITLE="number of cells in parallel" GLOB_PARAM_NAME="Np"/>
+     <GLOBALPARAM Param_Id="5" TYPE="Real" GLOB_EXPOSED="0" VALUE="33.1" UNITS="Ah" TITLE="capacity cell" GLOB_PARAM_NAME="Ccell"/>
+     <GLOBALPARAM Param_Id="6" TYPE="Real" GLOB_EXPOSED="0" VALUE="58800" UNITS="mm**2" TITLE="convective exchange area cell" GLOB_PARAM_NAME="Acell"/>
+     <GLOBALPARAM Param_Id="7" TYPE="Real" GLOB_EXPOSED="0" VALUE="0.15" UNITS="kg" TITLE="mass of material cell" GLOB_PARAM_NAME="Mcell"/>
+     <GLOBALPARAM Param_Id="8" TYPE="Real" GLOB_EXPOSED="0" VALUE="2000" UNITS="kg/m**3" TITLE="density of material" GLOB_PARAM_NAME="rhocell"/>
+     <GLOBALPARAM Param_Id="9" TYPE="Real" GLOB_EXPOSED="0" VALUE="-20" UNITS="degreeC" TITLE="minimum temperature" GLOB_PARAM_NAME="Tmin"/>
+     <GLOBALPARAM Param_Id="10" TYPE="Real" GLOB_EXPOSED="0" VALUE="60" UNITS="degreeC" TITLE="maximum temperature" GLOB_PARAM_NAME="Tmax"/>
+     <GLOBALPARAM Param_Id="11" TYPE="Real" GLOB_EXPOSED="0" VALUE="1000" UNITS="J/kg/K" TITLE=" specific heat of the material" GLOB_PARAM_NAME="Cp"/>
+     <GLOBALPARAM Param_Id="12" TYPE="Real" GLOB_EXPOSED="0" VALUE="1.5" UNITS="W/m/K" TITLE="thermal conductivity of the material" GLOB_PARAM_NAME="lambda"/>
+     <GLOBALPARAM Param_Id="13" TYPE="Real" GLOB_EXPOSED="0" VALUE="2" UNITS="null" TITLE="solid type" GLOB_PARAM_NAME="stype"/>
     </GLOBAL_PARAMS_LIST>
    
   </CIRCUIT>
