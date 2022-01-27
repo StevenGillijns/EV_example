@@ -1,1 +1,1 @@
-some guideline on how to use the scripts
+some guidelines on how to use the scripts
