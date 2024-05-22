@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE SUB>
-<SUB DOC_VERSION="2" AME_VERSION="2021.2" MAJ="20212" MIN="" PATCH="">
+<SUB DOC_VERSION="2" AME_VERSION="2022.1" MAJ="20221" MIN="" PATCH="">
 
  <SUPERCOMPONENT>
   <SC_SUB_NAME>EM_215NM_INEFFICIENT</SC_SUB_NAME>
@@ -65,7 +65,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>THSD00</SUB_NAME>
       <SUB_DIR>$AME/libth/submodels</SUB_DIR>
-      <SUB_ID_MAX>61</SUB_ID_MAX>
+      <SUB_ID_MAX>63</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal solid properties (generic)</SUB_LABEL>
@@ -202,9 +202,8 @@
         <TITLE>solid type index</TITLE>
         <VARNAME>soli</VARNAME>
         <VISIBILITY>True</VISIBILITY>
-        <USES_SC_GP>1</USES_SC_GP>
         <DEF_VALUE>motorSolidType</DEF_VALUE>
-        <VALUE>motorSolidType</VALUE>
+        <VALUE>motorSolidType__EM_215NM_INEFFICIENT_1</VALUE>
         <MIN_VALUE>1</MIN_VALUE>
         <MAX_VALUE>99</MAX_VALUE>
        </IPARAM>
@@ -216,7 +215,7 @@
         <DEF_VALUE>1</DEF_VALUE>
         <VALUE>1</VALUE>
         <MIN_VALUE>1</MIN_VALUE>
-        <MAX_VALUE>17</MAX_VALUE>
+        <MAX_VALUE>22</MAX_VALUE>
         <ENUM_LIST>
          <ENUM>
           <ENUM_STRING>user defined</ENUM_STRING>
@@ -368,6 +367,51 @@
            <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
            <ICON_MAP_DATA>
             H4sIAAAAAAACCo1R3WrDIBS+XqHvIGcX7WBJNFlJUmpLd1fYxWAPMLLUJDKjQV2S7umnWVk32EVFPB49fj/HzW5sBeqZNlxJCiTEgJgs1ZHLmsKHrYIMdtv5bGP6+ndZDOitMOxZq4oLRsFyeQLEjxSeeM+EUK8E5rMb5NClodBY262jaBiGcEhCpesoxhhHDhS+S9aj4PL9v0KS53k03bpSCrgbAZ3OceBH21BIcp80jNeNPWeeu+dseFT+DcIoyd0EpJyHSqiBgim1EmKiX5uuKJ2JTjPDdM/AG9astMjqQppK6dY59FtRWLYkebi698vdpCgg8Y+S+GESF7jLiyDieF2XBIXbahqAtHuXuHDyIfJ0lo1/6NrCaj4uCfLiCXKAK5Ihkk2slZI2qIqWCwew2GteiMX51PBP54T49mz3h5fDJvLIVzCkYZamKE6vhyeY4Au8/0wXvwDH4XYXUQIAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>polypropylene (PP)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1QX0/DIBB/dsm+w+V82ExsC21mxjK26LMP+wamdrQlUmgA285PL9RpNJEQDo6735/bH6dOwSCsk0ZzpClBELoyZ6kbju++TrZ4PCwXezc0v8tyhNfSiZM1tVSCo5f6giDPHJ/lIJQyLxSXixsI6NpxbL3vd1k2jmM6FqmxTZYTQrIAil8lu0lJ/fZfIWWMZfNvKOVI+gnhco2jPPuWY8HioxWyaf31FbkHKcYnE3uAQMHCRjDBQ63MyNFV1ig10+9cX1bBRG+FE3YQGA1bUXnwttSuNrYLDuNVlV6sKUs39/G4mxUllKSbHy05neUlDzH3LYkWCGFOiuNtPS8EGzpD1l5iyCKhF9Mfwq70Vk5rClE+BUpTxraQFzNvbbRP6rKTKgCsHq0s1eqadfIjeKF5mMLhdNpnETfix2mH+AmAgdlk8gEAAA==
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>polyethylene (PE)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1QX0/DIBB/dsm+w+V82EzsH9rMjGVs0cQ3H/wGBjvaEik0gG3npxfqNJpICAfH3e/P7Y9Tp2AQ1kmjGZI0RxC6MiepG4bvvk62eDwsF3s3NL/LCoRX7sSzNbVUgqGX+owgTwyf5CCUMi8El4srCOjaMWy973dZNo5jOpapsU1W5HmeBVD8KtlNSuq3/woJpTSbf0Mpw7yfEM6XOMqTbxmWND5aIZvWX16Re5BifDCxB3IoadgIJniolRkZusoapWb6net5FUz0VjhhB4HRsBWVB2+5drWxXXAYr4p7sSY03dzG42ZWlJA83fxoKcgsL7mLuW9JpEQIc1IMr+t5IdjQGbL2HEMWCb2Y/hB23Fs5rQlE+QQISSndQlHOvLXRPql5J1UAWN1bydXqknXyI3ghRZjC4flxn0XciB+nHeInf7yArvIBAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>polyurethane (PU)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1Q3U/DIBB/dsn+h8v54EzsB21mxjK26LMPe/HZYEdbIoUGsO3864U6jSYSwsFx9/u43WHqFAzCOmk0Q5LmCEJX5iR1w/Dd18kGD/vlYueG5ndZgfDKnThaU0slGHqpzwjyxPBJDkIp80JwubiCgK4dw9b7fptl4zimY5ka22RFnudZAMWvku2kpH77r5BQSrP5N5QyzPsJ4XyJozz5lmFJ46MVsmn95RW5BynGRxN7IIeSho1ggodamZGhq6xRaqbfup5XwURvhRN2EBgNW1F58JZrVxvbBYfxqrgXK0LT9V08bmdFCcnT9Y+WgszykvuY+5ZESoQwJ8Xwup4Xgg2dIWvPMWSR0IvpD2HHvZXTikCUT4CQlNINFOXMWxvtk5p3UgWAmwcrubq5ZJ38CF5IEaawPz7vsogb8eO0Q/wEZ+AjgPIBAAA=
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>polysulfone (PSU)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1QXWvDIBR9XqH/Qe4e2sESY0K7pdSW7XkPhbLn4VJNZEaDuiTdr59mZR8wEa/385xzt/uxVajn1kmjKZA0A8R1ZU5S1xTevUjuYb+bz7aur3+X5YBemeMHa4RUnIKX+gxInig8yZ4rZV4IzGdXKEzXjkLjfbfBeBiGdChSY2ucZ1mGw1D4KtmMSuq3/wpJWZZ4yoZSClk3Ajpf7CBPvqFQlNFpuKwbf/Eidi/58GhiD8pQUYYLyAQNQpmBgqusUWqC37iOVUFEZ7njtucQBVteeeQt004Y2waF8auY50tSpqvb+NxMjBJSfDPJ1xO5ZJ2ufgjFfNiSonAtpgPIhr4QtedocITzfPwD1zJv5bgkKJIn6C7NUF5MkMJonwjWShW6Fw9WMrW4RJ38CDJIHhawOxyftzhOjdPjpoP9BHigIhTuAQAA
+           </ICON_MAP_DATA>
+          </ICON_MAP>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>polytetrafluoroethylene (PTFE)</ENUM_STRING>
+          <ICON_MAP>
+           <ICON_MAP_FORMAT>svgz/base64</ICON_MAP_FORMAT>
+           <ICON_MAP_DATA>
+            H4sIAAAAAAACCm1QwU7DMAw9M2n/YJnDhkTbpN0QnZZNIMGJww7cUenSNiJNqiS0HV9PUoYAiSiSY+fZ7z1v92MroefGCq0Y0pggcFXqo1A1w3dXRbe4381nW9vXv2Epwmth+cHoSkjO0Al1QhBHhk+i51LqF4rz2QX46coybJzrNkkyDEM8ZLE2dZISQhI/FL8gm1EK9fYfkOZ5nky/HsqQdCPC6RwHcXQNwywPScNF3bhzFrh7wYd7HXqAQJb7i6C9h0rqgaEtjZZyot/Yrii9ic5wy03PMRg2vHTgTKFspU3rHYanLBxf0tU1zeP11aQnoiRe/yhJJ3HRTah9C6IZgt+SZHhZTQfB+E5fNacQkkDn+PiHri2cEeOSQhBPYRUTSLOJtNLKRVXRCum7F3dGFHJxrlrx4W3Q1C9gd3h+fNgmYWwYH1bt4ycOHQWH7wEAAA==
            </ICON_MAP_DATA>
           </ICON_MAP>
          </ENUM>
@@ -531,10 +575,88 @@
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
+        <ORIG_TITLE>ROOTGROUP</ORIG_TITLE>
+        <NAME>ROOTGROUP1</NAME>
+        <SUB_ID>62</SUB_ID>
+        <CIRCUIT_SCOPE_ID>144</CIRCUIT_SCOPE_ID>
+        <EDITABLE_TITLE>1</EDITABLE_TITLE>
+        <PARAM_GROUP_ELEMENT_LIST>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>soli</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>materialType</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>materialDefType</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>tMin</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>tMax</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>rho0</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>Cp0</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>lam0</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>polynomialFile</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>rhoFileExpression</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>CpFileExpression</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>lambdaFileExpression</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>materialName</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>dataFolder</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>mtot</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>se</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+         <PARAM_GROUP_ELEMENT>
+          <PARAM_GROUP_ELEMENT_VARNAME>filenamesDefParam</PARAM_GROUP_ELEMENT_VARNAME>
+          <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+         </PARAM_GROUP_ELEMENT>
+        </PARAM_GROUP_ELEMENT_LIST>
+        <EDITABLE>0</EDITABLE>
+       </PARAMS_GROUP>
+       <PARAMS_GROUP>
         <ORIG_TITLE>Additional parameters for definition by filenames</ORIG_TITLE>
         <NAME>filenamesDefParam</NAME>
         <SUB_ID>56</SUB_ID>
-        <CIRCUIT_SCOPE_ID>37</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>145</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1436,12 +1558,8 @@
         <TITLE>filename for positive torque [Nm]</TITLE>
         <VARNAME>filetorquepos</VARNAME>
         <VISIBILITY>trqdef == 3</VISIBILITY>
-        <USES_SC_GP>1</USES_SC_GP>
-        <USES_SCP_NAMES>
-         <SCP_NAME>lib_Electrics</SCP_NAME>
-        </USES_SCP_NAMES>
         <DEF_VALUE>${lib_Electrics}/data/max_torque_degraded.data</DEF_VALUE>
-        <VALUE>${lib_Electrics}/data/max_torque_degraded.data</VALUE>
+        <VALUE>${lib_Electrics__EM_215NM_INEFFICIENT_1}/data/max_torque_degraded.data</VALUE>
         <TEXT_TYPE>1</TEXT_TYPE>
        </TPARAM>
        <TPARAM>
@@ -1449,12 +1567,8 @@
         <TITLE>filename for negative torque [Nm]</TITLE>
         <VARNAME>filetorqueneg</VARNAME>
         <VISIBILITY>trqdef == 3 && negtrqdef == 2</VISIBILITY>
-        <USES_SC_GP>1</USES_SC_GP>
-        <USES_SCP_NAMES>
-         <SCP_NAME>lib_Electrics</SCP_NAME>
-        </USES_SCP_NAMES>
         <DEF_VALUE>${lib_Electrics}/data/min_torque_degraded.data</DEF_VALUE>
-        <VALUE>${lib_Electrics}/data/min_torque_degraded.data</VALUE>
+        <VALUE>${lib_Electrics__EM_215NM_INEFFICIENT_1}/data/min_torque_degraded.data</VALUE>
         <TEXT_TYPE>1</TEXT_TYPE>
        </TPARAM>
        <TPARAM>
@@ -1471,12 +1585,8 @@
         <TITLE>filename for lost power [W]</TITLE>
         <VARNAME>filelosses</VARNAME>
         <VISIBILITY>lossdef == 4</VISIBILITY>
-        <USES_SC_GP>1</USES_SC_GP>
-        <USES_SCP_NAMES>
-         <SCP_NAME>lib_Electrics</SCP_NAME>
-        </USES_SCP_NAMES>
         <DEF_VALUE>${lib_Electrics}/data/lost_power_degraded.data</DEF_VALUE>
-        <VALUE>${lib_Electrics}/data/lost_power_degraded.data</VALUE>
+        <VALUE>${lib_Electrics__EM_215NM_INEFFICIENT_1}/data/lost_power_degraded.data</VALUE>
         <TEXT_TYPE>1</TEXT_TYPE>
        </TPARAM>
       </TPARAMS_LIST>
@@ -1485,7 +1595,7 @@
         <ORIG_TITLE>maximum torques</ORIG_TITLE>
         <NAME>maxtrqgroup</NAME>
         <SUB_ID>68</SUB_ID>
-        <CIRCUIT_SCOPE_ID>86</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>83</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1551,7 +1661,7 @@
         <ORIG_TITLE>losses</ORIG_TITLE>
         <NAME>lossgroup</NAME>
         <SUB_ID>70</SUB_ID>
-        <CIRCUIT_SCOPE_ID>87</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>84</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1601,7 +1711,7 @@
         <ORIG_TITLE>dynamic</ORIG_TITLE>
         <NAME>dynamicgroup</NAME>
         <SUB_ID>96</SUB_ID>
-        <CIRCUIT_SCOPE_ID>88</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>85</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1619,7 +1729,7 @@
         <ORIG_TITLE>tables parameters</ORIG_TITLE>
         <NAME>tablesgroup</NAME>
         <SUB_ID>97</SUB_ID>
-        <CIRCUIT_SCOPE_ID>89</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>86</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1637,7 +1747,7 @@
         <ORIG_TITLE>torque computation</ORIG_TITLE>
         <NAME>torcompgroup</NAME>
         <SUB_ID>127</SUB_ID>
-        <CIRCUIT_SCOPE_ID>90</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>87</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1663,7 +1773,7 @@
         <ORIG_TITLE>electrical part</ORIG_TITLE>
         <NAME>elecgroup</NAME>
         <SUB_ID>129</SUB_ID>
-        <CIRCUIT_SCOPE_ID>91</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>88</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1693,7 +1803,7 @@
         <ORIG_TITLE>thermal part</ORIG_TITLE>
         <NAME>thmpart</NAME>
         <SUB_ID>130</SUB_ID>
-        <CIRCUIT_SCOPE_ID>92</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>89</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -2780,9 +2890,8 @@
         <TITLE>solid type index</TITLE>
         <VARNAME>soli</VARNAME>
         <VISIBILITY>True</VISIBILITY>
-        <USES_SC_GP>1</USES_SC_GP>
         <DEF_VALUE>motorSolidType</DEF_VALUE>
-        <VALUE>motorSolidType</VALUE>
+        <VALUE>motorSolidType__EM_215NM_INEFFICIENT_1</VALUE>
         <MIN_VALUE>1</MIN_VALUE>
         <MAX_VALUE>99</MAX_VALUE>
        </IPARAM>
@@ -2828,7 +2937,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>25</SUB_ID>
-        <CIRCUIT_SCOPE_ID>121</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>34</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -3710,11 +3819,11 @@
     <LOOP>0</LOOP>
    </ANIMATION_PROPERTIES>
     <GLOBAL_PARAMS_LIST>
-     <GLOBALPARAM GLOB_EXPOSED="0" VALUE="25" GLOB_PARAM_NAME="Tamb" TYPE="Real" TITLE="ambient temperature" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" VALUE="11" GLOB_PARAM_NAME="motorSolidType" TYPE="Real" TITLE="motor solid type" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" VALUE="50" GLOB_PARAM_NAME="motorMass" TYPE="Real" TITLE="motor mass" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" VALUE="0.1" GLOB_PARAM_NAME="motorConstant" TYPE="Real" TITLE="motor constant" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" VALUE="${library_node}" GLOB_PARAM_NAME="lib_Electrics" TYPE="Text" TITLE="lib_Electrics"/>
+     <GLOBALPARAM TITLE="ambient temperature" GLOB_PARAM_NAME="Tamb" TYPE="Real" VALUE="25" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="motor solid type" GLOB_PARAM_NAME="motorSolidType" TYPE="Real" VALUE="11" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="motor mass" GLOB_PARAM_NAME="motorMass" TYPE="Real" VALUE="50" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="motor constant" GLOB_PARAM_NAME="motorConstant" TYPE="Real" VALUE="0.1" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="lib_Electrics" GLOB_PARAM_NAME="lib_Electrics" TYPE="Text" VALUE="${library_node}" GLOB_EXPOSED="0"/>
     </GLOBAL_PARAMS_LIST>
    
   </CIRCUIT>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE SUB>
-<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+<SUB DOC_VERSION="2" AME_VERSION="2022.1" MAJ="20221" MIN="" PATCH="">
 
  <SUPERCOMPONENT>
   <SC_SUB_NAME>COOLING_LIQUID</SC_SUB_NAME>
@@ -1336,7 +1336,7 @@
         <ORIG_TITLE>reference parameters</ORIG_TITLE>
         <NAME>refparam</NAME>
         <SUB_ID>111</SUB_ID>
-        <CIRCUIT_SCOPE_ID>835</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>566</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1370,7 +1370,7 @@
         <ORIG_TITLE>pressure difference table</ORIG_TITLE>
         <NAME>tbl</NAME>
         <SUB_ID>69</SUB_ID>
-        <CIRCUIT_SCOPE_ID>836</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>567</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1426,7 +1426,7 @@
         <ORIG_TITLE>efficiency</ORIG_TITLE>
         <NAME>effComp</NAME>
         <SUB_ID>67</SUB_ID>
-        <CIRCUIT_SCOPE_ID>837</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>568</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1452,7 +1452,7 @@
         <ORIG_TITLE>efficiency table</ORIG_TITLE>
         <NAME>tbl1</NAME>
         <SUB_ID>61</SUB_ID>
-        <CIRCUIT_SCOPE_ID>838</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>569</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1508,7 +1508,7 @@
         <ORIG_TITLE>shaft power table</ORIG_TITLE>
         <NAME>tbl2</NAME>
         <SUB_ID>62</SUB_ID>
-        <CIRCUIT_SCOPE_ID>839</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>570</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1564,7 +1564,7 @@
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>163</SUB_ID>
-        <CIRCUIT_SCOPE_ID>840</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>571</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -1606,7 +1606,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>176</SUB_ID>
-        <CIRCUIT_SCOPE_ID>841</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>572</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -2507,7 +2507,7 @@
         <ORIG_TITLE>orifice geometry</ORIG_TITLE>
         <NAME>orifgeom</NAME>
         <SUB_ID>97</SUB_ID>
-        <CIRCUIT_SCOPE_ID>480</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>906</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -2541,7 +2541,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>117</SUB_ID>
-        <CIRCUIT_SCOPE_ID>481</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>907</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -3237,7 +3237,7 @@
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>57</SUB_ID>
-        <CIRCUIT_SCOPE_ID>314</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>432</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -3283,7 +3283,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>71</SUB_ID>
-        <CIRCUIT_SCOPE_ID>315</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>433</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -3989,7 +3989,7 @@
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>53</SUB_ID>
-        <CIRCUIT_SCOPE_ID>961</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>143</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -4031,7 +4031,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>60</SUB_ID>
-        <CIRCUIT_SCOPE_ID>962</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>144</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -4784,7 +4784,7 @@
         <ORIG_TITLE>orifice geometry</ORIG_TITLE>
         <NAME>orifgeom</NAME>
         <SUB_ID>97</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1185</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>489</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -4818,7 +4818,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>117</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1186</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>490</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -5658,7 +5658,7 @@
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>104</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1060</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>792</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -5720,7 +5720,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>Emanagement</NAME>
         <SUB_ID>123</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1061</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>793</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -6894,7 +6894,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>heat_exchange_param_group</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>115</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1068</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -6903,7 +6903,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>pressure_drop_param_group</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>116</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1069</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -6912,7 +6912,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>aeration_param_group</NAME>
         <SUB_ID>61</SUB_ID>
-        <CIRCUIT_SCOPE_ID>117</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1070</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -6921,7 +6921,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>aeration_var_group</NAME>
         <SUB_ID>66</SUB_ID>
-        <CIRCUIT_SCOPE_ID>118</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1071</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -6931,7 +6931,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>heat_exchange_var_group</NAME>
         <SUB_ID>57</SUB_ID>
-        <CIRCUIT_SCOPE_ID>119</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1072</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -6940,7 +6940,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>dynlib_pressdrop_param_group</NAME>
         <SUB_ID>58</SUB_ID>
-        <CIRCUIT_SCOPE_ID>120</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1073</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -6967,7 +6967,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>dynlib_heatexhNU_param_group</NAME>
         <SUB_ID>78</SUB_ID>
-        <CIRCUIT_SCOPE_ID>121</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1074</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -6994,7 +6994,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>dynlib_heatexhColb_param_group</NAME>
         <SUB_ID>83</SUB_ID>
-        <CIRCUIT_SCOPE_ID>122</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1075</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -7021,7 +7021,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>power_energy_activity_param_group</NAME>
         <SUB_ID>100</SUB_ID>
-        <CIRCUIT_SCOPE_ID>123</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1076</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -7030,7 +7030,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>power_energy_activity_var_group</NAME>
         <SUB_ID>101</SUB_ID>
-        <CIRCUIT_SCOPE_ID>124</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1077</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -7039,7 +7039,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>wall_compliance_param_group</NAME>
         <SUB_ID>114</SUB_ID>
-        <CIRCUIT_SCOPE_ID>125</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1078</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <EDITABLE>1</EDITABLE>
        </PARAMS_GROUP>
@@ -7048,7 +7048,7 @@
         <CUSTOM_TITLE>New Group</CUSTOM_TITLE>
         <NAME>zetaGroup</NAME>
         <SUB_ID>124</SUB_ID>
-        <CIRCUIT_SCOPE_ID>126</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>1079</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -7630,19 +7630,6 @@
         </EXPOSED_DATAPATH_LIST>
         <EXPOSED_GROUP_LIST>
          <EXPOSED_GROUP>
-          <EXPOSED_DATAPATH>power_energy_activity_param_group</EXPOSED_DATAPATH>
-          <EXPOSED_DATAPATH_LIST>
-           <EXPOSED_DATAPATH>energyRSfrict</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>energyCpipe</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>energySgrav</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>energyRSheat</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>actRSfrict</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>actCpipe</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>actSgrav</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>actRSheat</EXPOSED_DATAPATH>
-          </EXPOSED_DATAPATH_LIST>
-         </EXPOSED_GROUP>
-         <EXPOSED_GROUP>
           <EXPOSED_DATAPATH>heat_exchange_param_group</EXPOSED_DATAPATH>
           <EXPOSED_DATAPATH_LIST>
            <EXPOSED_DATAPATH>hexDef</EXPOSED_DATAPATH>
@@ -7707,6 +7694,19 @@
            <EXPOSED_DATAPATH>xg3</EXPOSED_DATAPATH>
            <EXPOSED_DATAPATH>aerinit</EXPOSED_DATAPATH>
            <EXPOSED_DATAPATH>xu3</EXPOSED_DATAPATH>
+          </EXPOSED_DATAPATH_LIST>
+         </EXPOSED_GROUP>
+         <EXPOSED_GROUP>
+          <EXPOSED_DATAPATH>power_energy_activity_param_group</EXPOSED_DATAPATH>
+          <EXPOSED_DATAPATH_LIST>
+           <EXPOSED_DATAPATH>energyRSfrict</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>energyCpipe</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>energySgrav</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>energyRSheat</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>actRSfrict</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>actCpipe</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>actSgrav</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>actRSheat</EXPOSED_DATAPATH>
           </EXPOSED_DATAPATH_LIST>
          </EXPOSED_GROUP>
          <EXPOSED_GROUP>
@@ -7781,14 +7781,14 @@
         </EXPOSED_DATAPATH_LIST>
         <EXPOSED_GROUP_LIST>
          <EXPOSED_GROUP>
-          <EXPOSED_DATAPATH>aeration_var_group</EXPOSED_DATAPATH>
+          <EXPOSED_DATAPATH>heat_exchange_var_group</EXPOSED_DATAPATH>
           <EXPOSED_DATAPATH_LIST>
-           <EXPOSED_DATAPATH>xg3</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>fvoid3</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>xuv3</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>dmxu1</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>dmxu3</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>xu3</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>Re</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>Pr</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>hconv</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>Nu</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>Gr</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>jfact</EXPOSED_DATAPATH>
           </EXPOSED_DATAPATH_LIST>
          </EXPOSED_GROUP>
          <EXPOSED_GROUP>
@@ -7809,14 +7809,14 @@
           </EXPOSED_DATAPATH_LIST>
          </EXPOSED_GROUP>
          <EXPOSED_GROUP>
-          <EXPOSED_DATAPATH>heat_exchange_var_group</EXPOSED_DATAPATH>
+          <EXPOSED_DATAPATH>aeration_var_group</EXPOSED_DATAPATH>
           <EXPOSED_DATAPATH_LIST>
-           <EXPOSED_DATAPATH>Re</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>Pr</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>hconv</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>Nu</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>Gr</EXPOSED_DATAPATH>
-           <EXPOSED_DATAPATH>jfact</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>xg3</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>fvoid3</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>xuv3</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>dmxu1</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>dmxu3</EXPOSED_DATAPATH>
+           <EXPOSED_DATAPATH>xu3</EXPOSED_DATAPATH>
           </EXPOSED_DATAPATH_LIST>
          </EXPOSED_GROUP>
         </EXPOSED_GROUP_LIST>
@@ -7925,7 +7925,7 @@
           <SUB_TYPE>0</SUB_TYPE>
           <SUB_NAME>TFPHE02</SUB_NAME>
           <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-          <SUB_ID_MAX>178</SUB_ID_MAX>
+          <SUB_ID_MAX>184</SUB_ID_MAX>
           <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
           <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
           <SUB_LABEL>thermal-hydraulic pipe with friction and heat exchange (R-C)</SUB_LABEL>
@@ -8499,13 +8499,40 @@
             <VALUE>filename.data</VALUE>
             <TEXT_TYPE>0</TEXT_TYPE>
            </TPARAM>
+           <TPARAM>
+            <SUB_ID>182</SUB_ID>
+            <TITLE>obsolete flag TFPHE02 Nu</TITLE>
+            <VARNAME>isObsoleteFlagTFPHE02Nu</VARNAME>
+            <VISIBILITY>False</VISIBILITY>
+            <DEF_VALUE>False</DEF_VALUE>
+            <VALUE>False</VALUE>
+            <TEXT_TYPE>0</TEXT_TYPE>
+           </TPARAM>
+           <TPARAM>
+            <SUB_ID>183</SUB_ID>
+            <TITLE>obsolete flag TFPHE02 Colb</TITLE>
+            <VARNAME>isObsoleteFlagTFPHE02Colb</VARNAME>
+            <VISIBILITY>False</VISIBILITY>
+            <DEF_VALUE>False</DEF_VALUE>
+            <VALUE>False</VALUE>
+            <TEXT_TYPE>0</TEXT_TYPE>
+           </TPARAM>
+           <TPARAM>
+            <SUB_ID>184</SUB_ID>
+            <TITLE>obsolete flag TFPHE02 Dp</TITLE>
+            <VARNAME>isObsoleteFlagTFPHE02Dp</VARNAME>
+            <VISIBILITY>False</VISIBILITY>
+            <DEF_VALUE>False</DEF_VALUE>
+            <VALUE>False</VALUE>
+            <TEXT_TYPE>0</TEXT_TYPE>
+           </TPARAM>
           </TPARAMS_LIST>
           <PARAMS_GROUPS_LIST>
            <PARAMS_GROUP>
             <ORIG_TITLE>wall compliance</ORIG_TITLE>
             <NAME>bulkdef</NAME>
             <SUB_ID>150</SUB_ID>
-            <CIRCUIT_SCOPE_ID>213</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1169</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8531,7 +8558,7 @@
             <ORIG_TITLE>pressure drop</ORIG_TITLE>
             <NAME>pressureDrop</NAME>
             <SUB_ID>46</SUB_ID>
-            <CIRCUIT_SCOPE_ID>214</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1170</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8569,7 +8596,7 @@
             <ORIG_TITLE>heat exchange</ORIG_TITLE>
             <NAME>heatExchange</NAME>
             <SUB_ID>47</SUB_ID>
-            <CIRCUIT_SCOPE_ID>215</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1171</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8655,7 +8682,7 @@
             <ORIG_TITLE>aeration</ORIG_TITLE>
             <NAME>aeration</NAME>
             <SUB_ID>112</SUB_ID>
-            <CIRCUIT_SCOPE_ID>216</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1172</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8697,7 +8724,7 @@
             <ORIG_TITLE>dynamic library handling tool</ORIG_TITLE>
             <NAME>dynlibtoolNu</NAME>
             <SUB_ID>133</SUB_ID>
-            <CIRCUIT_SCOPE_ID>217</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1173</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8709,6 +8736,11 @@
               <PARAM_GROUP_ELEMENT_VARNAME>dynlibTemplateNuTFPHE02</PARAM_GROUP_ELEMENT_VARNAME>
               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
               <PARAM_GROUP_ELEMENT_KEYWORD>dynlibTemplate</PARAM_GROUP_ELEMENT_KEYWORD>
+             </PARAM_GROUP_ELEMENT>
+             <PARAM_GROUP_ELEMENT>
+              <PARAM_GROUP_ELEMENT_VARNAME>isObsoleteFlagTFPHE02Nu</PARAM_GROUP_ELEMENT_VARNAME>
+              <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+              <PARAM_GROUP_ELEMENT_KEYWORD>isObsoleteSubmodel</PARAM_GROUP_ELEMENT_KEYWORD>
              </PARAM_GROUP_ELEMENT>
             </PARAM_GROUP_ELEMENT_LIST>
             <EDITABLE>1</EDITABLE>
@@ -8723,7 +8755,7 @@
             <ORIG_TITLE>dynamic library handling tool</ORIG_TITLE>
             <NAME>dynlibtoolDp</NAME>
             <SUB_ID>134</SUB_ID>
-            <CIRCUIT_SCOPE_ID>218</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1174</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8735,6 +8767,11 @@
               <PARAM_GROUP_ELEMENT_VARNAME>dynlibTemplateDpTFPHE02</PARAM_GROUP_ELEMENT_VARNAME>
               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
               <PARAM_GROUP_ELEMENT_KEYWORD>dynlibTemplate</PARAM_GROUP_ELEMENT_KEYWORD>
+             </PARAM_GROUP_ELEMENT>
+             <PARAM_GROUP_ELEMENT>
+              <PARAM_GROUP_ELEMENT_VARNAME>isObsoleteFlagTFPHE02Dp</PARAM_GROUP_ELEMENT_VARNAME>
+              <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+              <PARAM_GROUP_ELEMENT_KEYWORD>isObsoleteSubmodel</PARAM_GROUP_ELEMENT_KEYWORD>
              </PARAM_GROUP_ELEMENT>
             </PARAM_GROUP_ELEMENT_LIST>
             <EDITABLE>1</EDITABLE>
@@ -8749,7 +8786,7 @@
             <ORIG_TITLE>dynamic library handling tool</ORIG_TITLE>
             <NAME>dynlibtoolColb</NAME>
             <SUB_ID>144</SUB_ID>
-            <CIRCUIT_SCOPE_ID>219</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1175</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8761,6 +8798,11 @@
               <PARAM_GROUP_ELEMENT_VARNAME>dynlibTemplateColbTFPHE02</PARAM_GROUP_ELEMENT_VARNAME>
               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
               <PARAM_GROUP_ELEMENT_KEYWORD>dynlibTemplate</PARAM_GROUP_ELEMENT_KEYWORD>
+             </PARAM_GROUP_ELEMENT>
+             <PARAM_GROUP_ELEMENT>
+              <PARAM_GROUP_ELEMENT_VARNAME>isObsoleteFlagTFPHE02Colb</PARAM_GROUP_ELEMENT_VARNAME>
+              <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+              <PARAM_GROUP_ELEMENT_KEYWORD>isObsoleteSubmodel</PARAM_GROUP_ELEMENT_KEYWORD>
              </PARAM_GROUP_ELEMENT>
             </PARAM_GROUP_ELEMENT_LIST>
             <EDITABLE>1</EDITABLE>
@@ -8775,7 +8817,7 @@
             <ORIG_TITLE>table zeta = f(Re)</ORIG_TITLE>
             <NAME>zetaGroup</NAME>
             <SUB_ID>149</SUB_ID>
-            <CIRCUIT_SCOPE_ID>220</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1176</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -8801,7 +8843,7 @@
             <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
             <NAME>Emanagement</NAME>
             <SUB_ID>168</SUB_ID>
-            <CIRCUIT_SCOPE_ID>221</CIRCUIT_SCOPE_ID>
+            <CIRCUIT_SCOPE_ID>1177</CIRCUIT_SCOPE_ID>
             <EDITABLE_TITLE>1</EDITABLE_TITLE>
             <PARAM_GROUP_ELEMENT_LIST>
              <PARAM_GROUP_ELEMENT>
@@ -9246,7 +9288,7 @@
           </IVARS_LIST>
           <EVARS_LIST>
            <PORT>
-            <PORT_TAG>undefined</PORT_TAG>
+            <PORT_TAG>hflow</PORT_TAG>
             <USE_REQUIRED>0</USE_REQUIRED>
             <EVAR>
              <SUB_ID>3</SUB_ID>
@@ -9351,7 +9393,7 @@
             </EVAR>
            </PORT>
            <PORT>
-            <PORT_TAG>undefined</PORT_TAG>
+            <PORT_TAG>thermal</PORT_TAG>
             <USE_REQUIRED>0</USE_REQUIRED>
             <EVAR>
              <SUB_ID>5</SUB_ID>
@@ -9377,7 +9419,7 @@
             </EVAR>
            </PORT>
            <PORT>
-            <PORT_TAG>undefined</PORT_TAG>
+            <PORT_TAG>hflow</PORT_TAG>
             <USE_REQUIRED>0</USE_REQUIRED>
             <EVAR>
              <SUB_ID>73</SUB_ID>
@@ -10954,7 +10996,7 @@
         <ORIG_TITLE>numerical parameters</ORIG_TITLE>
         <NAME>numParams</NAME>
         <SUB_ID>77</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1122</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>847</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -10972,7 +11014,7 @@
         <ORIG_TITLE>interpolation parameters</ORIG_TITLE>
         <NAME>IntPrmGrp</NAME>
         <SUB_ID>75</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1123</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>848</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -10998,7 +11040,7 @@
         <ORIG_TITLE>operating range</ORIG_TITLE>
         <NAME>parlimits</NAME>
         <SUB_ID>134</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1124</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>849</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -11056,7 +11098,7 @@
         <ORIG_TITLE>variables at port</ORIG_TITLE>
         <NAME>PrtVarGrp</NAME>
         <SUB_ID>28</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1125</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>850</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -11106,7 +11148,7 @@
         <ORIG_TITLE>limits</ORIG_TITLE>
         <NAME>varlimit</NAME>
         <SUB_ID>135</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1126</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>851</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -11164,7 +11206,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>powers</NAME>
         <SUB_ID>30</SUB_ID>
-        <CIRCUIT_SCOPE_ID>1127</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>852</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -11789,7 +11831,7 @@
         <ORIG_TITLE>variables at ports</ORIG_TITLE>
         <NAME>PrtVarGrp</NAME>
         <SUB_ID>66</SUB_ID>
-        <CIRCUIT_SCOPE_ID>272</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>312</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -11831,7 +11873,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>powers</NAME>
         <SUB_ID>73</SUB_ID>
-        <CIRCUIT_SCOPE_ID>273</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>313</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -12462,7 +12504,7 @@
         <ORIG_TITLE>power, energy, activity</ORIG_TITLE>
         <NAME>powers</NAME>
         <SUB_ID>86</SUB_ID>
-        <CIRCUIT_SCOPE_ID>981</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>648</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -12496,7 +12538,7 @@
         <ORIG_TITLE>friction</ORIG_TITLE>
         <NAME>frictiongroup</NAME>
         <SUB_ID>87</SUB_ID>
-        <CIRCUIT_SCOPE_ID>982</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>649</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -13639,7 +13681,7 @@
         <ORIG_TITLE>saturation</ORIG_TITLE>
         <NAME>saturation</NAME>
         <SUB_ID>19</SUB_ID>
-        <CIRCUIT_SCOPE_ID>674</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>391</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -14755,7 +14797,7 @@
         <ORIG_TITLE>fluid properties</ORIG_TITLE>
         <NAME>fluidProperties</NAME>
         <SUB_ID>25</SUB_ID>
-        <CIRCUIT_SCOPE_ID>758</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>610</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -14801,7 +14843,7 @@
         <ORIG_TITLE>heat exchange</ORIG_TITLE>
         <NAME>heatExchange</NAME>
         <SUB_ID>26</SUB_ID>
-        <CIRCUIT_SCOPE_ID>759</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>611</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -15836,7 +15878,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>TFFD3</SUB_NAME>
       <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-      <SUB_ID_MAX>73</SUB_ID_MAX>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal-hydraulic fluid properties (polynomials)</SUB_LABEL>
@@ -16535,13 +16577,31 @@
         <TEXT_TYPE>2</TEXT_TYPE>
         <TOKEN_LIST>p, psat, xu, xueq, T</TOKEN_LIST>
        </TPARAM>
+       <TPARAM>
+        <SUB_ID>75</SUB_ID>
+        <TITLE>dataSimple</TITLE>
+        <VARNAME>dataSimple</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data/</DEF_VALUE>
+        <VALUE>$AME/libthh/data/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>dataAdvanced</TITLE>
+        <VARNAME>dataAdvanced</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data_advanced/</DEF_VALUE>
+        <VALUE>$AME/libthh/data_advanced/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>416</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>199</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -16595,7 +16655,7 @@
         <ORIG_TITLE>cavitation</ORIG_TITLE>
         <NAME>cavitation</NAME>
         <SUB_ID>50</SUB_ID>
-        <CIRCUIT_SCOPE_ID>417</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>200</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -16637,7 +16697,7 @@
         <ORIG_TITLE>fluid temperature computation</ORIG_TITLE>
         <NAME>thhlevel</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>418</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>201</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -16659,7 +16719,7 @@
         <ORIG_TITLE>reference state definition</ORIG_TITLE>
         <NAME>referencelevel</NAME>
         <SUB_ID>51</SUB_ID>
-        <CIRCUIT_SCOPE_ID>419</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>202</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -16685,7 +16745,7 @@
         <ORIG_TITLE>gas properties</ORIG_TITLE>
         <NAME>gasprops</NAME>
         <SUB_ID>64</SUB_ID>
-        <CIRCUIT_SCOPE_ID>420</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>203</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -16798,7 +16858,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>TFFD3</SUB_NAME>
       <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-      <SUB_ID_MAX>73</SUB_ID_MAX>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal-hydraulic fluid properties (polynomials)</SUB_LABEL>
@@ -17497,13 +17557,31 @@
         <TEXT_TYPE>2</TEXT_TYPE>
         <TOKEN_LIST>p, psat, xu, xueq, T</TOKEN_LIST>
        </TPARAM>
+       <TPARAM>
+        <SUB_ID>75</SUB_ID>
+        <TITLE>dataSimple</TITLE>
+        <VARNAME>dataSimple</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data/</DEF_VALUE>
+        <VALUE>$AME/libthh/data/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>dataAdvanced</TITLE>
+        <VARNAME>dataAdvanced</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data_advanced/</DEF_VALUE>
+        <VALUE>$AME/libthh/data_advanced/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>357</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>44</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -17557,7 +17635,7 @@
         <ORIG_TITLE>cavitation</ORIG_TITLE>
         <NAME>cavitation</NAME>
         <SUB_ID>50</SUB_ID>
-        <CIRCUIT_SCOPE_ID>358</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>45</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -17599,7 +17677,7 @@
         <ORIG_TITLE>fluid temperature computation</ORIG_TITLE>
         <NAME>thhlevel</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>359</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>46</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -17621,7 +17699,7 @@
         <ORIG_TITLE>reference state definition</ORIG_TITLE>
         <NAME>referencelevel</NAME>
         <SUB_ID>51</SUB_ID>
-        <CIRCUIT_SCOPE_ID>360</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>47</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -17647,7 +17725,7 @@
         <ORIG_TITLE>gas properties</ORIG_TITLE>
         <NAME>gasprops</NAME>
         <SUB_ID>64</SUB_ID>
-        <CIRCUIT_SCOPE_ID>361</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>48</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -17760,7 +17838,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>TFFD3</SUB_NAME>
       <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-      <SUB_ID_MAX>73</SUB_ID_MAX>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal-hydraulic fluid properties (polynomials)</SUB_LABEL>
@@ -18459,13 +18537,31 @@
         <TEXT_TYPE>2</TEXT_TYPE>
         <TOKEN_LIST>p, psat, xu, xueq, T</TOKEN_LIST>
        </TPARAM>
+       <TPARAM>
+        <SUB_ID>75</SUB_ID>
+        <TITLE>dataSimple</TITLE>
+        <VARNAME>dataSimple</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data/</DEF_VALUE>
+        <VALUE>$AME/libthh/data/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>dataAdvanced</TITLE>
+        <VARNAME>dataAdvanced</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data_advanced/</DEF_VALUE>
+        <VALUE>$AME/libthh/data_advanced/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>718</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>962</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -18519,7 +18615,7 @@
         <ORIG_TITLE>cavitation</ORIG_TITLE>
         <NAME>cavitation</NAME>
         <SUB_ID>50</SUB_ID>
-        <CIRCUIT_SCOPE_ID>719</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>963</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -18561,7 +18657,7 @@
         <ORIG_TITLE>fluid temperature computation</ORIG_TITLE>
         <NAME>thhlevel</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>720</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>964</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -18583,7 +18679,7 @@
         <ORIG_TITLE>reference state definition</ORIG_TITLE>
         <NAME>referencelevel</NAME>
         <SUB_ID>51</SUB_ID>
-        <CIRCUIT_SCOPE_ID>721</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>965</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -18609,7 +18705,7 @@
         <ORIG_TITLE>gas properties</ORIG_TITLE>
         <NAME>gasprops</NAME>
         <SUB_ID>64</SUB_ID>
-        <CIRCUIT_SCOPE_ID>722</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>966</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -18722,7 +18818,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>TFFD3</SUB_NAME>
       <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-      <SUB_ID_MAX>73</SUB_ID_MAX>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal-hydraulic fluid properties (polynomials)</SUB_LABEL>
@@ -19421,13 +19517,31 @@
         <TEXT_TYPE>2</TEXT_TYPE>
         <TOKEN_LIST>p, psat, xu, xueq, T</TOKEN_LIST>
        </TPARAM>
+       <TPARAM>
+        <SUB_ID>75</SUB_ID>
+        <TITLE>dataSimple</TITLE>
+        <VARNAME>dataSimple</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data/</DEF_VALUE>
+        <VALUE>$AME/libthh/data/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>dataAdvanced</TITLE>
+        <VARNAME>dataAdvanced</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data_advanced/</DEF_VALUE>
+        <VALUE>$AME/libthh/data_advanced/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>527</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>359</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -19481,7 +19595,7 @@
         <ORIG_TITLE>cavitation</ORIG_TITLE>
         <NAME>cavitation</NAME>
         <SUB_ID>50</SUB_ID>
-        <CIRCUIT_SCOPE_ID>528</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>360</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -19523,7 +19637,7 @@
         <ORIG_TITLE>fluid temperature computation</ORIG_TITLE>
         <NAME>thhlevel</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>529</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>361</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -19545,7 +19659,7 @@
         <ORIG_TITLE>reference state definition</ORIG_TITLE>
         <NAME>referencelevel</NAME>
         <SUB_ID>51</SUB_ID>
-        <CIRCUIT_SCOPE_ID>530</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>362</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -19571,7 +19685,7 @@
         <ORIG_TITLE>gas properties</ORIG_TITLE>
         <NAME>gasprops</NAME>
         <SUB_ID>64</SUB_ID>
-        <CIRCUIT_SCOPE_ID>531</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>363</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -19684,7 +19798,7 @@
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>TFFD3</SUB_NAME>
       <SUB_DIR>$AME/libthh/submodels</SUB_DIR>
-      <SUB_ID_MAX>73</SUB_ID_MAX>
+      <SUB_ID_MAX>76</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
       <SUB_LABEL>thermal-hydraulic fluid properties (polynomials)</SUB_LABEL>
@@ -20383,13 +20497,31 @@
         <TEXT_TYPE>2</TEXT_TYPE>
         <TOKEN_LIST>p, psat, xu, xueq, T</TOKEN_LIST>
        </TPARAM>
+       <TPARAM>
+        <SUB_ID>75</SUB_ID>
+        <TITLE>dataSimple</TITLE>
+        <VARNAME>dataSimple</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data/</DEF_VALUE>
+        <VALUE>$AME/libthh/data/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
+       <TPARAM>
+        <SUB_ID>76</SUB_ID>
+        <TITLE>dataAdvanced</TITLE>
+        <VARNAME>dataAdvanced</VARNAME>
+        <VISIBILITY>False</VISIBILITY>
+        <DEF_VALUE>$AME/libthh/data_advanced/</DEF_VALUE>
+        <VALUE>$AME/libthh/data_advanced/</VALUE>
+        <TEXT_TYPE>3</TEXT_TYPE>
+       </TPARAM>
       </TPARAMS_LIST>
       <PARAMS_GROUPS_LIST>
        <PARAMS_GROUP>
         <ORIG_TITLE>aeration</ORIG_TITLE>
         <NAME>aeration</NAME>
         <SUB_ID>32</SUB_ID>
-        <CIRCUIT_SCOPE_ID>591</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>259</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -20443,7 +20575,7 @@
         <ORIG_TITLE>cavitation</ORIG_TITLE>
         <NAME>cavitation</NAME>
         <SUB_ID>50</SUB_ID>
-        <CIRCUIT_SCOPE_ID>592</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>260</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -20485,7 +20617,7 @@
         <ORIG_TITLE>fluid temperature computation</ORIG_TITLE>
         <NAME>thhlevel</NAME>
         <SUB_ID>31</SUB_ID>
-        <CIRCUIT_SCOPE_ID>593</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>261</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -20507,7 +20639,7 @@
         <ORIG_TITLE>reference state definition</ORIG_TITLE>
         <NAME>referencelevel</NAME>
         <SUB_ID>51</SUB_ID>
-        <CIRCUIT_SCOPE_ID>594</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>262</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -20533,7 +20665,7 @@
         <ORIG_TITLE>gas properties</ORIG_TITLE>
         <NAME>gasprops</NAME>
         <SUB_ID>64</SUB_ID>
-        <CIRCUIT_SCOPE_ID>595</CIRCUIT_SCOPE_ID>
+        <CIRCUIT_SCOPE_ID>263</CIRCUIT_SCOPE_ID>
         <EDITABLE_TITLE>1</EDITABLE_TITLE>
         <PARAM_GROUP_ELEMENT_LIST>
          <PARAM_GROUP_ELEMENT>
@@ -20946,7 +21078,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>16</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21149,7 +21280,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>16</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21352,7 +21482,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>16</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21555,7 +21684,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>16</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21757,7 +21885,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>4</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21835,7 +21962,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>4</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21913,7 +22039,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -21971,7 +22096,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22029,7 +22153,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22087,7 +22210,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22145,7 +22267,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>16</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22347,7 +22468,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22405,7 +22525,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>4</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22483,7 +22602,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>4</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22561,7 +22679,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>4</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22639,7 +22756,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22697,7 +22813,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22755,7 +22870,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22813,7 +22927,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -22872,7 +22985,6 @@
      <SUBMODEL>
       <SUB_TYPE>0</SUB_TYPE>
       <SUB_NAME>DIRECT</SUB_NAME>
-      <SUB_DIR> </SUB_DIR>
       <SUB_ID_MAX>2</SUB_ID_MAX>
       <AUTONOMOUS_COMPILATION>False</AUTONOMOUS_COMPILATION>
       <AUTONOMOUS_RUNTIME>False</AUTONOMOUS_RUNTIME>
@@ -23101,10 +23213,10 @@
     <LOOP>0</LOOP>
    </ANIMATION_PROPERTIES>
     <GLOBAL_PARAMS_LIST>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="ambient temperature" VALUE="25" TYPE="Real" GLOB_PARAM_NAME="Tamb" UNITS="degreeC"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="control temperature coolant" VALUE="54" TYPE="Real" GLOB_PARAM_NAME="Tcontrol" UNITS="degreeC"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="coolant Type" VALUE="1" TYPE="Real" GLOB_PARAM_NAME="coolantType" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="lib_Cooling" VALUE="${library_node}" TYPE="Text" GLOB_PARAM_NAME="lib_Cooling"/>
+     <GLOBALPARAM TITLE="ambient temperature" GLOB_PARAM_NAME="Tamb" TYPE="Real" VALUE="25" GLOB_EXPOSED="0" UNITS="degreeC"/>
+     <GLOBALPARAM TITLE="control temperature coolant" GLOB_PARAM_NAME="Tcontrol" TYPE="Real" VALUE="54" GLOB_EXPOSED="0" UNITS="degreeC"/>
+     <GLOBALPARAM TITLE="coolant Type" GLOB_PARAM_NAME="coolantType" TYPE="Real" VALUE="1" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="lib_Cooling" GLOB_PARAM_NAME="lib_Cooling" TYPE="Text" VALUE="${library_node}" GLOB_EXPOSED="0"/>
     </GLOBAL_PARAMS_LIST>
    
   </CIRCUIT>

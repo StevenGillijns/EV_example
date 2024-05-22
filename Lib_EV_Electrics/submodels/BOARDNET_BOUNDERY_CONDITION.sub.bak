@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE SUB>
-<SUB DOC_VERSION="2" AME_VERSION="2021.1" MAJ="20211" MIN="" PATCH="">
+<SUB DOC_VERSION="2" AME_VERSION="2022.1" MAJ="20221" MIN="" PATCH="">
 
  <SUPERCOMPONENT>
   <SC_SUB_NAME>BOARDNET_BOUNDERY_CONDITION</SC_SUB_NAME>
@@ -351,11 +351,11 @@
     <LOOP>0</LOOP>
    </ANIMATION_PROPERTIES>
     <GLOBAL_PARAMS_LIST>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="ambient temperature" VALUE="20" TYPE="Real" GLOB_PARAM_NAME="Tamb" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage battery number of cells in series" VALUE="6" TYPE="Real" GLOB_PARAM_NAME="Ns" UNITS="null"/>
-     <GLOBALPARAM MIN_VALUE="1" GLOB_EXPOSED="0" TITLE="low voltage battery number of branches in parallel" VALUE="1" MAX_VALUE="10000" TYPE="Integer" GLOB_PARAM_NAME="Np"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage battery initial SOC" VALUE="80" TYPE="Real" GLOB_PARAM_NAME="SOC" UNITS="null"/>
-     <GLOBALPARAM GLOB_EXPOSED="0" TITLE="low voltage output " VALUE="13.91" TYPE="Real" GLOB_PARAM_NAME="LVoutput" UNITS="null"/>
+     <GLOBALPARAM TITLE="ambient temperature" GLOB_PARAM_NAME="Tamb" TYPE="Real" VALUE="20" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="low voltage battery number of cells in series" GLOB_PARAM_NAME="Ns" TYPE="Real" VALUE="6" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="low voltage battery number of branches in parallel" GLOB_PARAM_NAME="Np" TYPE="Integer" MIN_VALUE="1" VALUE="1" MAX_VALUE="10000" GLOB_EXPOSED="0"/>
+     <GLOBALPARAM TITLE="low voltage battery initial SOC" GLOB_PARAM_NAME="SOC" TYPE="Real" VALUE="80" GLOB_EXPOSED="0" UNITS="null"/>
+     <GLOBALPARAM TITLE="low voltage output " GLOB_PARAM_NAME="LVoutput" TYPE="Real" VALUE="13.91" GLOB_EXPOSED="0" UNITS="null"/>
     </GLOBAL_PARAMS_LIST>
    
   </CIRCUIT>
