@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="VCU" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="235,205,205"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="Layers" value="Port Names=0|Images=1"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="vehicle_max_braking_torque" title="maximum braking torque for the vehicle" description="" unit="Nm" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="gear_ratio" title="gear ratio" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="torque_command" title="electric motor torque command at port 1" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="braking_command" title="braking command at port 3" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="gear_selection_command" title="gear selection at port 7" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="SOC_1" title="battery state of charge at port 8" description="" unit="%" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="acceleration_command" title="acceleration command" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="msg_Tmax" title="msg_Tmax" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:219|P_Y:205|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="p2__input" title="input " description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_Tmin" title="msg_Tmin" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:268|P_Y:205|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="p3__input" title="input" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_w" title="msg_w" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:319|P_Y:205|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="sensor" title="electric motor rotary velocity" description="" unit="rev/min" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_acc" title="msg_acc" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:220|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="torvehdrv" title="acceleration command from driver " description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_br" title="msg_br" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:271|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="torbrakdrv" title="braking command from driver" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_gl" title="msg_gl" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:168|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="gearsel" title="gear selection" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="SOC" title="SOC" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:47|P_Y:205|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="SOC" title="battery state of charge" description="" unit="%" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="msg_Treq" title="msg_Treq" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:171|P_Y:205|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="torME" title="electric motor torque command" description="" unit="Nm" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="brake" title="brake" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:98|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="outbrak" title="braking command" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

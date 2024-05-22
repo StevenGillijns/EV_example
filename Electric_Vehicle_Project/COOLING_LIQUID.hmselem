@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="COOLING_LIQUID" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="205,230,235"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:380|P_HEIGHT:228|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="k" title="enable fan" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="pump_pressure" title="pump pressure" description="" unit="barA" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="fan_control" title="fan control" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="power_loss_motor" title="power_loss_pump" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="pump_pressure_1" title="pump pressure" description="" unit="barA" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="pump_mass_flowrate" title="pump mass flowrate" description="" unit="kg/s" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="heat_flowrate_cooling_system" title="heat_flowrate_cooling_system" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="heat_flowrate_ambient" title="heat_flowrate_ambient" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="temperature_coolant" title="temperature_coolant" description="" unit="degC" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="temperature_motor" title="temperature motor" description="" unit="degC" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="heat_flowrate_motor" title="heat_flowrate_motor" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="speed" title="speed" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:83|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="in3" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="temp_motor" title="temp_motor" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:150|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="its" title="temperature" description="" unit="degC" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="voltage" title="voltage" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:112|P_Y:211|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="voltage signal input at port 1" description="" unit="V" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="heat_motor" title="heat_motor" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:363|P_Y:88|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ohfs" title="heat flow rate" description="" unit="W" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="current" title="current" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:220|P_Y:211|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="psig2" title="current at port 3" description="" unit="A" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="fan" title="fan" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:363|P_Y:156|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out2" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

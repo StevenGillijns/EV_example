@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="TRANSMISSION_FIXED_RATIO" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="205,230,235"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="gear_ratio" title="gear ratio" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="gearbox_output_speed" title="gearbox_output_speed" description="" unit="rev/min" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="gearbox_output_torque" title="gearbox_output_torque" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="w_out" title="w_out" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:78|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="win" title="input angular velocity " description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="T_in" title="T_in" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:156|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="tin" title="input torque signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="T_out" title="T_out" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:87|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="tout" title="output torque signal" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="w_in" title="w_in" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:160|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="wout" title="output angular velocity signal" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

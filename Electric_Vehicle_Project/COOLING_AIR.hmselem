@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="COOLING_AIR" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="205,230,235"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="fan_command" title="enable_fan" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Tamb" title="ambient temperature" description="" unit="degreeC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Tcontrol" title="control temperature coolant" description="" unit="degreeC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="heat_flowrate_ambient" title="heat flow rate at port 2" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="temperature_motor" title="temperature motor" description="" unit="degC" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="vehicle" title="vehicle" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:96|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="x" title="input signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="temp_motor" title="temp_motor" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:156|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="its" title="temperature" description="" unit="degC" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="heat_motor" title="heat_motor" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:51|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ohfs" title="heat flow rate" description="" unit="W" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="fan" title="fan" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:135|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out" title="output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

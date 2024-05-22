@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="SCENARIO_MANAGER" title="" description="">
+   <metadataList>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="slope_1" title="slope" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="type_maneuver" title="type_maneuver" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="scenario" title="scenario" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="ambient_temperature" title="ambient temperature" description="" unit="degC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="vehicle_speed" title="vehicle_speed" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="vehicle_speed_control" title="vehicle speed control" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="gear_lever_command" title="gear lever command" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="acc_command" title="acc command" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="brake_command" title="brake command" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="road_slope" title="slope" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="Vcar" title="Vcar" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:93|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="in3" title="vehicle_speed" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="slope" title="slope" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:8|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="output" title="slope" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="gl" title="gl" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:50|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="output" title="gear lever command" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="acc" title="acc" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:92|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ev2" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="brake" title="brake" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:133|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="output" title="brake command" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="acc_perf" title="acc_perf" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:175|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ev3" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

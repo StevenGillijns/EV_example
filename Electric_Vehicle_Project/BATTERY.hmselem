@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="BATTERY" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="255,240,155"/>
+      <metadata key="IMAGE_BASE64" value="iVBORw0KGgoAAAANSUhEUgAAAhcAAADuCAMAAAC9BdWCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAnUExURQAAAGBwgGB4h2V1hWN2hmR2hmN4h2V3iGR4h2R3iGN4h2R3iGR4h2mmlAwAAAAMdFJOUwAQIDBQcJ+vv8/f7371OdsAAAAJcEhZcwAAFxEAABcRAcom8z8AAATwSURBVHhe7dzLklRHEARRkAR6wP9/ryzNfEWGpK5LEYzAzzbbosZ6fDvz7rN+Lh/fvYRP62dhF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6UfG0Xv+sqvtbv7mu7+IUP6I5PfK/fm128LXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSuxif/gn3sg+8/qW/uBe8lS4+//mKb9UFIxv3sg+8/qVipm+mi5fYRYtdDEY27mV2ccguWuxiMLJxL7OLQ3bRYheDkY17mV0csosWuxiMbNzL7OKQXbTYxWBk415mF4fsosUuBiMb9zK7OGQXLXYxGNm4l9nFIbtosYvByMa9zC4O2UWLXQxGNu5ldnHILlrsYjCycS+zi0N20WIXg5GNe5ldHLKLFrsYjGzcy+zikF202MVgZONeZheH7KLFLgYjG/cyuzhkFy12MRjZuJfZxSG7aLGLwcjGvcwuDtlFi10MRjbuZXZxyC5a7GIwsnEvs4tDdtFiF4ORjXuZXRyyixa7GIxs3Mvs4pBdtNjFYGTjXmYXh/7PXfA/vl/C6wvnV/DqU3YxGNm438BiC68+ZReDkY37DSy28OpTdjEY2bjfwGILrz5lF4ORjfsNLLbw6lN2MRjZuN/AYguvPmUXg5GN+w0stvDqU3YxGNm438BiC68+ZReDkY37DSy28OpTdjEY2bjfwGILrz5lF4ORjfsNLLbw6lN2MRjZuN/AYguvPmUXg5GN+w0stvDqU3YxGNm438BiC68+ZReDkY37DSy28OpTdjEY2bjfwGILrz5lF4ORjfsNLLbw6lN2MRjZuN/AYguvPmUXg5GN+w0stvDqU3YxGNm438BiC68+ZReDkY37DSy28OpTdjEY2bjfwGILrz5lF4ORjfsNLLbw6lN2MRjZuN/AYguvPmUXg5GN+w1/vO4vXl+4v4JXn7KLwcjGvcy/NztkFy12MRjZuJfZxSG7aLGLwcjGvcwuDtlFi10MRjbuZXZxyC5a7GIwsnEvs4tDdtFiF4ORjXuZXRyyixa7GIxs3Mvs4pBdtNjFYGTjXmYXh+yixS4GIxv3Mrs4ZBctdjEY2biX2cUhu2ixi8HIxr3MLg7ZRYtdDEY27mV2ccguWuxiMLJxL7OLQ3bRYheDkY17mV0csosWuxiMbNzL7OKQXbTYxWBk415mF4fsosUuBiMb9zK7OGQXLXYxGNm4l9nFIbtosYvByMa9zC4O2UWLXQxGNu5ldnHILlrsYjCycS+zi0N20WIXg5GNe5ldHPpWXbz/J9zbeH3hXPBWuvj46yu+VRf60pvpgp/nP/DpzS7usgsldqHELpTYhRK7UGIXSuxCiV0osQsldqHELpTYhRK7UGIXSuxCiV0osQsldqHELpTYhRK7UGIXSuxCiV0osQsldqHELpTYhRK7UGIXSuxCiV0osQsldqHkR+niw2+66UfpQj8mu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IUSu1BiF0rsQoldKLELJXahxC6U2IWSF7t4r58Mv/h/8+7d32BJQ3oShXTxAAAAAElFTkSuQmCC"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:221|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="Tamb" title="Temperature ambient" description="" unit="degreeC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="SOC_1" title="initial SOC" description="" unit="%" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Ns" title="number of cells in series" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Np" title="number of cells in parallel" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Ccell" title="capacity cell" description="" unit="Ah" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Acell" title="convective exchange area cell" description="" unit="mm**2" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Mcell" title="mass of material cell" description="" unit="kg" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="rhocell" title="density of material" description="" unit="kg/m**3" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Tmin" title="minimum temperature" description="" unit="degreeC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Tmax" title="maximum temperature" description="" unit="degreeC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Cp" title="specific heat of the material" description="" unit="J/kg/K" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="lambda" title="thermal conductivity of the material" description="" unit="W/m/K" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="stype" title="solid type index" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="battery_temperature" title="temperature" description="" unit="degC" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="V2" title="potential " description="" unit="V" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="I2" title="current " description="" unit="A" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="soc_3" title="state of charge" description="" unit="%" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="ocv" title="open circuit voltage" description="" unit="V" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="battery_temperature_1" title="temperature" description="" unit="degC" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="Energy_J" title="energy" description="" unit="J" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="iNet" title="iNet" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:28|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="isig2" title="current signal input" description="" unit="A" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="i" title="i" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:128|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="isig2" title="current signal input" description="" unit="A" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="vehicle" title="vehicle" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:155|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="x" title="input signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Unet" title="Unet" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:33|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="potential " description="" unit="V" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="U" title="U" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:56|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="potential" description="" unit="V" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="E" title="E" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:111|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="output" title="signal output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="SOC" title="SOC" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:167|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="soc4" title="state of charge" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

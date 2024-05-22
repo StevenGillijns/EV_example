@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="TRANSMISSION_FIXED_RATIO_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO;SimulationTemplate;Definition}.{gear_ratio;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">5</ParameterExposure>
+      <SubmodelInterface id="TRANSMISSION_FIXED_RATIO_Submodel" title="" description="" native_id="TRANSMISSION_FIXED_RATIO" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:580|P_HEIGHT:348|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Mechanics</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>1</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Transmission</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032281&amp;#032153&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;281&quot;&amp;#032height=&quot;153&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAACZAQMAAAAhGdw4AAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAD3ElEQVRYhe2YT2vTYBzHn+YUi7jT3kBPJYIX/6AH2QYtG6g4pc86D6V4cSjoQS3DwVgoO4QgfQ2hp5BDX4PCXsAEw04h0lPpISBYnNDw+HuSJs3TPk/ygDIc+OvWteuXbz/75vs8aYZQ8byX0KDbMqKajOiDjKgjI7olI6rLiO7JiKQiuCkjei0jOkBoheTPOdpBSC3wUSl4seiVjGgXoau1/NmiERQ7PYC7Esq9qeiuJHgx06aM0zsZ0SMZUQORaQHTY/JdxmkboSv5MYHoqYzTgUxOuzJOL2VE12VEO3+tTxsyfXom47Qpw/RQxul5KlrFQtGejNOblAnjhojpjozTXtqntRCL+jTfMG4EQqdaynREXD7UFnqbOmmOLXLaSEX3SchPSs0kro3HukD0IsN0NGnM4qpnM8seO80RQEV/3axPa75PcHbmfUJZp4HFd0IZJkImWac5E+MEEz+0jORh8vpMtOZ7ISEu9TiaYLBd54io07AXRTUeVuGJnhVlmH768ekkcjoRMPXNCMyJmBinpE++50/axIcbOMHdl7RPi0xOLxgMgpHSCwIREzh5h36Ij4iH218FTJbpGBXTNjXHMEzGKZPTpAWHzw9buIld71SUU9lRNdXSNE3tmt/ETBC42wGnZvtHDlPV1LuqaZimxbxd0ieakw9GYNbErfYpv0+QU3Bc0S1U6R/bvTymJrVq4o4/FTEZyFBNHb4hJ5thSnOKmtlyMc0Jt3994uYUDFXlasWIctLKI13ABE77cU5gdyJmKpf1PmUyjKzTvE/ebJ2c0dhd7PL7pHSVbrVr9bW+0dUVa5npEJiozb4brRigcpeZ6AJBwFSBIqm0TgxTsj/Nmei0wInfJ0VVaJ9MrapWu1rKVFrK6dB1aeIdLy8nYLKjnBDDlPYpcmrGfYJj95nbp/FQV441ZPWhT/1e3rHDcZ9wW9inuOMor08hbWYnZspZd9ecpE/56w5M2oXrbtbxhXXH7k+04/G6E+9Pg16lN4I+fXTy1p233w7PYH/q+Hn7U7lsG7A/2Tn7U+h5HiFh6JNQmBPsvuMx/XLmZz/RPh6NiCnZx6Nhmeb7E3OVsS3Yn4IRWp5FJlfmfKfTJ3r8G51xyuTEnIPX+TmJzuYME3MKFjFRjDQmm3FKPz/5uFEqpTFNS7w+DQJF7JQyTQCjPnfiM1lI7JTkRFy4YCiFyUx5okoFZZ34OcXJpEy1Go9pNotEbJ9W8RP6048nWXQLfWKdLD5TPPUlJB7T8nDe7k9ExdcIsk7F13cXz/Qv5lR8fXfBTCVEzgtEK0S/xH0q/v/T/7nE8xv0p6StMPko4wAAAABJRU5ErkJggkw2ynHqiJyIS7u8ECbrQohEC0olJDvJOdWl+0yWDGeqVgWTmHTTNUuUjMM4jpt4i/3245VsuqhPqaeyqZOdfe7iVUshUabKrFN6AZ+DX0BEB5BnhGOI0w7k+e4lxGntyp6D2xDRIUR0BGHagzhhBHi++wLitARh+g7itIjIxzmiG+RXYOLzmR4Dc5rfpyOI00PI50+gT/weQUR3IKIHENEuRAT6PHMHIqpCRN9ARAcQ0T5EtAURrf0PsyzHC/eFSuIAAAAASUVORK5CYII=&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.01&amp;#0320.00&amp;#0320.00&amp;#0321.01&amp;#03211.91&amp;#03211.72)&quot;&amp;#032width=&quot;256&quot;&amp;#032height=&quot;128&quot;&amp;#032id=&quot;object55&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,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&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;257&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;1.00&quot;&amp;#032id=&quot;object56&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;129&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#032135.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#03225.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03224.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#032134.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__gear_ratio" title="" description="" unit="null" data_type="real" native_id="gear_ratio" native_title="gear ratio" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>5</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__gearbox_output_speed" title="" description="" unit="rev/min" data_type="real" native_id="gearbox_output_speed" native_title="gearbox_output_speed"/>
+            <NativeToolVariable id="__ntv__gearbox_output_torque" title="" description="" unit="Nm" data_type="real" native_id="gearbox_output_torque" native_title="gearbox_output_torque"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="T_out" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:563|P_Y:93|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__tout" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="tout" native_title="output torque signal port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="w_out" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:93|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__win" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="win" native_title="input angular velocity signal port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="w_in" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:563|P_Y:220|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__wout" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="wout" native_title="output angular velocity signal port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="T_in" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:220|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__tin" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="tin" native_title="input torque signal at port 2"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libmec" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Mechanics" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntp__gear_ratio;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{gear_ratio;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntv__gearbox_output_speed;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{gearbox_output_speed;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntv__gearbox_output_torque;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{gearbox_output_torque;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{w_out;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{T_in;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{T_out;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{TRANSMISSION_FIXED_RATIO_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}.{w_in;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelAccuracy" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelUtilizationStage" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

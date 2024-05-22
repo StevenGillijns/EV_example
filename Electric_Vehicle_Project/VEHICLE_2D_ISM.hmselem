@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="VEHICLE_2D_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D;SimulationTemplate;Definition}.{mass_vehicle;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1360</ParameterExposure>
+      <SubmodelInterface id="VEHICLE_2D_Submodel" title="" description="" native_id="VEHICLE_2D" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:1446|P_HEIGHT:868|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Mechanics</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>1</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Vehicle_2D</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032281&amp;#032153&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;281&quot;&amp;#032height=&quot;153&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAACZAQMAAAAhGdw4AAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAADq0lEQVRYhe2YMUscQRiGZzeFZkkwV4iVRFLJEiUxMWlTKKZUyHGVbJEiSBDBGCSF7GIV8iuOq5Yp/A0p/AEKkauGDSGFXHGk8LgUDpOZ2bvd+Wb3bj/IYVL4rdy5+t27z77zzs4oIcNyBu8P4KmsPYJo2sc07WCa3mGaDid2OdTd7WKa3mKanmCaDjBNK4TMiPH1m7wnZJqMr2kFXt10H9Mkzby3Nr5ek0cYpU/yxSFjj2mc0sHEmD5gmvYxTbsYppdEDmCV0jIhd8fbJJuWMEzPMUwopReYpseYplUM03K10oy4xORpcmO3glFCgCPHbgnD9BSjtIDJ0x5GaQfD9AyjVDY5a1tWU8nYeZRS2FTM+HoYilAAptWCkhKiNDaVVgt5mmdJwhj7ZuSJFJTooKJcidhMG0JcrDfk4/sqZyooeRrHM6SKl3O2+aayijN2NrLJHXjUys0qMgWS5ZU06yrMqIpMforiRrnv+vcgT4xJrlpt7nxOenU+yJOl5NFmiha5me0FplCcrq3Lo7G2rpa6cqYhh6foBlT25WYZr+ma36rNS6jkqti04NPvmVKaBpuprnLUq+sK5JdQ56cWk/5kenNkcajUHF4utWhWMXCRZCVzJZRVJhMtrSZg2ijdE/TeACa/VCgGFshBk8U5Z+k36Rs73zSbvBFIgCks36f0DkymcqH87lSepgSXpsDSP9g08qSQupbISdfyaQSSznnGFFUxyRfHEdIjkdmjkbRpv0yfKO20bBXfYpKJ5jpPxtGrW0xybsTUcv24mSrNiCjN00OWXIhGhqQeUPI0YCBP0pVWt9UBSssnPmBSk6zdb0OLgjCATPKDn2kTCMVe/AX6JBO0LY54wvI48T6/4MAn5Uo3BkqXHfqjYzOFdQ6QOG/0hfiZM6lHiB9BpTj2WiBPkkkrDWac0EPH2n2efM3zpJSID+N56TZdwLQxkukUwxTlFtxRPtW5Fae69MmYnFqpswiZKG3ph0zOFIpt8RHkiR8etRUSGLsv9BjmSY1dllyVp1km2glMAQ+SoAfXO/+kRY9hnnzqE2IwydFr9PoNmKf2UWg/x9140YuIUV7UNFaEtMmRs8XsIVO9+rXdROS8A00u9YtrSyiu4f5guOCZz3HP3AsQ7V2UKw3WuzlxBjcIgXAK653bjaCS1yEFppFVsi8oVtk25C+aJshUuR//B0wTa5ocU/V+/OaZbtanyr+Ds/XuNk/VSpPLU/X/n4xyoIB1etv0/zX9AVZiN+oexzB+AAAAAElFTkSuQmCC&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032width=&quot;256&quot;&amp;#032height=&quot;128&quot;&amp;#032id=&quot;object148&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,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&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;256&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;1.00&quot;&amp;#032id=&quot;object149&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;129&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03279.00&amp;#032141.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#032199.00&amp;#032141.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#032130.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#03282.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#03234.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032200.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032140.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#03280.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03225.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#032129.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__mass_vehicle" title="" description="" unit="kg" data_type="real" native_id="mass_vehicle" native_title="mass_vehicle" min="0" max="30000" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1360</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__vehicle_speed" title="" description="" unit="null" data_type="real" native_id="vehicle_speed" native_title="vehicle speed"/>
+            <NativeToolVariable id="__ntv__acc_rotation" title="" description="" unit="null" data_type="real" native_id="acc_rotation" native_title="acc_rotation"/>
+            <NativeToolVariable id="__ntv__acc_Z" title="" description="" unit="null" data_type="real" native_id="acc_Z" native_title="acc_Z"/>
+            <NativeToolVariable id="__ntv__acc_X" title="" description="" unit="null" data_type="real" native_id="acc_X" native_title="acc_X"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="Vbat" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:78|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__out2" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="out2" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="Vcs" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:190|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__out2" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="out2" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="acc_rot" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:302|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__p1__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="p1__output" native_title="output at port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="acc_z" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:414|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__p2__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="p2__output" native_title="output at port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__4" title="" description="" native_id="4" native_title="acc_x" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:526|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__p3__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="p3__output" native_title="output at port 3"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__5" title="" description="" native_id="5" native_title="V" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:638|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__out1" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="out1" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__6" title="" description="" native_id="6" native_title="slope" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:191|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__input" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="input" native_title="input to gain"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__7" title="" description="" native_id="7" native_title="brake" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:416|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__in3" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="in3" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__8" title="" description="" native_id="8" native_title="w" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1429|P_Y:750|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__wout" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="wout" native_title="output angular velocity signal port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__9" title="" description="" native_id="9" native_title="T" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:641|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__tin" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="tin" native_title="input torque signal at port 2"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libmec" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libsig" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libtr" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libtrdv" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Mechanics" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntp__mass_vehicle;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{mass_vehicle;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntv__vehicle_speed;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{vehicle_speed;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntv__acc_rotation;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_rotation;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntv__acc_Z;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_Z_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntv__acc_X;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_X_1;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__6;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{slope;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__7;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{brake;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__9;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{T;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{Vbat;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{Vcs;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_rot;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_z;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__4;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{acc_x;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__5;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{V;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{VEHICLE_2D_Submodel;SubmodelInterface;Standalone}.{__ntport__8;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}.{w;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelAccuracy" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelUtilizationStage" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

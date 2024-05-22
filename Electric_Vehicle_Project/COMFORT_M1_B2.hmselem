@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<ConfiguredArchitecture id="COMFORT_M1_B2" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}"/>
+   <instances>
+      <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{VCU_ISM;InstrumentedSubmodel;Definition}" id="VCU" title="" description="">
+         <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}"/>
+      </InstrumentedSubmodel>
+      <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_2D_ISM;InstrumentedSubmodel;Definition}" id="VEHICLE_2D" title="" description="">
+         <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_2D;SimulationTemplate;Instance}"/>
+      </InstrumentedSubmodel>
+      <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_AIR_ISM;InstrumentedSubmodel;Definition}" id="COOLING_AIR" title="" description="">
+         <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_AIR;SimulationTemplate;Instance}"/>
+      </InstrumentedSubmodel>
+      <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_BOUNDERY_CONDITION_ISM;InstrumentedSubmodel;Definition}" id="BOARDNET_BOUNDERY_CONDITION" title="" description="">
+         <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_BOUNDERY_CONDITION;SimulationTemplate;Instance}"/>
+      </InstrumentedSubmodel>
+      <SimulationTemplate redeclare="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_COMFORT;SimulationTemplate;Instance}">
+         <instances>
+            <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{SCENARIO_MANAGER_EV_ISM;InstrumentedSubmodel;Definition}" id="SCENARIO_MANAGER_EV_ST_1" title="" description="">
+               <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_COMFORT;SimulationTemplate;Instance}.{SCENARIO_MANAGER_EV_ST_1;SimulationTemplate;Instance}"/>
+               <standalones>
+                  <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{SCENARIO_MANAGER_EV_ISM;InstrumentedSubmodel;Definition}.{type_maneuver;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">0</ParameterExposure>
+               </standalones>
+            </InstrumentedSubmodel>
+            <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{ANALYZER_COMFORT_ISM;InstrumentedSubmodel;Definition}" id="ANALYZER_COMFORT_ST_1" title="" description="">
+               <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_COMFORT;SimulationTemplate;Instance}.{ANALYZER_COMFORT_ST_1;SimulationTemplate;Instance}"/>
+            </InstrumentedSubmodel>
+         </instances>
+      </SimulationTemplate>
+      <SimulationTemplate redeclare="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}">
+         <instances>
+            <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{EM_208NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}" id="EM" title="" description="">
+               <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{EM;SimulationTemplate;Instance}"/>
+            </InstrumentedSubmodel>
+            <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO_ISM;InstrumentedSubmodel;Definition}" id="TRANSMISSION" title="" description="">
+               <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{TRANSMISSION;SimulationTemplate;Instance}"/>
+            </InstrumentedSubmodel>
+            <InstrumentedSubmodel definition="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}" id="BATTERY" title="" description="">
+               <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{BATTERY;SimulationTemplate;Instance}"/>
+            </InstrumentedSubmodel>
+         </instances>
+      </SimulationTemplate>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{start_time_s;NativeToolSolverSetting;Definition}" id="__ntss__start_time_s" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{stop_time_s;NativeToolSolverSetting;Definition}" id="__ntss__stop_time_s" title="" description="">200</NativeToolSolverSetting>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{interval_s;NativeToolSolverSetting;Definition}" id="__ntss__interval_s" title="" description="">1</NativeToolSolverSetting>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{integ_method;NativeToolSolverSetting;Definition}" id="__ntss__integ_method" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{tolerance;NativeToolSolverSetting;Definition}" id="__ntss__tolerance" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{max_time_step_s;NativeToolSolverSetting;Definition}" id="__ntss__max_time_step_s" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{solver_type;NativeToolSolverSetting;Definition}" id="__ntss__solver_type" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{error_type;NativeToolSolverSetting;Definition}" id="__ntss__error_type" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{discontinuity_printout;NativeToolSolverSetting;Definition}" id="__ntss__discontinuity_printout" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{fixed_step_s;NativeToolSolverSetting;Definition}" id="__ntss__fixed_step_s" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{fixed_order;NativeToolSolverSetting;Definition}" id="__ntss__fixed_order" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{fixed_integ_method;NativeToolSolverSetting;Definition}" id="__ntss__fixed_integ_method" title="" description=""/>
+      <NativeToolSolverSetting definition="{__Amesim__emlib__;ExtensionMaterialPackage;Standalone}.{monitor_time;NativeToolSolverSetting;Definition}" id="__ntss__monitor_time" title="" description=""/>
+   </instances>
+   <simu_target>Amesim</simu_target>
+   <mic_attributes>
+      <attribute id="ConfiguredArchitectureRealTimeSimulation" scope="Configured Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="ConfiguredArchitectureComplexity" scope="Configured Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="ConfiguredArchitectureLinearity" scope="Configured Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="ConfiguredArchitectureVerificated" scope="Configured Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="ConfiguredArchitectureValidated" scope="Configured Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</ConfiguredArchitecture>

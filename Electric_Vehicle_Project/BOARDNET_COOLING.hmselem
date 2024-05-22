@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="BOARDNET_COOLING" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="205,235,220"/>
+      <metadata key="IMAGE_BASE64" value="iVBORw0KGgoAAAANSUhEUgAAAKIAAACYCAMAAABQzcLiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAzUExURQAAAGBwgGB4h2V1hWR4h2N2hmJ4h2R2hmR4hWR3iGN4h2V3iGR4h2R3iGN4h2R3iGR4h+rxsagAAAAQdFJOUwAQIDBAUGBwgI+fr7/P3+8jGoKKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFrElEQVR4Xu2c7ZqiMAxGdVBHd3Tw/q92m/ZF0pJ+BAPuPk/PL6RpOUIJbXHmwPgZNwGtm/Dz3AS0bkJXtKArWtAVLeiKFnRFC7qiBf+f4vVrHQPqT6B1ExLFb+zWckT9Cew2oSta0BUt6IoWdEULuqIFXdGCrmhBV7Tgk4qn6xVbnuP5esFmxAcVz+Pz+cA2cXP1JMcPKvpDn/ABTUgr0B9U/KXA+bSFGdoRnxhdsURXTOmKnPGxEtSfQOtFVipagdaLdMUaaL1IV6yB1mWufzxuFPF83sO2I5jgAyI9n1BMb38BRHq6osh2ig0tv0DrMpspjt/YaAGty2ymeP3nFX+Pf7DVAlqX2Urxoum2H1G842nQCFqX2UjRzdSw1QRal9lG8Wd6hjaC1mU2URyHw+GE7SbQuswmirSwock5+yuONETS5Jyy4unsuCMy5XEhEOlpUvSTrsZeG/BtF8l9Y5c6EloO/PDjTE3O2V0xLA3hQxu+RhFTRZdwHKqcs7MiJRyHKufsrHgLgaqcs6+iTzgOWkNtJ9QpYag4LUc3dFoGKhWwU/ydJraqnLOr4ivP+1lvM6hUwEwxJBzHF3Y0gloFzBRfC/q6nNOgeL454gf1nXYtVzjLikg4Dl3OaVD0XBAemI8WUVQcvxB1OFyxq5HvmctpfreS8r4ie/9V6RBlxtv8XSPeVnwlHIcu5yzJHJ7PfO/scJySIh9Yvqso3Kke9tDKRJQUeRVlzpGQDd5T5L1cmXNEonXNibcUX1mbiPv1SqR75h1FDBOBMi3KSKfxHcXohXupP7Qzjes4byjyhONomPo2cEZrjDcUk0fl2znHI7xhXK+YpFHV2iKBP2RLRnBx5/GsV1w8Vs8rh7TRfSbcL6sVo4QDVq7pnLGHMFSME86E5mqjCsFOv6Fi5pl/GJpvbFQg2LDVTlHKX+C7sUsinGBHsFMUbryZtrEtgolNFHPXOTC0dEnEEpsoPh/REuSCU/1qI5LYRtFJZkbyoJqAEEdspVi72rUEhDBiO8Xab3bKCQhBxJaKtS55KXRJhBCbKroH4douiQBiY8XVCQjlxOaKz7F8tQf5aqOU2F7RdUlxUPFCvNooI/ZQdE2XuuRRWnlEGbGPYrFLig9tlBF7Kea75Je4fItCYjfFbJeU72kUEjsquqstdMnMSgpKibIi+4YWilKXzLyzRSnBjiBMiVipjeLzkUwN+eSJg2KCHeEXuxgsrRoppiPy3ItvFBOsty0XnvjLT6EbeLSK8ZpH9iGNcoInpcXgiRfmEptWMbrQx+xYBwEEX/dj6/uegWes3JRJqxgdIz/VQgARdVf+xyOOqJ8Ii1IepWL0xx5y1vYgwhNF8asZD93TM/xCqRidBX4jJCDCEyf3+QmQjNulRRqPUpG3UziJkWKamG7Un4+nW1I9O3tXKvLrVKqKkMDyphp/F18vvwSiVGSDiVzW9iAmUIycyC+BKBXZXZfL2h7EgIbVqmThmqNUnO+68qlBEKj/gGbMZRzHWsVj+cwgaqL6Zqk0Z9cpzuOAygIZol4U8hNRGNRrFV+DEXHCwkDYTPEr3fId0aFTfA1GKidxqVi41pVpsFJxuiClrO1BHCe3LHAvz4G1itP3zRxtBnEx0rLAo3ArA50i2qu/+g1xC07XKBE8rkOxFwZ0isg5xaztCXEiw/nif9ZxGnJDmwSdYqjT8EALgTaoFMNQrJK1PT7QCJViSIstb9p8oBEqRZ9zalnb49s2QqXoB0y1rO3xbRuhUqScU83antC4DSpFGtFXBgQgNG6DStElslPTSfyYIs1Q61nbExq3QaPo0mLTNMSB1tczzGgU3Qy18SQ+0TqBYypp608Lbqt+l1UfykisVLzkl5kK7Kp4bsraKbsqRkttzeyquOok7qqY/ryqkV3P4jq6ogVd0YJ1ivhnsvvQMFNOORz+AuleLq7wqQ3IAAAAAElFTkSuQmCC"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:380|P_HEIGHT:228|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="Np" title="low voltage battery number of branches in parallel" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="eff" title="efficiency_DC_DC_Coverter" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="k" title="generic_load" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Tamb" title="ambient temperature" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="Ns" title="low voltage battery number of cells in series" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="SOC" title="low voltage battery initial SOC" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="LVoutput" title="low voltage output " description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="battery_output_voltage_1" title="battery output voltage" description="" unit="V" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="battery_output_current" title="battery output current" description="" unit="A" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="power_loss_generic" title="power loss generic" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="power_loss_fan" title="power loss fan" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="fan_command" title="fan command" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="soc_2" title="battery SOC" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="power_loss_converter" title="power loss converter" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="power_loss_battery" title="power loss battery" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="fan" title="fan" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:363|P_Y:92|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="input" title="command signal at port 4 (off:0, level 1-8:1-8)" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="iCS" title="iCS" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:220|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="isig2" title="current signal input at port 2" description="" unit="A" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Ubat" title="Ubat" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:128|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="voltage signal input at port 1" description="" unit="V" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="UCS" title="UCS" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:112|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="potential at port 3" description="" unit="V" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="ibat" title="ibat" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:363|P_Y:162|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="psig2" title="current at port 3" description="" unit="A" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

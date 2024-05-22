@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="17">
+<Cache class_id="0" tracking_level="0" version="0">
+	<mCache class_id="1" tracking_level="0" version="0">
+		<V>1</V>
+		<E>0</E>
+		<vertex_property class_id="2" tracking_level="0" version="0">
+			<mToolId class_id="3" tracking_level="0" version="0">
+				<mName></mName>
+				<mVersion class_id="4" tracking_level="0" version="0">
+					<mMajor>-1</mMajor>
+					<mMinor>-1</mMinor>
+					<mMinimus>-1</mMinimus>
+				</mVersion>
+				<mArchitecture>1</mArchitecture>
+			</mToolId>
+			<mHashValue></mHashValue>
+			<mModelPath></mModelPath>
+			<mNodeType>0</mNodeType>
+		</vertex_property>
+		<graph_property class_id="5" tracking_level="0" version="0"></graph_property>
+	</mCache>
+	<mRoot>0</mRoot>
+</Cache>
+</boost_serialization>
+

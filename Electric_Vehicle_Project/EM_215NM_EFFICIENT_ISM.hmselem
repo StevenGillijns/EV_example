@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="EM_215NM_EFFICIENT_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{ELECTRIC_MOTOR;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{ELECTRIC_MOTOR;SimulationTemplate;Definition}.{Tamb;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">2.50000000000000e+01</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{ELECTRIC_MOTOR;SimulationTemplate;Definition}.{motorMass;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">50</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{ELECTRIC_MOTOR;SimulationTemplate;Definition}.{motorConstant;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">0.1</ParameterExposure>
+      <SubmodelInterface id="EM_215NM_INEFFICIENT_Submodel" title="" description="" native_id="EM_215NM_INEFFICIENT" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:1273|P_HEIGHT:764|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Electrics</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>1</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Electric_Motor</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032190&amp;#032190&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;190&quot;&amp;#032height=&quot;190&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAByklEQVRYhe2YTWrDMBCFJXnjmkK76T5k2VN4Ee9dsOiqZ4mXPUrwKXqR3qOLGFeSW3vkzhOZ4tAfIoNImMx8en7SCKKU0iqMNsxlmDdhZgMZChgUgKVWZOj1Ain4zcCMF/frXDHDJ/KBDAUc43rHDFzKB7T6+pSpVfEMI9YhZ8BS7pVcMTJ0Ei7UAZebUi7UYZAfK+pIlVrLc438gBkZYqR2u/B8wHcFlWuxH0rMSJVaS4fC52N44zL2x2/t3ZQOwwU843EqXjURo2i5Um7Zff/qhnpyk4386OZhKKOaG25vI8accMjpcvUQGGHYmuogjBwyGp5BMpwfH4whMB5ovyIZhZRxyFuqoyeMBunYLBh797j5FB3BD7Iqi/xYMuYMpCMImXTQjBLoMEKG0/HJCH5EDOCHaRHDon31jHRYXkdxv5UxOsJY+mGBH6OOTODH9K7O6MfkufcjZgA/tuLzMe/dhQ50Pgq4d+H5aOn5oBn1mfoV1VECHbhfAcaiX1GGBv0qYuz2cwbX27swUx3qzn/Rg5/qKDC+oEXGdEdVwwl3lL/V1rrPUxnygJwhu89/r47/7sdf03Hx40d08H8OjImaVrklny8BGngHM4dGgdSWXAcAAAAASUVORK5CYII=&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.28&amp;#0320.00&amp;#0320.00&amp;#0321.30&amp;#03212.28&amp;#03211.78)&quot;&amp;#032width=&quot;128&quot;&amp;#032height=&quot;128&quot;&amp;#032id=&quot;object151&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFtJREFUeNrsnE1LG0EYgDdqUhvSxiSSqETwVC0Inuup9A8U2oPeeiuF9je00P9QKL15ql4K/QPiTTwKQkUvgmLQmtjUEC1pat9k2mn8SLTdnc3u9HkIy7hCEubZd953ZmcTKRaLDnSPHroAAQgABCAAEIAAQAACAAEIAAQgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABCAAEIAAQAACAAEIAAQgABAQSvq8eqPnS3PzG8vSmL1z7839J6HriO3t7VKpJI10Oj06Ohq+CFC939oIF6r3Wxv+EHHzoPb7jeUXS3POzn7jj3z2zz8unvGCdrGlg+8faX7bxcev9In19XU5Tk9P+xAKroagRu/7iPSyn+EloRCNRoeGhkjCXWNvb8/0iOQ6Cf84PTPsWMfu7u7NJkGNgOIXu4OgXq9LgSTHoEbAt1rjmL7txPt/nameOKWvjcb3utPX6/H3vTTOvM72ikKhMDw8LI3j42NxMDY2FrYc4Hnv+0u5XD44ONBtQ8nAdQTciDaCQC55ddXbxeHhYSqV6u3tVckgkUjEYrGARUBmwNbRX2pQGfrFgU4GUhQFbwjqifwZiPPZyaNb8rJDwODgoAoCnYFNjELMA9qSTCbj8bj0vs4EIUjCa3dvyssaBzoIarVaUMvQvy0ZQ/VB8SbValWCQJWkDEHdCQIpQw0FAQKuDgKpPp3mupAcFxYWVlZWEOAruVxOjpVKRcYiaWxtbSHA7wmBVETSMFEOIeAvMoGKgIBVQbYvR+sgSKVSelYcpAiwfTm6NQjUolDAIqDDcrRdSO9LEKg0sLq6qs+73EXR58C10QLUXXvNzMxM9wTYuxx9rpeDuhSRGXB2P/9voRCJRMbHx4MhoHU52nEmPx3Lce3WkQW9PDExce5MvV7f3NyUxunpaWt8TE1NMQ/wg/39S0rtbDbb1Qg4y6+16J0jHRMeY+Km/PVmMCcnJ+Vy2X3WJQK8vPwDkANcX1mh+KBqExPvTARci0Kh4PxeEUKA35RKpVqtpmbCCPAbKT3VDv5MJqPWgrzdIsdSxBWobSnRaDSdTntb/3gkwOrlaBl51OKPoTvyDsvRnVH3gdXeCEMfwXJ0p9KzUqm0znVNPCVAEm6LGnySyWR/f+Pakgxs4pExlqM7RYB0ur78R0ZGAhkB9u6Odpp3YFTpKXGgqqDgRYC9y9GJRELNvGKxmLnnVZkHtCWfz6uGzLxM3I43IuDMcrQV5HI5c49IUgVdPQrxoHbXkGHH0JORngmYvXPPYgGSeM0N/d7kAPXTGfM7H9tkMe9/rGN+8ZLPmn3w0P2PdVxEbcg1jatfSzkzH3j3TLeLT98a+rqZl48uniy+/uD+nVs3u7nZ5dC1HKCHo5COS3qeZWjCZTwC/MFcBHSLkAmwD8pQBCAAEIAAQAACAAEIAAQgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABCAAEIAAQAACAAEIAAQgABCAAPhHfgowAF5ShPKVVlCvAAAAAElFTkSuQmCC&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.01&amp;#0320.00&amp;#0320.00&amp;#0321.01&amp;#03211.94&amp;#03212.00)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;164&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;0.99&quot;&amp;#032id=&quot;object152&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;165&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03239.00&amp;#032178.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#032139.00&amp;#032178.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#032130.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#03260.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032171.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032122.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#03273.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#03224.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03259.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#032139.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__motorConst" title="" description="" unit="s" data_type="real" native_id="motorConst" native_title="time constant to determine the torque" min="1e-30" max="1000" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>0.1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__mass" title="" description="" unit="kg" data_type="real" native_id="mass" native_title="mass of material" min="0.001" max="10000" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>50</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__temperature" title="" description="" unit="degC" data_type="real" native_id="temperature" native_title="temperature" min="-273.14" max="1e+09" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>2.50000000000000e+01</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__motor_torque" title="" description="" unit="Nm" data_type="real" native_id="motor_torque" native_title="motor torque" min="-1e+30" max="1e+30" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>0.00000000000000e+00</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__temperature" title="" description="" unit="degC" data_type="real" native_id="temperature" native_title="temperature"/>
+            <NativeToolVariable id="__ntv__powerloss" title="" description="" unit="W" data_type="real" native_id="powerloss" native_title="power losses"/>
+            <NativeToolVariable id="__ntv__torque_command" title="" description="" unit="Nm" data_type="real" native_id="torque_command" native_title="torque command"/>
+            <NativeToolVariable id="__ntv__current" title="" description="" unit="A" data_type="real" native_id="current" native_title="current"/>
+            <NativeToolVariable id="__ntv__voltage" title="" description="" unit="V" data_type="real" native_id="voltage" native_title="voltage"/>
+            <NativeToolVariable id="__ntv__eff" title="" description="" unit="null" data_type="real" native_id="eff" native_title="efficiency"/>
+            <NativeToolVariable id="__ntv__Tmax" title="" description="" unit="Nm" data_type="real" native_id="Tmax" native_title="maximum torque"/>
+            <NativeToolVariable id="__ntv__Tmin" title="" description="" unit="Nm" data_type="real" native_id="Tmin" native_title="minimum torque"/>
+            <NativeToolVariable id="__ntv__motor_torque" title="" description="" unit="Nm" data_type="real" native_id="motor_torque" native_title="motor torque"/>
+            <NativeToolVariable id="__ntv__motor_speed" title="" description="" unit="rev/min" data_type="real" native_id="motor_speed" native_title="motor_speed"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="temp_cs" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:80|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__outt" title="" description="" unit="degC" data_type="real" dimension="1" causality="output" native_id="outt" native_title="temperature"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="heatflow_cs" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:125|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__ihfs" title="" description="" unit="W" data_type="real" dimension="1" causality="input" native_id="ihfs" native_title="heat flow rate"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="Torque" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:194|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__tout" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="tout" native_title="output torque signal port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="speed" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:284|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__win" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="win" native_title="input angular velocity signal port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__4" title="" description="" native_id="4" native_title="w" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:308|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__wsig" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="wsig" native_title="signal output"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__5" title="" description="" native_id="5" native_title="Tmin" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:422|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__p1__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="p1__output" native_title="output at port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__6" title="" description="" native_id="6" native_title="Tmax" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:536|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__p2__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="p2__output" native_title="output at port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__7" title="" description="" native_id="7" native_title="Treq" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:443|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__Tset" title="" description="" unit="Nm" data_type="real" dimension="1" causality="input" native_id="Tset" native_title="torque command at port 4"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__8" title="" description="" native_id="8" native_title="voltage" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:602|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="input" native_id="usig1" native_title="voltage signal input at port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__9" title="" description="" native_id="9" native_title="current" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:1256|P_Y:650|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__psig2" title="" description="" unit="A" data_type="real" dimension="1" causality="output" native_id="psig2" native_title="current at port 3"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libth" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libdrv" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libmec" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libeb" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libsig" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Electrics" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntp__mass;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{motorMass;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntp__motorConst;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{motorConstant;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntp__temperature;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Tamb;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__powerloss;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{powerloss;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__torque_command;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{torque_command;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__eff;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{eff;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__motor_speed;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{motor_speed;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__temperature;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{temperature;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__current;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{current_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__voltage;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{voltage_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__Tmax;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Tmax_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__Tmin;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Tmin_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntv__motor_torque;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{motor_torque_1;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{heatflow_cs;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{speed;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__7;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Treq;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__8;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{voltage;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{temp_cs;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Torque;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__4;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{w;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__5;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Tmin;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__6;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{Tmax;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{EM_215NM_INEFFICIENT_Submodel;SubmodelInterface;Standalone}.{__ntport__9;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{EM_215NM_EFFICIENT_ISM;InstrumentedSubmodel;Definition}.{current;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

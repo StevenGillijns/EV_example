@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="POWERTRAIN" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="255,240,155"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="True"/>
+      <metadata key="Layers" value="Port Names=0|Images=1"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:245|P_X:410|P_Y:186"/>
+      <metadata key="SVG_SHAPES" value=""/>
+   </metadataList>
+   <instances>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO;SimulationTemplate;Definition}" id="TRANSMISSION" title="" description="">
+         <metadataList>
+            <metadata key="FLIP_STATE" value="UNFLIPPED"/>
+            <metadata key="Locked" value="1"/>
+            <metadata key="ROTATION_STATE" value="0"/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:1246.09|P_Y:538.15"/>
+         </metadataList>
+         <standalones>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{TRANSMISSION_FIXED_RATIO;SimulationTemplate;Definition}.{gear_ratio;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+         </standalones>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}" id="BATTERY" title="" description="">
+         <metadataList>
+            <metadata key="FLIP_STATE" value="UNFLIPPED"/>
+            <metadata key="Locked" value="1"/>
+            <metadata key="ROTATION_STATE" value="0"/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:221|P_X:332.033|P_Y:922.908"/>
+         </metadataList>
+         <standalones>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tamb;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{SOC_1;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Ns;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Np;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Ccell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Acell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Mcell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{rhocell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tmin;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tmax;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Cp;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{lambda;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{stype;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+            <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{battery_temperature;ParameterExposure;Standalone}" express_fmt="ExpressionFormat"/>
+         </standalones>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{ELECTRIC_MOTOR;SimulationTemplate;Definition}" id="EM" title="" description="">
+         <metadataList>
+            <metadata key="Locked" value="1"/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:473|P_HEIGHT:284|P_X:314.177|P_Y:303.51"/>
+         </metadataList>
+      </SimulationTemplate>
+   </instances>
+   <standalones>
+      <VariableExposure id="BAT_SOC" title="" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="heatflow_cs" title="heatflow_cs" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;98.26584855871495&quot; y=&quot;308.19938641903622&quot; angle=&quot;0&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:211|P_Y:228|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ihfs" title="heat flow rate" description="" unit="W" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Treq" title="Treq" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;96.332310698393684&quot; y=&quot;407.12985637453858&quot; angle=&quot;0&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:127|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Tset" title="torque command" description="" unit="Nm" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="w_out" title="w_out" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;1055.8489227055181&quot; y=&quot;600.35862556404049&quot; angle=&quot;0&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:201|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="win" title="input angular velocity signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="iNet" title="iNet" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;99.795812760405312&quot; y=&quot;936.76823421509232&quot; angle=&quot;0&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:185|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="isig2" title="current signal input" description="" unit="A" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="vehicle" title="vehicle" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;106.30679670715072&quot; y=&quot;1063.4535643008762&quot; angle=&quot;0&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:282|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="x" title="input signal " description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="temp_cs" title="temp_cs" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;1106.4639287121056&quot; y=&quot;292.21328949004203&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:77|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="outt" title="temperature" description="" unit="degC" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="w" title="w" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;988.94580947959673&quot; y=&quot;347.32924279357474&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:4|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="wsig" title="signal output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Tmin" title="Tmin" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;874.86707572064245&quot; y=&quot;401.99693209518108&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:44|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="p1__output" title="output " description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Tmax" title="Tmax" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;791.72494772682842&quot; y=&quot;466.33231069839383&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:85|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="p2__output" title="output " description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="T_out" title="T_out" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;1743.7233761300365&quot; y=&quot;609.66529216169272&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:123|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="tout" title="output torque signal" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Unet" title="Unet" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;850.95274422754846&quot; y=&quot;940.97273679661873&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:129|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="potential " description="" unit="V" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="E" title="E" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;942.57900270609753&quot; y=&quot;1019.6000328490682&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:209|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="output" title="signal output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="SOC" title="SOC" description="" domain="Signal">
+         <metadataList>
+            <metadata key="PARENT_PORT_DATA" value="&lt;values x=&quot;829.40774239863106&quot; y=&quot;1074.9263976785387&quot; angle=&quot;180&quot; flip=&quot;0&quot;/&gt;"/>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:168|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="soc4" title="state of charge" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <simulationPortMappings>
+      <SimulationPortMLMapping id="Mapping_6" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{iNet;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{iNet;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;208.79581276,968.76823422 294.03276502,968.76823422&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_8" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{vehicle;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{vehicle;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;215.30679671,1095.45356430 294.03276502,1095.45356430&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_17" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{Unet;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{Unet;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;837.95274423,972.97273680 744.03300000,972.97273680&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_19" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{E;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{E;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;929.57900271,1051.60003285 744.03300000,1051.60003285&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_20" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{SOC;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{SOC;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;816.40774240,1106.92639768 785.05500000,1106.92639768 785.05500000,1106.90724279 744.03276502,1106.90724279&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_4" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{w_out;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{TRANSMISSION;SimulationTemplate;Instance}.{w_out;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;1164.84892271,632.35862556 1208.09000000,632.35862556&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_5" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{T_out;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{TRANSMISSION;SimulationTemplate;Instance}.{T_out;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;1730.72337613,641.66529216 1658.09000000,641.66529216&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{heatflow_cs;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{heatflow_cs;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;207.26584856,340.19938642 276.17700000,340.19938642&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_1" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{Treq;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{Treq;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;205.33231070,439.12985637 276.17700000,439.12985637&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_2" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{w;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{w;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;975.94580948,379.32924279 841.58850000,379.32924279 841.58850000,379.51000000 727.17700000,379.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_3" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{Tmin;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{Tmin;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;861.86707572,433.99693210 727.17700000,433.99693210&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_7" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{Tmax;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{Tmax;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;778.72494773,498.33231070 771.48160627,498.33231070 771.48160627,498.51000000 727.17700000,498.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+      <SimulationPortMLMapping id="Mapping_9" title="" description="" top_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{temp_cs;SimulationPort;Standalone}" inner_port="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{temp_cs;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="Polyline" value="&lt;svg&gt;&lt;polyline points=&apos;1093.46392871,324.21328949 727.17700000,324.21328949&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortMLMapping>
+   </simulationPortMappings>
+   <connections>
+      <SimulationPortConnection id="Connection" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{Torque;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{TRANSMISSION;SimulationTemplate;Instance}.{T_in;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1208.09000000,711.41891646 630.04100782,711.41891646 630.04100782,564.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_1" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{U;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{voltage;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;405.83054568,884.90800000 403.17700000,884.90800000 403.17700000,564.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_2" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{current;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BATTERY;SimulationTemplate;Instance}.{i;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;477.03300000,884.90800000 477.03300000,564.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_3" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{TRANSMISSION;SimulationTemplate;Instance}.{w_in;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{EM;SimulationTemplate;Instance}.{speed;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1658.09000000,715.15000000 1902.81000000,715.15000000 1902.81000000,817.88651492 550.17700000,817.88651492 550.17700000,564.51000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+   </connections>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

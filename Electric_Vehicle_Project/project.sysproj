@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysproj id="Electric_Vehicle_Project" fileVersion="2.1" version="2404">
+    <attachedFiles/>
+    <dependencies/>
+    <plotConfigs>
+        <file title="Performance_M1_vs_M2" name="Plot_0.plt"/>
+        <file title="Comfort_Acc_Z_M1_vs_M2" name="Plot_2.plt"/>
+        <file title="VEM_Battery_SOC" name="Plot_3.plt"/>
+    </plotConfigs>
+    <NativePathEntries>
+        <NativePathEntry path="/home/simcenter/studio/model_pipelines_updated/EV_example/Lib_EV_Controls" isModel="0" tool="Simcenter Amesim"/>
+        <NativePathEntry path="/home/simcenter/studio/model_pipelines_updated/EV_example/Lib_EV_Cooling" isModel="0" tool="Simcenter Amesim"/>
+        <NativePathEntry path="/home/simcenter/studio/model_pipelines_updated/EV_example/Lib_EV_Electrics" isModel="0" tool="Simcenter Amesim"/>
+        <NativePathEntry path="/home/simcenter/studio/model_pipelines_updated/EV_example/Lib_EV_Mechanics" isModel="0" tool="Simcenter Amesim"/>
+        <NativePathEntry path="/home/simcenter/studio/model_pipelines_updated/EV_example/Lib_EV_Scenario" isModel="0" tool="Simcenter Amesim"/>
+    </NativePathEntries>
+</sysproj>

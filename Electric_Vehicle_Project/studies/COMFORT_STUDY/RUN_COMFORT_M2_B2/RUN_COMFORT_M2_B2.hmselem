@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<Run id="RUN_COMFORT_M2_B2" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COMFORT_M2_B2;ConfiguredArchitecture;Standalone}"/>
+   <native_ca>
+      <target_tool>
+         <name>Amesim</name>
+         <version_major>20221</version_major>
+         <version_minor>0</version_minor>
+         <version_minimus>0</version_minimus>
+         <architecture>64Bits</architecture>
+      </target_tool>
+      <path>mdl</path>
+      <target>
+         <path>.</path>
+         <name>Amesim_RUN_COMFORT_M2_B2</name>
+      </target>
+   </native_ca>
+</Run>

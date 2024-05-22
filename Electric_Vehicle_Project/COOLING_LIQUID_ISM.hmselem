@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="COOLING_LIQUID_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID;SimulationTemplate;Definition}.{k;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID;SimulationTemplate;Definition}.{pump_pressure;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1.00000000000000e+00</ParameterExposure>
+      <SubmodelInterface id="COOLING_LIQUID_Submodel" title="" description="" native_id="COOLING_LIQUID" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:753|P_HEIGHT:452|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Cooling</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>0</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Cooling_System_Liquid</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032190&amp;#032190&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;190&quot;&amp;#032height=&quot;190&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAADjklEQVRYhe2YP2vbQBjG72RK1VDaePDWUKNJ+FMkYOGpJAYfWWLyKUqWgEQn46E0Q8eC6SRu6GdQIG1mQ1ovNto9ZIppChHXk066O0nvpbUJhUBfEzycH/30vM/9kYIQQgGq1rb4ggbwww1Yaw+sf1fGS23k4yUDKuKjdu33vHYbpgHLNMAZz7tAmRUpA6P6J72UEQ4zjIr1DTZMDKOC/z0DbOB772pNH8YmGg1mefRWBPZhURoAChs/nTb7YB4W/dwGe9VjJwOYEdYmo7gUPsAfQINWu67IeuUNvKsqQzgP6gory4MzqnlkCmsC3hXMwCaG0UfD5KOxEQPjPj6r5oHW7lUxfaBewT42ZQA+UC2PJy3S4nlYiN2WGVs0nZdinZcYxCO+tgaVoo1Qrqj4IEmSyPWhMzoILQM4D4+B88oWjHx9aHkQhMle0SuqKVyEnKJXvdXXUq9IkXlpfdh6HsneR5LXwRG3IvOg7THNa+IKhZi7h15cbOo3OUNc1FKK0NbzwHufFnlNB3ibFOtDV0woch257/YUY/Wtewozxsi1ZdsxkYzFYvdU+kBWRyroMnDlvOr29iWDXV7oDE0xFgpLnB/Ds6asaEiwYmgzMXAdjcHYT8ZiduffeGWGuDwNaTgJdB9D3qTFIjXzPYmOdB+54gu3Hrht1SvFWL01MQLpPM1DMab98yMtD8UIYR8JW5ErAwONMh9W1ce0OYd80EyhM3x2wvzY5z68Ocyg41EofLBbrDPS4nn4d7VeLSl16r1KfHbJfhgYYwrmwWsO57Ech2DmLDb7KOZVOQ9ecB50OXItKA92eQ/D4MOQR8roqF75ysfsDz6QWB8tQvqEtNLNZDjX14e2PLZG2hr09EdEnYE6VJXsVTowVMu85CPb0JWio5599k2MssJWz1c7RIOcqjzQlqNJsjzyZ7g3xJeMO53Bq+IjH+BdKqwk81eaD/3GRmpv5zstIcfMzz6zebfMKHas8QjZpTwOc8YswiqPtN4ViqDCOJR7oomRpan5OM4VcYRgHzVGoZhVGVQphA/2i+fBGXweZp/4HGl5vLi+LhTvS4ws8wv9HNQzF6yROGvzgZ0kO8XTGvBjMSrNq1AqlkGJcSMAac/KjImc8AWD5/E6juNInOf9ZjNWeXAf14H4ecdxqGJ4vFldiFGrzQbgd4P7FPD7x8My/oUP+H3w8fl4ZHkY/znwv/62fgOcyMR14qn3XAAAAABJRU5ErkJggmRfBbSzegWG83hevcGvfDfwXPcP583Lydh5V6vW4LxH7fJhvw86FaDyXW3X1bJiX+1iVLwPVvcBKt8HnYxd/xx4qoKuBv9/Kqo/ytng/QWMHsUyhdmkOgAAAABJRU5ErkJggg==&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(0.65&amp;#0320.00&amp;#0320.00&amp;#0320.65&amp;#03212.45&amp;#03212.41)&quot;&amp;#032width=&quot;256&quot;&amp;#032height=&quot;256&quot;&amp;#032id=&quot;object87&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,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&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;166&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;1.00&quot;&amp;#032id=&quot;object88&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;166&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#03299.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032172.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#03225.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03259.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03298.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#032138.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__k" title="" description="" unit="null" data_type="real" native_id="k" native_title="enable fan" min="-1e+30" max="1e+30" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__pump_pressure" title="" description="" unit="barA" data_type="real" native_id="pump_pressure" native_title="pump pressure" min="1e-06" max="1e+09" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1.00000000000000e+00</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__fan_control" title="" description="" unit="null" data_type="real" native_id="fan_control" native_title="fan control"/>
+            <NativeToolVariable id="__ntv__power_loss_motor" title="" description="" unit="W" data_type="real" native_id="power_loss_motor" native_title="power_loss_pump"/>
+            <NativeToolVariable id="__ntv__pump_pressure" title="" description="" unit="barA" data_type="real" native_id="pump_pressure" native_title="pump pressure"/>
+            <NativeToolVariable id="__ntv__pump_mass_flowrate" title="" description="" unit="kg/s" data_type="real" native_id="pump_mass_flowrate" native_title="pump mass flowrate"/>
+            <NativeToolVariable id="__ntv__heat_flowrate_cooling_system" title="" description="" unit="W" data_type="real" native_id="heat_flowrate_cooling_system" native_title="heat_flowrate_cooling_system"/>
+            <NativeToolVariable id="__ntv__heat_flowrate_ambient" title="" description="" unit="W" data_type="real" native_id="heat_flowrate_ambient" native_title="heat_flowrate_ambient"/>
+            <NativeToolVariable id="__ntv__temperature_coolant" title="" description="" unit="degC" data_type="real" native_id="temperature_coolant" native_title="temperature_coolant"/>
+            <NativeToolVariable id="__ntv__temperature_motor" title="" description="" unit="degC" data_type="real" native_id="temperature_motor" native_title="temperature motor"/>
+            <NativeToolVariable id="__ntv__heat_flowrate_motor" title="" description="" unit="W" data_type="real" native_id="heat_flowrate_motor" native_title="heat_flowrate_motor"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="speed" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:87|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__in3" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="in3" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="heat_motor" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:736|P_Y:87|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__ohfs" title="" description="" unit="W" data_type="real" dimension="1" causality="output" native_id="ohfs" native_title="heat flow rate"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="temp_motor" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:208|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__its" title="" description="" unit="degC" data_type="real" dimension="1" causality="input" native_id="its" native_title="temperature"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="voltage" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:329|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="input" native_id="usig1" native_title="voltage signal input at port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__4" title="" description="" native_id="4" native_title="current" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:736|P_Y:208|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__psig2" title="" description="" unit="A" data_type="real" dimension="1" causality="output" native_id="psig2" native_title="current at port 3"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__5" title="" description="" native_id="5" native_title="fan" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:736|P_Y:329|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__out2" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="out2" native_title="input to junction"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libemd" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libcs" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libmec" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libeb" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libesc" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libsig" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libthh" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libth" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Cooling" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntp__k;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{k;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntp__pump_pressure;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{pump_pressure;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__fan_control;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{fan_control;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__power_loss_motor;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{power_loss_motor;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__pump_pressure;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{pump_pressure_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__pump_mass_flowrate;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{pump_mass_flowrate;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__heat_flowrate_cooling_system;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{heat_flowrate_cooling_system;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__heat_flowrate_ambient;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{heat_flowrate_ambient;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__temperature_coolant;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{temperature_coolant;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__temperature_motor;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{temperature_motor;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntv__heat_flowrate_motor;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{heat_flowrate_motor;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{speed;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{temp_motor;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{voltage;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{heat_motor;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__4;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{current;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{COOLING_LIQUID_Submodel;SubmodelInterface;Standalone}.{__ntport__5;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID_ISM;InstrumentedSubmodel;Definition}.{fan;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

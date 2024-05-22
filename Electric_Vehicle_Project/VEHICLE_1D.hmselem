@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="VEHICLE_1D" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="255,225,120"/>
+      <metadata key="IMAGE_BASE64" value="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"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:375|P_HEIGHT:223|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="mtot" title="total vehicle mass" description="" unit="tonne" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="gear_ratio" title="gear_ratio" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="displacement" title="displacement" description="" unit="m" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="velocity" title="velocity" description="" unit="m/s" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="displacement_1" title="displacement" description="" unit="m" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="velocity_1" title="velocity" description="" unit="m/s" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="acceleration" title="acceleration" description="" unit="m/s/s" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="driving_force" title="driving force" description="" unit="N" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="slope" title="slope" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:32|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="slopein" title="" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="brake" title="brake" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:93|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="fbrakcmd" title="front axle braking signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="T" title="T" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:59|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="tin" title="input torque signal" description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Vbat" title="Vbat" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:218|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out2" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Vcs" title="Vcs" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:358|P_Y:146|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out2" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Vpa" title="Vpa" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:226|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out2" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="X" title="X" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:271|P_Y:-17|P_ORIENTATION:1"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="xsig" title="signal output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="V" title="V" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:357|P_Y:88|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="out1" title="input to junction" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="w" title="w" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:140|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="wout" title="output angular velocity signal" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>

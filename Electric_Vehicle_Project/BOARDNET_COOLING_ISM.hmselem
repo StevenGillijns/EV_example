@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="BOARDNET_COOLING_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{Np;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{eff;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">0.9</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{k;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{Tamb;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">20</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{Ns;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">6</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{SOC;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">80</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}.{LVoutput;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">13.91</ParameterExposure>
+      <SubmodelInterface id="BOARDNET_COOLING_Submodel" title="" description="" native_id="BOARDNET_COOLING" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:753|P_HEIGHT:452|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Electrics</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>0</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Boardnet_Cooling</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032281&amp;#032153&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;281&quot;&amp;#032height=&quot;153&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAACZAQMAAAAhGdw4AAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAADIUlEQVRYhe2YMWvbQBTHz0cDV1FIO2Su8GS09xsk0K0J5NAk8hUy2HQqvXoS/hRCk7hP00I1Gq8lQ+lS6BLc906y9N7Jkt1gmqTNX1ZkO4+nn/763+kSIWo9E1wjsUVPRQ+r6Hg9rF9YpLb1JVKHLXpxOqy3+59uJAa3e2E6WNGBmCAQz4dtup97d7Cipzz9baZHkadXL/co2oPpTKPIF+/W5m55OnGd9PlwnsY5aJipQgJdDvmkUvyZDlqgG533F8moAgsHmDTRZS+TMu5gFO/E8kQ76YvteZIyFxI3IzPZx6S5ephUc1Ds6knRyOvkvOoy1fYE7lWZxpjO/DY1VYfJtGhomEoNz5PLUeJ3uujmSVoXplr4PmRMFdGV3+nSYzKZUAuVMhlmwUgvb5dll+kz8ymy1hbhpPbJHQL4ylAm/SFe33pXdwULla+UaVFIWyijNkahCmhmSJ6OkhI6JbxTqd3wa5ikzaPv34IwqNIkMFVjm7uoN0zxTw2dYtYp9n2Ccy9sEbSewW5h8CnTWjBCp/2rS+pANUzRRI5vbmRYd8J4B5mIRBTicu6TY8Ib12EqwaiSMqVGzW1hUpIIwIwsyxN2Wi11mTCk9aqkeZIOI5wTpgjMs/Os9WkTb9pppmOPyVTDLGuHncjEJCBMZLyRTqX2fRJigvtYNXECm7IqVj7TrO2U6Bh78XHnmCbt+4kBo0zze8jThilJCFICjq9+tHmSkB5MEKQ6x03IeZ5FmHvqU9mmuhYaNdN6SphsUeA7HB+1xNyIME0z4tPtcrksnc0ECT9dt0Uyj2xHMJlHUdjx6f3H9WZbY89Z/HPavXfOYlmFHDwKF0VG8nSit6vk89MY9pwKesDIIz71zJizq3LK5yfTzpibGxguqE+iihStEUcYivKaFcGFSVYk0ScbMqZT8tTdQHo+uQNDQsKsZaqfd0dkKVBP7CeJvvaed2PeSMis49M2QeSnO9dPPE89euPydDy86uF56mPS+zC517b1E9ler1Zfdq7H+bgb1A6mSjtO96dF/9l6/M5F//Dfd6OH6dPh8rTX/5+e9Fj1G4rhgjAQwI8TAAAAAElFTkSuQmCC&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032width=&quot;256&quot;&amp;#032height=&quot;128&quot;&amp;#032id=&quot;object74&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,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&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03212.50&amp;#03212.50)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;256&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;1.00&quot;&amp;#032id=&quot;object75&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;129&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#032111.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#03280.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032269.00&amp;#03249.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032200.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#03270.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__Np" title="" description="" unit="null" data_type="integer" native_id="Np" native_title="low voltage battery number of branches in parallel" min="1" max="10000" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__eff" title="" description="" unit="null" data_type="real" native_id="eff" native_title="efficiency_DC_DC_Coverter" min="1e-30" max="1" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>0.9</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__k" title="" description="" unit="null" data_type="real" native_id="k" native_title="generic_load" min="-1e+30" max="1e+30" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Tamb" title="" description="" unit="null" data_type="real" native_id="Tamb" native_title="ambient temperature" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>20</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Ns" title="" description="" unit="null" data_type="real" native_id="Ns" native_title="low voltage battery number of cells in series" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>6</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__SOC" title="" description="" unit="null" data_type="real" native_id="SOC" native_title="low voltage battery initial SOC" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>80</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__LVoutput" title="" description="" unit="null" data_type="real" native_id="LVoutput" native_title="low voltage output " min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>13.91</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__battery_output_voltage" title="" description="" unit="V" data_type="real" native_id="battery_output_voltage" native_title="battery output voltage" min="-1e+16" max="1e+16" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>LVoutput__BOARDNET_COOLING_1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__soc" title="" description="" unit="null" data_type="real" native_id="soc" native_title="battery SOC" min="0" max="100" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>SOC__BOARDNET_COOLING_1</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__battery_output_voltage" title="" description="" unit="V" data_type="real" native_id="battery_output_voltage" native_title="battery output voltage"/>
+            <NativeToolVariable id="__ntv__battery_output_current" title="" description="" unit="A" data_type="real" native_id="battery_output_current" native_title="battery output current"/>
+            <NativeToolVariable id="__ntv__power_loss_generic" title="" description="" unit="W" data_type="real" native_id="power_loss_generic" native_title="power loss generic"/>
+            <NativeToolVariable id="__ntv__power_loss_fan" title="" description="" unit="W" data_type="real" native_id="power_loss_fan" native_title="power loss fan"/>
+            <NativeToolVariable id="__ntv__fan_command" title="" description="" unit="null" data_type="real" native_id="fan_command" native_title="fan command"/>
+            <NativeToolVariable id="__ntv__soc" title="" description="" unit="null" data_type="real" native_id="soc" native_title="battery SOC"/>
+            <NativeToolVariable id="__ntv__power_loss_converter" title="" description="" unit="W" data_type="real" native_id="power_loss_converter" native_title="power loss converter"/>
+            <NativeToolVariable id="__ntv__power_loss_battery" title="" description="" unit="W" data_type="real" native_id="power_loss_battery" native_title="power loss battery"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="fan" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:87|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__input" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="input" native_title="command signal at port 4 (off:0, level 1-8:1-8)"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="iCS" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:208|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__isig2" title="" description="" unit="A" data_type="real" dimension="1" causality="input" native_id="isig2" native_title="current signal input at port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="UCS" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:736|P_Y:128|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="output" native_id="usig1" native_title="potential at port 3"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="Ubat" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:329|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="input" native_id="usig1" native_title="voltage signal input at port 1"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__4" title="" description="" native_id="4" native_title="ibat" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:736|P_Y:290|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__psig2" title="" description="" unit="A" data_type="real" dimension="1" causality="output" native_id="psig2" native_title="current at port 3"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libae" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libeb" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libemd" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libsig" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libesc" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libth" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Electrics" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__Np;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{Np;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__eff;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{eff;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__k;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{k;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__Tamb;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{Tamb;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__Ns;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{Ns;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__SOC;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{SOC;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntp__LVoutput;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{LVoutput;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__battery_output_voltage;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{battery_output_voltage_1;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__battery_output_current;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{battery_output_current;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__power_loss_generic;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{power_loss_generic;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__power_loss_fan;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{power_loss_fan;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__fan_command;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{fan_command;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__soc;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{soc_2;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__power_loss_converter;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{power_loss_converter;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntv__power_loss_battery;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{power_loss_battery;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{fan;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{iCS;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{Ubat;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{UCS;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{BOARDNET_COOLING_Submodel;SubmodelInterface;Standalone}.{__ntport__4;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING_ISM;InstrumentedSubmodel;Definition}.{ibat;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

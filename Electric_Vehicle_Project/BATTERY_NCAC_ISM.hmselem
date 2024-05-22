@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<InstrumentedSubmodel id="BATTERY_NCAC_ISM" title="" description="">
+   <realize id="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}"/>
+   <SubmodelInterface id="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}"/>
+   <standalones>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tamb;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">20</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{SOC_1;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">100</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Ns;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">96</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Np;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">74</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Ccell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">3.4</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Acell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">4184</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Mcell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">0.0455</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{rhocell;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">2568</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tmin;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">-10</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Tmax;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">60</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{Cp;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1300</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{lambda;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1.5</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{stype;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">1</ParameterExposure>
+      <ParameterExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY;SimulationTemplate;Definition}.{battery_temperature;ParameterExposure;Standalone}" express_fmt="ExpressionFormat">20</ParameterExposure>
+      <SubmodelInterface id="BATTERY_TH_LIION_NCAC_Submodel" title="" description="" native_id="BATTERY_TH_LIION_NCAC" native_title="">
+         <metadataList>
+            <metadata key="IMAGE_BASE64" value=""/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:926|P_HEIGHT:556|P_X:410|P_Y:186"/>
+         </metadataList>
+         <url type="folder" is_path_list_used="1">Lib_EV_Electrics</url>
+         <toolInfos tool_name="Amesim" tool_version="20222.0.0"/>
+         <nextMessage>1</nextMessage>
+         <isModel>false</isModel>
+         <sourceValues>
+            <sourceValue key="ComponentIconName">Battery</sourceValue>
+            <sourceValue key="SimulationTemplateIconContent">&lt;svg&amp;#032xmlns:amesim=&quot;vnd.lms.imagine.amesim&quot;&amp;#032xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&amp;#032viewBox=&quot;0&amp;#0320&amp;#032190&amp;#032190&quot;&amp;#032xmlns=&quot;http://www.w3.org/2000/svg&quot;&amp;#032fill=&quot;#000000&quot;&gt;&amp;#013&amp;#032&lt;g&amp;#032id=&quot;object1&quot;&gt;&amp;#013&amp;#032&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#0320.00&amp;#0320.00)&quot;&amp;#032width=&quot;190&quot;&amp;#032height=&quot;190&quot;&amp;#032id=&quot;object2&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+AQMAAACxuifeAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAAPoAAAD6AG1e1JrAAACTUlEQVRYhe1YMU7DMBR1UiGBhARHQB0zcAYGEBcgylT1GB1TdUI9RqbKg8/QS1QsRGFEHTqBYGgx304c/zT+EW4rBIhntY368/r8/JzfKIwhnDMCqNCjCiTDvxB6i/vPKvBmAM6kA3OY7rGLe0UWelQBZnV67cAV62AcB6w9dMHJYJQGOatOcT8fJAPW6sRhI6AX0X+tSINdCXr6YFQeXeI7aHgXPDUCKg9/H+SsusQPpJF+mDziykAQl3kYRsjNuXzc0LiV1Y/flAe187A80TLMTx1tqu+DfK4LFSOMOO9rwMEF0hhC+3gbjdJU9ZEXlAecx3nW5xozZq8PxXgYJaO4gIM1uj6ipSIAQwguZsxmnpYaAMVAa1VqREijmm6Ku9saGYyWCM9bGpaxrWFgZqXyGBS5HTnKIxIaHIZo+fDQgNewPHcDr0I+Yh8uhr9GmUdhx6PKwzBWCHv6WMQ1koYPsw/VHmtoYEZD495igvNoaDTymGQWe2h0+phGCly99dsaww2hwWcNDZ2HZgwWpQbOY5rxTG14Ndoa6euXNOR77cNotHxwyock1mrKqTzyfOHOA3yYPNI10kikpDS4O49Bnvv6+OJa7ZcHta9m1L5aUPtK23D4SKi9O/2h1wfhw6kxZjXCdh5GA+eR9S3261cDaLn1OHTf7VV56I6rUchGHtBuxUos9cdv+P+QxgcooTwuhTKgIVZPSCOJ0bjrvL/aqeB5D8eo+93DaagO9x0+3Pe7h9X4C3l8l49flof74YCh2mcaW88a/gu28Akk7bhfePcOvQAAAABJRU5ErkJggg==&quot;/&gt;&amp;#013&amp;#032&lt;/g&gt;&amp;#013&amp;#032&lt;image&amp;#032y=&quot;0&quot;&amp;#032transform=&quot;matrix(1.29&amp;#0320.00&amp;#0320.00&amp;#0321.29&amp;#03212.34&amp;#03212.11)&quot;&amp;#032width=&quot;128&quot;&amp;#032height=&quot;128&quot;&amp;#032id=&quot;object103&quot;&amp;#032x=&quot;0&quot;&amp;#032xlink:href=&quot;data:image/bitmap;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5dJREFUeNrsnLFPE1EYwK+IFQpuHYCYoDGaOhkGE9lcYGFmcNF/wEETSIhDh7p29B9QBxdXpiboBolTJwkMSCBosI0MDbRHUT96cja9O2naXu++198vDTnevdJ373ff974e7SXK5bIF0THEFCAAAYAABAACEAAIQAAgAAGAAAQAAhAACEAAIAABgAAEAAIQAAhAACAAAYAAYxgO+wWefXrzfmu9ueXx3dnXj57GcC4iGepQ/w5p//D8YVnSIu2xnv0+DjVcAS0n1KXtERLVUFkD9K8Bx8fHuVxud3fXbSmVSn+3Fm8HPWtubs7ZSKfT7lOc7bBpfq0OhuowPT2dzWZTqVT0EdAy+y5nwwmrdvrv4XDx6/neAFZWVsLe6H6ocshy4LGIAN/ZFw4nk9aPn62tFy2yd3KvFpM80NlQgw48LmvA4cTVjvf2W0B0Qw3xfcD9zxUtK2GEQ010/y1Jd40aQAqFAmXowJehU1NTzCMRMMAR0MzBwcH/A8WMDkQAKQjimYIujVAzOhABpCBQVwUZQ28TFBFgVgQ45PN5IydraWmJNYAIaJvNzU1jpimTyVAFUYYCAhAAehbhUFmtfV2t7njbb1wZfzn+gAgIl5Pf9bXanu+uJ6P3SEGhs2bviwNv+8LILYkABIRL+Vc1KPksXLvJItyH7L9jRvJRKUBO/w37uxnJR6WAdydfjEk++gRs14+26kfGJB99Anyzv97ko+yNWPG05Hv6S0XkLYoeJie0hIWaCPhQ3W6zp6LZVxMBUvlI/dNOT5l6EUAK6vGFh6Dav5nRxPDiyB1ds69DgMzsq+uzzdHw1lOMSp8XYzMaV2N9V0M3Tr953wdI5lFaCykTICtBSy0k8y7nvkQAZWg/+GjvtRQ8kvf1zr4+AetNF4J0lZsmCJDl1/03gLpy0wgBjeVXabmpXoCz/OotN9ULkOVXdbmpXsD+WUV1ualewPOxGctE+GAWAhAAZq4B4X2mngiAeEdAGN+lIgJAQwRw7yAiYLAjgPsFEQGkIEAAAiC6MtS2bWc7mUx6O7g3IPfdK891OvjubXMZDOpgNwjq4OySn/LS3g7uQcVRQEvN4E6xby3Rzd4uiefAepCC5ufnBzN7yIFXKt3edLoH9462Ghd/isXioM3+8vJy93+nNwKAKggBgAAEAAIQAAhAACAAAYAABAACEAAIQAAgAAGAAAQAAhAACEAAIAABgAAEgPVHgAEAUu6Osnp7fhkAAAAASUVORK5CYII=&quot;/&gt;&amp;#013&amp;#032&lt;rect&amp;#032rx=&quot;0&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032ry=&quot;0&quot;&amp;#032transform=&quot;matrix(1.01&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03211.72&amp;#03212.50)&quot;&amp;#032stroke-miterlimit=&quot;4.00&quot;&amp;#032width=&quot;164&quot;&amp;#032y=&quot;0&quot;&amp;#032stroke-width=&quot;0.99&quot;&amp;#032id=&quot;object104&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke=&quot;#000000&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032fill=&quot;none&quot;&amp;#032x=&quot;0&quot;&amp;#032height=&quot;165&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032fill-rule=&quot;nonzero&quot;/&gt;&amp;#013&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#03254.00&amp;#032178.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(1.00&amp;#0320.00&amp;#0320.00&amp;#0321.00&amp;#032131.00&amp;#032178.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#032150.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#032100.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#032-1.00&amp;#0321.00&amp;#0320.00&amp;#032178.00&amp;#03250.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(-1.00&amp;#0320.00&amp;#0320.00&amp;#032-1.00&amp;#032100.00&amp;#03212.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;g&amp;#032transform=&quot;matrix(0.00&amp;#0321.00&amp;#032-1.00&amp;#0320.00&amp;#03212.00&amp;#03294.00)&quot;&gt;&amp;#013&amp;#013&lt;g&amp;#032id=&quot;signal&quot;&gt;&amp;#013&amp;#009&lt;path&amp;#032fill=&quot;none&quot;&amp;#032stroke=&quot;#ff0000&quot;&amp;#032stroke-dasharray=&quot;&quot;&amp;#032stroke-dashoffset=&quot;0.00&quot;&amp;#032stroke-linecap=&quot;butt&quot;&amp;#032stroke-linejoin=&quot;miter&quot;&amp;#032stroke-miterlimit=&quot;1.00&quot;&amp;#032stroke-opacity=&quot;1.00&quot;&amp;#032stroke-width=&quot;1&quot;&amp;#013&amp;#009&amp;#032d=&quot;M&amp;#0320.5,0&amp;#032L&amp;#0320.5,12&quot;/&gt;&amp;#013&lt;/g&gt;&amp;#013&amp;#013&lt;/g&gt;&lt;/svg&gt;&amp;#013</sourceValue>
+         </sourceValues>
+         <standalones>
+            <NativeToolParameter id="__ntp__Tamb" title="" description="" unit="degreeC" data_type="real" native_id="Tamb" native_title="Temperature ambient" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>20</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__SOC" title="" description="" unit="%" data_type="real" native_id="SOC" native_title="initial SOC" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>100</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Ns" title="" description="" unit="null" data_type="real" native_id="Ns" native_title="number of cells in series" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>96</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Np" title="" description="" unit="null" data_type="real" native_id="Np" native_title="number of cells in parallel" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>74</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Ccell" title="" description="" unit="Ah" data_type="real" native_id="Ccell" native_title="capacity cell" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>3.4</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Acell" title="" description="" unit="mm**2" data_type="real" native_id="Acell" native_title="convective exchange area cell" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>4184</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Mcell" title="" description="" unit="kg" data_type="real" native_id="Mcell" native_title="mass of material cell" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>0.0455</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__rhocell" title="" description="" unit="kg/m**3" data_type="real" native_id="rhocell" native_title="density of material" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>2568</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Tmin" title="" description="" unit="degreeC" data_type="real" native_id="Tmin" native_title="minimum temperature" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>-10</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Tmax" title="" description="" unit="degreeC" data_type="real" native_id="Tmax" native_title="maximum temperature" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>60</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__Cp" title="" description="" unit="J/kg/K" data_type="real" native_id="Cp" native_title=" specific heat of the material" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1300</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__lambda" title="" description="" unit="W/m/K" data_type="real" native_id="lambda" native_title="thermal conductivity of the material" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1.5</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__stype" title="" description="" unit="null" data_type="real" native_id="stype" native_title="solid type index" min="-1e+06" max="1e+06" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__soc" title="" description="" unit="%" data_type="real" native_id="soc" native_title="state of charge at port 4" min="-1e+30" max="1e+30" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>SOC__BATTERY_TH_LIION_NCAC_1</value>
+            </NativeToolParameter>
+            <NativeToolParameter id="__ntp__battery_temperature" title="" description="" unit="degC" data_type="real" native_id="battery_temperature" native_title="temperature" min="-273.14" max="1e+09" driver_dependant="false" read_only="false" flagged_as_solver_setting="false">
+               <value>Tamb__BATTERY_TH_LIION_NCAC_1</value>
+            </NativeToolParameter>
+            <NativeToolVariable id="__ntv__V2" title="" description="" unit="V" data_type="real" native_id="V2" native_title="potential at port 2"/>
+            <NativeToolVariable id="__ntv__I2" title="" description="" unit="A" data_type="real" native_id="I2" native_title="current at port 2"/>
+            <NativeToolVariable id="__ntv__soc" title="" description="" unit="%" data_type="real" native_id="soc" native_title="state of charge at port 4"/>
+            <NativeToolVariable id="__ntv__ocv" title="" description="" unit="V" data_type="real" native_id="ocv" native_title="open circuit voltage"/>
+            <NativeToolVariable id="__ntv__battery_temperature" title="" description="" unit="degC" data_type="real" native_id="battery_temperature" native_title="temperature"/>
+            <NativeToolVariable id="__ntv__Energy_J" title="" description="" unit="J" data_type="real" native_id="Energy_J" native_title="energy"/>
+            <NativeToolPort id="__ntport__0" title="" description="" native_id="0" native_title="Unet" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:909|P_Y:84|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="output" native_id="usig1" native_title="potential at port 3"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__1" title="" description="" native_id="1" native_title="iNet" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:113|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__isig2" title="" description="" unit="A" data_type="real" dimension="1" causality="input" native_id="isig2" native_title="current signal input at port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__2" title="" description="" native_id="2" native_title="i" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:260|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__isig2" title="" description="" unit="A" data_type="real" dimension="1" causality="input" native_id="isig2" native_title="current signal input at port 2"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__3" title="" description="" native_id="3" native_title="U" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:909|P_Y:202|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__usig1" title="" description="" unit="V" data_type="real" dimension="1" causality="output" native_id="usig1" native_title="potential at port 3"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__4" title="" description="" native_id="4" native_title="E" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:909|P_Y:320|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__output" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="output" native_title="signal output"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__5" title="" description="" native_id="5" native_title="SOC" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:909|P_Y:438|P_ORIENTATION:4"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__soc4" title="" description="" unit="null" data_type="real" dimension="1" causality="output" native_id="soc4" native_title="state of charge at port 4"/>
+               </standalones>
+            </NativeToolPort>
+            <NativeToolPort id="__ntport__6" title="" description="" native_id="6" native_title="vehicle" port_type="signal">
+               <metadataList>
+                  <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:407|P_ORIENTATION:3"/>
+               </metadataList>
+               <standalones>
+                  <NativeToolPortVariable id="__ntpv__x" title="" description="" unit="null" data_type="real" dimension="1" causality="input" native_id="x" native_title="input signal at port 1"/>
+               </standalones>
+            </NativeToolPort>
+         </standalones>
+         <resources>
+            <resource type="Library" url="$AME/libeb" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libess" alias="" not_expanded_path=""/>
+            <resource type="Library" url="$AME/libth" alias="" not_expanded_path=""/>
+            <resource type="Library" url="Lib_EV_Electrics" alias="" not_expanded_path=""/>
+         </resources>
+      </SubmodelInterface>
+   </standalones>
+   <bindings>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Tamb;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Tamb;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Ns;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Ns;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Np;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Np;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Ccell;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Ccell;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Acell;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Acell;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Mcell;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Mcell;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__rhocell;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{rhocell;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Tmin;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Tmin;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Tmax;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Tmax;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__Cp;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Cp;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__lambda;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{lambda;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__stype;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{stype;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__battery_temperature;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{battery_temperature;ParameterExposure;Standalone}"/>
+      <parameterBinding native_param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntp__soc;NativeToolParameter;Standalone}" param="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{SOC_1;ParameterExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__V2;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{V2;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__I2;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{I2;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__ocv;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{ocv;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__Energy_J;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Energy_J;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__soc;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{soc_3;VariableExposure;Standalone}"/>
+      <variableBinding native_var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntv__battery_temperature;NativeToolVariable;Standalone}" var="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{battery_temperature_1;VariableExposure;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__1;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{iNet;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__2;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{i;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__6;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{vehicle;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__0;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{Unet;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__3;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{U;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__4;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{E;SimulationPort;Standalone}"/>
+      <simulationPortBinding native_port="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{BATTERY_TH_LIION_NCAC_Submodel;SubmodelInterface;Standalone}.{__ntport__5;NativeToolPort;Standalone}" simulationPort="{Electric_Vehicle_Project;Project;Standalone}.{BATTERY_NCAC_ISM;InstrumentedSubmodel;Definition}.{SOC;SimulationPort;Standalone}"/>
+   </bindings>
+   <mic_attributes>
+      <attribute id="InstrumentedSubmodelRealTimeSimulation" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelPhysicsType" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelGranularity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelComplexity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelLinearity" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelVerificated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="InstrumentedSubmodelValidated" scope="Instrumented Submodel">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</InstrumentedSubmodel>

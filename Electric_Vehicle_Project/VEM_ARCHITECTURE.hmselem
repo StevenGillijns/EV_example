@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationArchitecture id="VEM_ARCHITECTURE" title="" description="">
+   <metadataList>
+      <metadata key="Layers" value="Port Names=0|Images=1"/>
+      <metadata key="SVG_SHAPES" value=""/>
+   </metadataList>
+   <instances>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{VCU;SimulationTemplate;Definition}" id="VCU" title="" description="">
+         <metadataList>
+            <metadata key="Locked" value="1"/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:374|P_HEIGHT:222|P_X:207.251|P_Y:514.481"/>
+         </metadataList>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}" id="POWERTRAIN" title="" description="">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:373|P_HEIGHT:245|P_X:751.755|P_Y:1012.43"/>
+         </metadataList>
+         <standalones>
+            <VariableExposure redeclare="{Electric_Vehicle_Project;Project;Standalone}.{POWERTRAIN;SimulationTemplate;Definition}.{BAT_SOC;VariableExposure;Standalone}">BATTERY.soc_3</VariableExposure>
+         </standalones>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Definition}" id="SCENARIO_PERFORMANCE" title="" description="">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:373|P_HEIGHT:222|P_X:794.198|P_Y:60.7829"/>
+         </metadataList>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{VEHICLE_1D;SimulationTemplate;Definition}" id="VEHICLE_1D" title="" description="">
+         <metadataList>
+            <metadata key="Locked" value="0"/>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:375|P_HEIGHT:223|P_X:814.149|P_Y:520.159"/>
+         </metadataList>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{COOLING_LIQUID;SimulationTemplate;Definition}" id="COOLING_LIQUID" title="" description="">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:380|P_HEIGHT:228|P_X:1470.12|P_Y:584.224"/>
+         </metadataList>
+      </SimulationTemplate>
+      <SimulationTemplate definition="{Electric_Vehicle_Project;Project;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Definition}" id="BOARDNET_COOLING" title="" description="">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_WIDTH:380|P_HEIGHT:228|P_X:1470.13|P_Y:976.041"/>
+         </metadataList>
+      </SimulationTemplate>
+   </instances>
+   <standalones>
+      <VariableExposure id="SOC" title="" description="" unit="null" express_fmt="ExpressionFormat">POWERTRAIN.BAT_SOC</VariableExposure>
+   </standalones>
+   <connections>
+      <SimulationPortConnection id="Connection_4" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{SOC;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{SOC;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;713.75500000,1197.43000000 271.25100000,1197.43000000 271.25100000,774.48100000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_17" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{Treq;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_Treq;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;713.75488825,1156.43388825 395.25055299,1156.43388825 395.25055299,774.48111175&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_18" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{Tmax;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_Tmax;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;713.75488825,1114.43388825 443.25055299,1114.43388825 443.25055299,774.48111175&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_19" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{Tmin;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_Tmin;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;713.75488825,1073.43388825 492.25055299,1073.43388825 492.25055299,774.48111175&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_20" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{w;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_w;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;713.75488825,1033.43388825 543.25055299,1033.43388825 543.25055299,774.48111175&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_6" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{energy_cons;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{E;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;756.19808704,171.78287044 159.07000000,171.78287044 159.07000000,1238.43000000 713.75000000,1238.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_9" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{gear_lever;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_gl;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;850.20000000,320.78000000 850.20000000,386.88000000 392.25000000,386.88000000 392.25000000,476.48000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_8" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{acc_cmd;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_acc;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;904.20000000,320.78000000 904.20000000,418.30000000 444.25000000,418.30000000 444.25000000,476.48000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_7" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{brake_cmd;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{msg_br;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;969.20000000,320.78000000 969.20000000,445.80000000 495.25000000,445.80000000 495.25000000,476.48000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VCU;SimulationTemplate;Instance}.{brake;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{brake;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;619.25100000,629.48100000 776.14900000,629.48100000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_1" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{slope;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{slop;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1227.15000000,569.16000000 1275.01000000,569.16000000 1275.01000000,215.78000000 1206.20000000,215.78000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_2" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{vehicle_speed;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{V;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1206.20000000,163.78000000 1333.05000000,163.78000000 1333.05000000,625.16000000 1227.15000000,625.16000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_3" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{T;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{T_out;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;890.14900000,781.15900000 890.14900000,974.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_10" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{w;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{w_out;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;971.14900000,781.15900000 971.14900000,974.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_12" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{Vbat;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{vehicle;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1050.75500000,974.43000000 1050.75500000,781.15900000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_21" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{Vcar;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{Vpa;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1057.33532348,482.15900000 1057.33532348,320.78290000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_22" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{X;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{SCENARIO_PERFORMANCE;SimulationTemplate;Instance}.{xcar;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1103.08061741,482.15900000 1103.08061741,320.78290000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_13" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{Unet;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Instance}.{Ubat;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1432.13000000,1121.04100000 1366.73599466,1121.04100000 1366.73599466,1158.43000000 1163.75500000,1158.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_15" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Instance}.{ibat;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{iNet;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1888.13071730,1155.04100000 2063.10283976,1155.04100000 2063.10283976,1324.02549482 1266.69000000,1324.02549482 1266.69000000,1214.43000000 1163.75000000,1214.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_11" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{speed;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{VEHICLE_1D;SimulationTemplate;Instance}.{Vcs;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1432.12395651,684.22404349 1227.14900000,684.22404349&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_14" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{temp_motor;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{temp_cs;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1432.12395651,751.22404349 1307.93000000,751.22404349 1307.93000000,1106.43000000 1163.75000000,1106.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_5" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{fan;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Instance}.{fan;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1888.13000000,1085.04000000 2059.39000000,1085.04000000 2059.39000000,757.22404349 1888.12395651,757.22404349&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_16" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{heat_motor;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{POWERTRAIN;SimulationTemplate;Instance}.{heatflow_cs;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1888.12395651,689.22404349 2107.67000000,689.22404349 2107.67000000,1370.45000000 979.75000000,1370.45000000 979.75000000,1295.43000000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_23" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{voltage;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Instance}.{UCS;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1599.12395651,850.22404349 1599.12395651,894.13250000 1591.13000000,894.13250000 1591.13000000,938.04100000&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+      <SimulationPortConnection id="Connection_24" title="" description="" source="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{COOLING_LIQUID;SimulationTemplate;Instance}.{current;SimulationPort;Standalone}" target="{Electric_Vehicle_Project;Project;Standalone}.{VEM_ARCHITECTURE;SimulationArchitecture;Standalone}.{BOARDNET_COOLING;SimulationTemplate;Instance}.{iCS;SimulationPort;Standalone}">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="&lt;svg&gt;&lt;polyline points=&apos;1710.13000000,938.04100000 1710.13000000,894.13250000 1707.12395651,894.13250000 1707.12395651,850.22404349&apos;/&gt;&lt;/svg&gt;"/>
+         </metadataList>
+      </SimulationPortConnection>
+   </connections>
+   <mic_attributes>
+      <attribute id="SimulationArchitectureReviewed" scope="Simulation Architecture">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationArchitecture>

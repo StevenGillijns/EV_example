@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hms_version>20241</hms_version>
+<SimulationTemplate id="ELECTRIC_MOTOR" title="" description="">
+   <metadataList>
+      <metadata key="BODY_COLOR" value="175,220,200"/>
+      <metadata key="IMAGE_BASE64" value="iVBORw0KGgoAAAANSUhEUgAAARUAAADtCAMAAACmhhEQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJnUExURQAAAICAgECAgICAgGaZmW1tbWCAgHFxjmaAgGaAmXR0i2J2iVuAgG2AkmZ3iGBwgGCAj2l4h2R6hWB1imp1imJ2iWh7hGF7hGZ3iGN7hGh4h2R0g2R8g2R8i2J4h2N4h2Z5hmR2iWF5hmd5hmV3iGN6hWR6hWJ3iGV6imN4h2R4h2J2iWd7iWN2hGN7iWR2iWJ5hmV3iGR4h2J2hWR4h2V4h2V3iGV3iGR5hmN3iGV5hmR3iGV4h2R2hmR5hmN4h2V3hWV6iGN3hWN3iGR4h2N3hWN3iGV4h2R3hWN5hmV5hmR3iGN5hmN5iWV4h2R5hmR5iWN4h2V4h2R2hmR5iWJ3hmV5iGV4h2R5iGV4h2V3iGN3iGV3iGN4h2V5hmR4h2N3hmV5iGN5iGR3hmR4h2V3iGV3iGR4h2R4h2N5hmR4h2N5hmN4h2R3hmR5iGV3hmR4h2N3hmR4h2N3iGV4h2N4h2V4h2R4h2R5hmN4h2R5hmV4h2R4h2V3hmV5iGN3hmV5iGR4h2R3hmR5iGR3iGN4h2R4h2R4h2V4h2R4h2R5hmR4h2R3hmR3hmR3iGR5iGV4h2R4h2V3iGV5h2R4h2N3h2V4h2V4iGR5iGN4h2V4h2R5iGR4h2V5iGR4h2R4h2N4h2R4h2R4h2R5hmR5iGR3hmR5iGR5iGR4h2R3iGV4h2R4h2R4h2N4h2R4h2R3h2R4h2N4h2N4h2R4h2R3hmV4h2R4h2R4h2R4h2R4h2R4h2V4iGR4h2N4h2R4h2V4h2R4h2R5h2R4h2R4h2R4h2R4h2V4h2R4h2R4iGR4h2R3h2R4iGR4h1xDKnwAAADMdFJOUwACBAQFBwgJCgoLDQ4ODxAQERcYGBobHR4fICEhISIkKCkqKissLi8wMTM0NDY2ODk6QEFCREdJSktMT1FUVFVWVlhYWVpaW1xdXV5fX2BhYWJiY2NlZWhpam1vb3Fyc3R0dnp7fH5/gIGCg4aHh4mKi4yNjpCQkZKTlJWXmJiampucnJ6foKGio6Wmqaurq6yur7GztLS0uLm5vL2+v8HDxMXJycvLzc7P0NPU1dfY2drd3d7f4eLk5ebp6uzu7vDz9fb5+/v8/P3+/hpHgA8AAAAJcEhZcwAAFxEAABcRAcom8z8AAAThSURBVHhe7dz3kxRFGMbxVswgYsCcBTPmgBgPz0NdFDFjzhkxYAAVRcxizgEVc8QMioqC8XT/KGe6v7u33TOzYJU/3M77fH7Z7ud956p4qo467vZwIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL2bDm9ccJxnfom9w+ceFLjlGnTzzyriKecm9bPvjfQmJphVOnQKX3sZ44/+Yz8A05kNrxMbv4Xb/OUG0sQ2YVhlbfY63Qvs+Hl/2zlCoYVRrAWqX8rHzCscCxrkfq30tyEabnH2IoYaOV0puV+YytioJWXmJbaj6WYgVaaTEvNZCdmoZVuX30sYSdmoZX7GZfYgpWEhVZWMC5xDisJC60092Re9AobCROtXM+8iIWUiVY+Y14wkYVUj7SyYVc8VdlKcz0WUvcxT/VIK+SrUdnKDBZSg8xTNlp5jYXEeMYFNlqpeP5KpgVGWjmKjdgXTAuMtPIoG5FRDIuMtLKKjUiDYZGRVpo7s9LpRWZFVlq5mZVOjEpYaeUrVjocxKiElVZKPsLtTEqYaeVCdoYwKGOmlcXstO3IoIyZVgof4iJy7x1eYaeVw1lq+Zrcu5xX2GnlSZawNnFwNq+w08ogSzia2FtxGQfYaaW5LVvBy6Te+TdygKFW7mQrIAzWuocDeqSVZVVG8oSXtjKH1+A7trwJhIFbyAE90kqlrq2M5hVseXPJvMfdC5xQ61aSL1/PZS1HFOzqXuWEercS/ZXafJ+1zGZEgXNvcEK9W9mXA1jLXEDifePcYo6odyvJp9DB7Dm3lMSb6ty7HFHzVj7nFDzPXtLWCOc+4ohat7KOG+AE9twR3IMs+JQjat3K6PRTaHMWX+fu3Z0FX3JGrVsZ69wPHIObWOQajM+Cbzmj1q3s5Nw1HIOfwt44rkGefM8ZtW5l9yzjiLA3j5v3YZ78yAW1bmX/LPuDc3Ca3+MSHJMnv3BBj7QyrgoPBGkrh2RZ/N7rT/K1kVyCdfNoFRf0SCvkq5G2MinLduCMfO0SzkGeuN+5oNat9OUhZxyQJcs5ezPznWSp3q2cmofxP4efyBKOwR75jqlW/Bu/DuMC547kFPgHTbVyqU+5YIx7k5O3yK9syq2l1q1c7dP3uAXXxS35v3qSb7fUvJVZPj2PW7ByNw7B+n5lK24ttW7llhBzwwJevV/DxtZcW2rdyq0hjn52GrsqbJhqZXaIZ3EtsVfYMNXKbSHemGuJsGCrlTvIf+Ze8CwLplqZQz6fe0E/C6ZamUu+D/eCjVgw1cpd5OkX9C3LGdtqJf8+tfc0QeJaxrZamUfu+gkSezO21crQH44gwdBYK/PJnVtEElnI0FgrC8idm0ESmcKwZ1u5uCueKrTyAHmGJDKKWc+20tVSniq08iB55mOiDksYZUy18jB5puRXDDt+99tUK4+QZ7Yn6jCBUcZUK52/bbiMbAiDnNlWZpO1PcUgZ7aVA8naGgxyZltxKwlbxpDn7LbyECH8z+Fb7LYyiRA3EHt2W0m+vM3f29JmuJXnSL1/CINtSFsMtRL9BwDPEAbbkbYM+1YG/8z99TfXMmvYygaknn8TR1v6+6rDsxURERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERFZI879C20ixWzVnyL2AAAAAElFTkSuQmCC"/>
+      <metadata key="IS_MULTILEVEL" value="False"/>
+      <metadata key="SVG_PROPERTIES" value="P_WIDTH:375|P_HEIGHT:223|P_X:410|P_Y:186"/>
+   </metadataList>
+   <standalones>
+      <ParameterExposure id="Tamb" title="ambient temperature" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="motorMass" title="motor mass" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <ParameterExposure id="motorConstant" title="motor constant" description="" unit="null" express_fmt="ExpressionFormat" param_type="RealParameterType"/>
+      <VariableExposure id="temperature" title="temperature" description="" unit="degC" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="powerloss" title="power losses" description="" unit="W" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="torque_command" title="torque command" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="current_1" title="current" description="" unit="A" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="voltage_1" title="voltage" description="" unit="V" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="eff" title="efficiency" description="" unit="null" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="Tmax_1" title="maximum torque" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="Tmin_1" title="minimum torque" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="motor_torque_1" title="motor torque" description="" unit="Nm" express_fmt="ExpressionFormat"/>
+      <VariableExposure id="motor_speed" title="motor_speed" description="" unit="rev/min" express_fmt="ExpressionFormat"/>
+      <SimulationPort id="heatflow_cs" title="heatflow_cs" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:19|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="ihfs" title="heat flow rate" description="" unit="W" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="speed" title="speed" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:219|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="win" title="input angular velocity signal " description="" unit="null" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Treq" title="Treq" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:-17|P_Y:118|P_ORIENTATION:3"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Tset" title="torque command" description="" unit="Nm" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="voltage" title="voltage" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:72|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="usig1" title="voltage signal input" description="" unit="V" data_type="undefined" dimension="1" causality="input"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="temp_cs" title="temp_cs" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:358|P_Y:4|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Temp" title="temperature" description="" unit="degC" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Torque" title="Torque" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:298|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Torque" title="output torque signal" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="w" title="w" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:358|P_Y:59|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="wsig" title="signal output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Tmin" title="Tmin" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:358|P_Y:113|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Tmin" title="output " description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="Tmax" title="Tmax" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:358|P_Y:178|P_ORIENTATION:4"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="Tmax" title="output" description="" unit="null" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+      <SimulationPort id="current" title="current" description="" domain="Signal">
+         <metadataList>
+            <metadata key="SVG_PROPERTIES" value="P_X:145|P_Y:206|P_ORIENTATION:2"/>
+         </metadataList>
+         <standalones>
+            <SimulationPortVariable id="current" title="current " description="" unit="A" data_type="undefined" dimension="1" causality="output"/>
+         </standalones>
+      </SimulationPort>
+   </standalones>
+   <mic_attributes>
+      <attribute id="SimulationTemplateSystemLevel" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+      <attribute id="SimulationTemplateReviewed" scope="Simulation Template">
+         <values>
+            <value>Not&amp;#032set</value>
+         </values>
+      </attribute>
+   </mic_attributes>
+</SimulationTemplate>
